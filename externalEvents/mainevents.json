@@ -99,7 +99,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"d\""
+                    "controls.keyRight"
                   ]
                 },
                 {
@@ -144,7 +144,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"s\""
+                    "controls.keyDown"
                   ]
                 },
                 {
@@ -189,7 +189,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"a\""
+                    "controls.keyLeft"
                   ]
                 },
                 {
@@ -234,7 +234,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"w\""
+                    "controls.keyUp"
                   ]
                 },
                 {
@@ -288,7 +288,7 @@
                       },
                       "parameters": [
                         "",
-                        "\"Space\""
+                        "controls.keyDash"
                       ]
                     },
                     {
@@ -306,13 +306,14 @@
                 },
                 {
                   "type": {
+                    "inverted": true,
                     "value": "CompareObjectTimer"
                   },
                   "parameters": [
                     "Player",
-                    "\"dashCooldown\"",
+                    "\"dashDuration\"",
                     ">=",
-                    "1"
+                    "0"
                   ]
                 }
               ],
@@ -433,7 +434,7 @@
                   "parameters": [
                     "Player",
                     "Player.Angle()",
-                    "250",
+                    "400",
                     "0"
                   ]
                 },
@@ -487,7 +488,25 @@
                     "TopDownMovement",
                     "yes"
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"dashDuration\"",
+                    ">=",
+                    "0.6"
+                  ]
+                }
+              ],
+              "actions": [
                 {
                   "type": {
                     "value": "RemoveObjectTimer"
@@ -538,7 +557,7 @@
                       },
                       "parameters": [
                         "",
-                        "\"Left\""
+                        "controls.keyAttack"
                       ]
                     },
                     {
@@ -553,9 +572,196 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"attackTimer\"",
+                    ">=",
+                    "0"
+                  ]
                 }
               ],
-              "actions": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"attackTimer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"attackTimer\"",
+                    ">=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Player.Angle()",
+                    "100",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"attackTimer\"",
+                    ">=",
+                    "0.1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "AttackHitbox",
+                    "Player.PointX(\"Attack\")",
+                    "Player.PointY(\"Attack\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "AttackHitbox",
+                    "=",
+                    "Player.Angle()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "AttackHitbox",
+                    "\"attackTimer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Arreter"
+                  },
+                  "parameters": [
+                    "Player"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Sticker::Sticker::Stick"
+                  },
+                  "parameters": [
+                    "AttackHitbox",
+                    "Sticker",
+                    "Player",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "AttackHitbox",
+                    "\"attackTimer\"",
+                    ">=",
+                    "0.3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "AttackHitbox",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "RemoveObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"attackTimer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "yes"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -590,7 +796,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"Right\""
+                    "controls.keyAltAttack"
                   ]
                 }
               ],
@@ -613,6 +819,39 @@
               ]
             },
             {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Gamepads::C_Button_pressed"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "\"Y\"",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Player",
+                    "FireBullet",
+                    "Player.CenterX()",
+                    "Player.CenterY()",
+                    "PlayerBullet",
+                    "Player.Angle()",
+                    "300",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -625,6 +864,7 @@
               "comment": "TODO: Add some aiming assist to show the direction the player is targeting. Maybe just spin the character or a small reticule close to the player"
             },
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -687,7 +927,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"e\""
+                    "controls.keyInteract"
                   ]
                 },
                 {
@@ -778,6 +1018,66 @@
           },
           "parameters": [
             "PlayerBullet",
+            "Minions",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Health::Health::Hit"
+          },
+          "parameters": [
+            "Minions",
+            "Health",
+            "1",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsJustDamaged"
+              },
+              "parameters": [
+                "Minions",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "PlayerBullet",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "AttackHitbox",
             "Minions",
             "",
             "",
@@ -965,6 +1265,35 @@
           "parameters": [
             "Player",
             "Wall",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "Minions",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Player",
+            "Minions",
             ""
           ]
         }

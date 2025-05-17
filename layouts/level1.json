@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.3216911764705887,
+    "zoomFactor": 0.2912258866911118,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -33,8 +33,8 @@
       "name": "Player",
       "persistentUuid": "dd7eda5d-9d60-4c7a-8b58-b70e31691532",
       "width": 0,
-      "x": 481,
-      "y": 292,
+      "x": -227,
+      "y": 332,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -49,8 +49,8 @@
       "name": "Boss1",
       "persistentUuid": "a9e0d8ba-e9b9-4ff5-b245-aeb9c803464c",
       "width": 0,
-      "x": 947,
-      "y": 208,
+      "x": 1413,
+      "y": 274,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -65,8 +65,8 @@
       "name": "Minion1",
       "persistentUuid": "82a8417f-e2b3-4435-8cb4-6f88bebb6b49",
       "width": 0,
-      "x": 220,
-      "y": 100,
+      "x": 26,
+      "y": 24,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -81,8 +81,8 @@
       "name": "Minion1",
       "persistentUuid": "25f11bfa-d6ed-49f5-92ea-9a4f339d9c65",
       "width": 0,
-      "x": 220,
-      "y": 600,
+      "x": 24,
+      "y": 662,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -97,8 +97,8 @@
       "name": "Minion1",
       "persistentUuid": "21c217f2-5f1b-4236-ab74-a02a63e2b4ad",
       "width": 0,
-      "x": 1400,
-      "y": 600,
+      "x": 1213,
+      "y": 674,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -113,8 +113,8 @@
       "name": "Minion1",
       "persistentUuid": "b50e36c0-2e59-4b98-a28a-822bc1cd6320",
       "width": 0,
-      "x": 1400,
-      "y": 100,
+      "x": 1239,
+      "y": 19,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -184,6 +184,125 @@
       "x": 1884,
       "y": -372,
       "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 115,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "4c699a52-d10d-442c-a6ac-5d66b93b9e37",
+      "width": 115,
+      "x": 1624,
+      "y": 50,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 115,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "a7e73609-8409-4c78-9b7a-ceda09438f8c",
+      "width": 115,
+      "x": 234,
+      "y": -282,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 115,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "2636e8c7-2c97-4588-a34c-9ec3b3eb990f",
+      "width": 115,
+      "x": 351,
+      "y": 236,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 115,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "abe0c1a4-307a-4f16-a2c6-451bac57b6f4",
+      "width": 115,
+      "x": 594,
+      "y": 714,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 115,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "1d7fd3d5-47ca-4b27-92af-2c425db84500",
+      "width": 115,
+      "x": 1064,
+      "y": -4,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 115,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "6f5dd66f-5a15-4021-88ad-a00a01620a5a",
+      "width": 115,
+      "x": 1435,
+      "y": 775,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 115,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "5b212967-f3b8-4c39-bd9d-23530148ed2f",
+      "width": 115,
+      "x": -144,
+      "y": 87,
+      "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -338,6 +457,81 @@
             "Boss1",
             "\"attackTimer\""
           ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "EnemyText"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "BossFrame"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "TextFrame"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"dialogueTimer\"",
+            ">=",
+            "3"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "EnemyText"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "BossFrame"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "TextFrame"
+          ]
+        },
+        {
+          "type": {
+            "value": "RemoveTimer"
+          },
+          "parameters": [
+            "",
+            "\"dialogueTimer\""
+          ]
         }
       ]
     },
@@ -421,6 +615,52 @@
                 "=",
                 "1.3"
               ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "EnemyText",
+                "=",
+                "\"Energy from shields partially removed, rerouting power\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "BossFrame",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "EnemyText",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "TextFrame",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"dialogueTimer\""
+              ]
             }
           ]
         },
@@ -454,6 +694,52 @@
                 "modfier",
                 "=",
                 "1.6"
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "EnemyText",
+                "=",
+                "\"Rerouting energy to guns. Dodge this filthy casual\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "BossFrame",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "EnemyText",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "TextFrame",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"dialogueTimer\""
               ]
             }
           ]
@@ -489,6 +775,52 @@
                 "=",
                 "1.9"
               ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "EnemyText",
+                "=",
+                "\"Stop, this energy MUST go somewhere after the shields are down\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "BossFrame",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "EnemyText",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "TextFrame",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"dialogueTimer\""
+              ]
             }
           ]
         },
@@ -526,6 +858,52 @@
             },
             {
               "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "EnemyText",
+                "=",
+                "\"Rebooting...\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "BossFrame",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "EnemyText",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "TextFrame",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"dialogueTimer\""
+              ]
+            },
+            {
+              "type": {
                 "value": "ResetObjectTimer"
               },
               "parameters": [
@@ -541,6 +919,46 @@
                 "Boss1",
                 "FireBullet",
                 "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PickedInstancesCount"
+              },
+              "parameters": [
+                "Minion1",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceVers"
+              },
+              "parameters": [
+                "Boss1",
+                "Player",
+                "50",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "RotateTowardPosition"
+              },
+              "parameters": [
+                "Boss1",
+                "Player.CenterX()",
+                "Player.CenterY()",
+                "1200",
+                ""
               ]
             }
           ]
@@ -618,7 +1036,7 @@
             "Boss1",
             "\"shieldDownTimer\"",
             ">=",
-            "3"
+            "4"
           ]
         }
       ],
@@ -693,16 +1111,72 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "TODO: Kill the boss with a melee attack while weakened"
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Boss1",
+            "\"shieldDownTimer\"",
+            "<",
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "AttackHitbox",
+            "Boss1",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Boss1",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Boss1",
+            "Wall",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Boss1",
+            "Wall",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -824,6 +1298,10 @@
     {
       "name": "SmoothCamera",
       "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "Sticker",
+      "type": "Sticker::Sticker"
     },
     {
       "name": "TopDownMovement",

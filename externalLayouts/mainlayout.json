@@ -17,6 +17,72 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 106,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "EnemyText",
+      "persistentUuid": "3e949e03-f985-48fd-b1ec-40de64fca99f",
+      "width": 999,
+      "x": 70,
+      "y": 584,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "BossFrame",
+      "persistentUuid": "82062e7d-cd83-493c-b7e0-90ea53872ddd",
+      "width": 0,
+      "x": 1099,
+      "y": 566,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 141,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "TextFrame",
+      "persistentUuid": "85db650c-4e1d-4ac1-af1c-c5faf4ce41b6",
+      "width": 1029,
+      "x": 50,
+      "y": 565,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "PowerBar",
+      "persistentUuid": "d41708c3-c6eb-461c-90d0-f98395ea7acc",
+      "width": 0,
+      "x": 94,
+      "y": 98,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "editionSettings": {
@@ -29,7 +95,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.546875,
+    "zoomFactor": 0.8700232859857289,
     "windowMask": false
   }
 }

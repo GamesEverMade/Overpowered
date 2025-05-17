@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.6040838749988865,
+    "zoomFactor": 0.7619362677197602,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -33,8 +33,8 @@
       "name": "Player",
       "persistentUuid": "5a5aa18a-b162-46a9-a694-39276fad4cf8",
       "width": 0,
-      "x": 408,
-      "y": 245,
+      "x": 602,
+      "y": 398,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -42,16 +42,51 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
       "keepRatio": true,
       "layer": "",
-      "name": "Bullet",
-      "persistentUuid": "49b23e17-2264-4b74-a08a-8c5120000994",
-      "width": 0,
-      "x": 535,
-      "y": 250,
-      "zOrder": 4,
+      "name": "Wall",
+      "persistentUuid": "a8760f67-bdd5-46cf-98e2-ec3957e9ab65",
+      "width": 956,
+      "x": 524,
+      "y": 203,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "b88d6642-251e-4028-b775-9a258be1b4af",
+      "width": 1053,
+      "x": 522,
+      "y": 574,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 90,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "e1245f9b-7ea7-4cdc-bed6-99b8febfc52c",
+      "width": 404,
+      "x": 316,
+      "y": 389,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -62,12 +97,114 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Bullet",
-      "persistentUuid": "c13fb4d9-c4e1-4757-b4e8-623777fe5367",
+      "name": "Tutorial1Move",
+      "persistentUuid": "1f1d04fc-7d84-44ed-8d52-fc44262d6a43",
       "width": 0,
-      "x": 507,
-      "y": 342,
-      "zOrder": 5,
+      "x": 533,
+      "y": 98,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 270,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "2f601251-d3c6-4ad3-b5c5-042e3ec39ab1",
+      "width": 278,
+      "x": 1201,
+      "y": 227,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 270,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "5d800d88-feca-465f-88ef-9ab3445351c7",
+      "width": 32,
+      "x": 891,
+      "y": 310,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 145,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "66ec713d-3dd3-4059-bf88-49a9ee91b16b",
+      "width": 32,
+      "x": 1562,
+      "y": 576,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 145,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "fc8d8267-109e-4ce1-be27-755c8f021c36",
+      "width": 32,
+      "x": 1448,
+      "y": 89,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "7dfcdc6e-0173-436f-ba2a-68110f5e49d6",
+      "width": 988,
+      "x": 1560,
+      "y": 702,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "7b7e8f5e-54ad-4bdb-8733-60e7f1583fd0",
+      "width": 1787,
+      "x": 1455,
+      "y": 72,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -78,20 +215,377 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Bullet",
-      "persistentUuid": "0dd17f08-c939-41d5-bb5d-2e1bac708713",
+      "name": "Minion1",
+      "persistentUuid": "47163d90-d82f-4640-aa20-c6accba9cf5a",
       "width": 0,
-      "x": 343,
-      "y": 388,
-      "zOrder": 6,
+      "x": 1736,
+      "y": 502,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tutorial2Attack",
+      "persistentUuid": "5f9c3db7-cf30-4650-958b-abb53ac9cd7c",
+      "width": 0,
+      "x": 1327,
+      "y": 619,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 481,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "374884c2-8a52-4ee4-b922-c4eeba85e22f",
+      "width": 32,
+      "x": 2123,
+      "y": 242,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 141,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "a2d02a07-3386-4a2b-b44c-43ac7b08c25c",
+      "width": 32,
+      "x": 2122,
+      "y": 74,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Minion1",
+      "persistentUuid": "42c259a5-ad79-4ede-aec4-053a21fa26d1",
+      "width": 0,
+      "x": 2241,
+      "y": 212,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tutorial3Ranged",
+      "persistentUuid": "5d5f7649-2a85-4aaf-9a84-cdc2a1a307da",
+      "width": 0,
+      "x": 1854,
+      "y": -44,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 295,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "cbbb8aab-73f1-4250-9bce-5726fb2c36cf",
+      "width": 32,
+      "x": 2526,
+      "y": 418,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "9c5361aa-5f00-4ed7-907c-cbe525a2cb29",
+      "width": 691,
+      "x": 2537,
+      "y": 418,
+      "zOrder": 16,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 303,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Bullet",
+      "persistentUuid": "131c80f7-c7bf-49b0-a885-64ec94457e37",
+      "width": 32,
+      "x": 2794,
+      "y": 111,
+      "zOrder": 17,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tutorial4Dash",
+      "persistentUuid": "07aa7a19-b884-47b9-972d-2617c1b95ab1",
+      "width": 0,
+      "x": 2694,
+      "y": -42,
+      "zOrder": 18,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 379,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "daee3a55-6d65-4b2a-9ee1-557a7877421e",
+      "width": 32,
+      "x": 3214,
+      "y": 71,
+      "zOrder": 19,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Exit",
+      "persistentUuid": "a5e5fd08-c24a-4618-967a-2320ae4570b0",
+      "width": 0,
+      "x": 3118,
+      "y": 225,
+      "zOrder": 20,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
   ],
-  "objects": [],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "Tutorial1Move",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "name": "text",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]Move character[/b]\nW, A, S, D\nANALOG STICK",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Roboto-Regular.ttf",
+        "align": "center",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Tutorial2Attack",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "name": "text",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]Attack[/b]\nLEFT MOUSE BUTTON\nX\nSQUARE",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Roboto-Regular.ttf",
+        "align": "center",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Tutorial3Ranged",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "name": "text",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]Fire[/b]\nRIGHT MOUSE BUTTON\nY\nCROSS",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Roboto-Regular.ttf",
+        "align": "center",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Tutorial4Dash",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "name": "text",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]Dash[/b]\nSPACE\nB\nCIRCLE",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Roboto-Regular.ttf",
+        "align": "center",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Exit",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Exit",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Exit",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Tutorial1Move"
+      },
+      {
+        "objectName": "Tutorial2Attack"
+      },
+      {
+        "objectName": "Tutorial3Ranged"
+      },
+      {
+        "objectName": "Tutorial4Dash"
+      },
+      {
+        "objectName": "Exit"
+      }
+    ]
   },
   "events": [
     {
@@ -100,6 +594,45 @@
         "includeConfig": 0
       },
       "target": "MainEvents"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "EnemyText"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "BossFrame"
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "TextFrame"
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -221,6 +754,10 @@
     {
       "name": "SmoothCamera",
       "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "Sticker",
+      "type": "Sticker::Sticker"
     },
     {
       "name": "TopDownMovement",
