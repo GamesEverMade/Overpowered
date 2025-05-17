@@ -187,8 +187,16 @@
       "type": "AnimatableCapability::AnimatableBehavior"
     },
     {
+      "name": "Bounce",
+      "type": "Bounce::Bounce"
+    },
+    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
     },
     {
       "name": "Flippable",
