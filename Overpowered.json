@@ -172,14 +172,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/AttackHitbox2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "AttackHitbox2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Kenney High.ttf",
         "kind": "font",
         "metadata": "",
@@ -203,14 +195,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "TextFrame",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/AttackHitbox3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "AttackHitbox",
         "smoothed": false,
         "userAdded": false
       },
@@ -278,30 +262,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/Dot Bar Blue Border.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Dot Bar Blue Border.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/aa81b97c3211cf1e7cd040b96f5409851e3f1141c496b064157588294f09e662_Dot Bar Blue Border.png",
-          "name": "Dot Bar Blue Border.png"
-        }
-      },
-      {
-        "file": "assets/Dot Bar Blue Fill Bar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Dot Bar Blue Fill Bar.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/0f15d828199d38d229469b48c953574c22a34b8daeb8941f3eb40df01a8f7d22_Dot Bar Blue Fill Bar.png",
-          "name": "Dot Bar Blue Fill Bar.png"
-        }
-      },
-      {
         "file": "assets/TutorialButton.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -314,6 +274,46 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "TutorialDamageArea",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Flat Bar Orange Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar Orange Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/e277b4eaf6ac17fafedb222c2900b817f1fe3018b42a46430d530f0df8d42b60_Flat Bar Orange Fill Bar.png",
+          "name": "Flat Bar Orange Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Flat Bar White Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar White Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
+          "name": "Flat Bar White Border.png"
+        }
+      },
+      {
+        "file": "assets/EnergyPlateOff.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/EnergyPlateOff.png\"}",
+        "name": "EnergyPlateOff",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite3.png\"}",
+        "name": "NewSprite2",
         "smoothed": false,
         "userAdded": false
       }
@@ -339,13 +339,26 @@
           "value": true
         }
       ],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "Glow",
+          "doubleParameters": {
+            "distance": 15,
+            "innerStrength": 2,
+            "outerStrength": 4
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
-          "isFolded": true,
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
-          "FireCooldown": 0.2,
+          "FireCooldown": 0.4,
           "HasJustFired": false,
           "RotateBullet": true,
           "FiringArc": 45,
@@ -373,6 +386,7 @@
           "RandomizedAngle": 0
         },
         {
+          "isFolded": true,
           "name": "Health",
           "type": "Health::Health",
           "Health": 4,
@@ -770,7 +784,7 @@
           "Health": 2,
           "CurrentHealth": 0,
           "MaxHealth": 2,
-          "DamageCooldown": 0.3,
+          "DamageCooldown": 0.5,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
           "DamageToBeApplied": 0,
@@ -1028,94 +1042,6 @@
       "behaviors": []
     },
     {
-      "assetStoreId": "98213fe7f1e2289ef501a2e0a96ed2292535e720bfa616da42cf780d99a3c6d0",
-      "name": "PowerBar",
-      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-      "variant": "",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "BarTopPadding": 3,
-        "BarLeftPadding": 4,
-        "BarRightPadding": 4,
-        "BarBottomPadding": 4,
-        "EasingDuration": 0,
-        "PreviousHighValueDuration": 0,
-        "ShowLabel": false,
-        "InitialValue": 4,
-        "MaxValue": 4
-      },
-      "childrenContent": {
-        "Background": {
-          "bottomMargin": 4,
-          "height": 26,
-          "leftMargin": 2,
-          "rightMargin": 2,
-          "texture": "Dot Bar Blue Border.png",
-          "tiled": false,
-          "topMargin": 3,
-          "width": 118
-        },
-        "Buffer": {
-          "bottomMargin": 0,
-          "height": 19,
-          "leftMargin": 0,
-          "rightMargin": 0,
-          "texture": "Dot Bar Blue Fill Bar.png",
-          "tiled": true,
-          "topMargin": 0,
-          "width": 21
-        },
-        "FillBar": {
-          "bottomMargin": 0,
-          "height": 19,
-          "leftMargin": 0,
-          "rightMargin": 0,
-          "texture": "Dot Bar Blue Fill Bar.png",
-          "tiled": true,
-          "topMargin": 0,
-          "width": 21
-        },
-        "Label": {
-          "bold": false,
-          "italic": false,
-          "smoothed": true,
-          "underlined": false,
-          "string": "",
-          "font": "",
-          "textAlignment": "",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "",
-            "font": "",
-            "textAlignment": "",
-            "verticalTextAlignment": "top",
-            "characterSize": 20,
-            "color": "0;0;0"
-          }
-        }
-      }
-    },
-    {
       "assetStoreId": "",
       "height": 32,
       "name": "MovingWall",
@@ -1136,19 +1062,128 @@
           "type": "Tween::TweenBehavior"
         }
       ]
+    },
+    {
+      "assetStoreId": "5d60da81895e1d170c135f9071369e0f617f24485a6760a717ea2d56988b8c8f",
+      "name": "EnemyHealthBar",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": true
+        }
+      ],
+      "content": {
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": false,
+        "BarTopPadding": 0,
+        "BarBottomPadding": 0,
+        "BarLeftPadding": 0,
+        "BarRightPadding": 0,
+        "MaxValue": 2,
+        "InitialValue": 2,
+        "EasingDuration": 0.5
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 6,
+          "height": 12,
+          "leftMargin": 4,
+          "rightMargin": 4,
+          "texture": "Flat Bar White Border.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 32
+        },
+        "Buffer": {
+          "bottomMargin": 0,
+          "height": 8,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Flat Bar Orange Fill Bar.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 8
+        },
+        "FillBar": {
+          "bottomMargin": 0,
+          "height": 8,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Flat Bar Orange Fill Bar.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 8
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 16,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 16,
+            "color": "255;255;255"
+          }
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
+        "folderName": "HUD",
+        "children": [
+          {
+            "objectName": "EnemyHealthBar"
+          },
+          {
+            "objectName": "HealthBar"
+          },
+          {
+            "objectName": "TextFrame"
+          },
+          {
+            "objectName": "BossFrame"
+          },
+          {
+            "objectName": "EnemyText"
+          }
+        ]
+      },
+      {
         "objectName": "Player"
-      },
-      {
-        "objectName": "HealthBar"
-      },
-      {
-        "objectName": "PowerBar"
       },
       {
         "objectName": "Bullet"
@@ -1167,19 +1202,18 @@
       },
       {
         "objectName": "MovingWall"
-      },
-      {
-        "objectName": "EnemyText"
-      },
-      {
-        "objectName": "BossFrame"
-      },
-      {
-        "objectName": "TextFrame"
       }
     ]
   },
   "objectsGroups": [
+    {
+      "name": "Bosses",
+      "objects": [
+        {
+          "name": "Boss1"
+        }
+      ]
+    },
     {
       "name": "Minions",
       "objects": [

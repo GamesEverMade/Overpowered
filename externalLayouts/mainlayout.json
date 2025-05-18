@@ -68,22 +68,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "HUD",
-      "name": "PowerBar",
-      "persistentUuid": "d41708c3-c6eb-461c-90d0-f98395ea7acc",
-      "width": 0,
-      "x": 94,
-      "y": 98,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     }
   ],
   "editionSettings": {

@@ -55,6 +55,17 @@
             "HealthBar",
             "\"HUD\""
           ]
+        },
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::EnableEffect"
+          },
+          "parameters": [
+            "Player",
+            "Effect",
+            "\"Glow\"",
+            "no"
+          ]
         }
       ]
     },
@@ -71,6 +82,46 @@
             "=",
             "Player.Health::Health()",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Gamepads::C_Button_pressed"
+          },
+          "parameters": [
+            "",
+            "1",
+            "\"Y\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "MouseButtonFromTextPressed"
+          },
+          "parameters": [
+            "",
+            "controls.keyAltAttack"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "TopDownMovementBehavior::MaxSpeed"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "=",
+            "200"
           ]
         }
       ]
@@ -315,6 +366,17 @@
                     ">=",
                     "0"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"dashCooldown\"",
+                    ">=",
+                    "1"
+                  ]
                 }
               ],
               "actions": [
@@ -553,7 +615,7 @@
                   "subInstructions": [
                     {
                       "type": {
-                        "value": "MouseButtonFromTextReleased"
+                        "value": "MouseButtonFromTextPressed"
                       },
                       "parameters": [
                         "",
@@ -792,7 +854,7 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "MouseButtonFromTextReleased"
+                    "value": "MouseButtonFromTextPressed"
                   },
                   "parameters": [
                     "",
@@ -814,6 +876,17 @@
                     "AngleBetweenPositions(Player.CenterX(),Player.CenterY(),CursorX(),CursorY())",
                     "300",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "=",
+                    "50"
                   ]
                 }
               ]
@@ -847,6 +920,17 @@
                     "Player.Angle()",
                     "300",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Player",
+                    "TopDownMovement",
+                    "=",
+                    "50"
                   ]
                 }
               ]
@@ -1139,6 +1223,26 @@
           "actions": [
             {
               "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Minions",
+                "\"knockbackTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "Minions",
+                "Player.AngleToObject(PlayerBullet)",
+                "200",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "Delete"
               },
               "parameters": [
@@ -1199,13 +1303,202 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
+                "value": "ResetObjectTimer"
               },
               "parameters": [
-                "PlayerBullet",
-                ""
+                "Minions",
+                "\"knockbackTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "Minions",
+                "Minions.AngleToObject(Player)+180",
+                "200",
+                "1"
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "PlayerBullet",
+            "Bosses",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "PlayerBullet",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Minions",
+            "\"knockbackTimer\"",
+            ">=",
+            "0.2"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "RemoveObjectTimer"
+          },
+          "parameters": [
+            "Minions",
+            "\"knockbackTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Arreter"
+          },
+          "parameters": [
+            "Minions"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Health::Health::IsJustDamaged"
+          },
+          "parameters": [
+            "Minions",
+            "Health",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "EnemyHealthBar",
+            "Minions.CenterX() - Minions.Width()/2",
+            "Minions.CenterY() - Minions.Height()-8",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Sticker::Sticker::Stick"
+          },
+          "parameters": [
+            "EnemyHealthBar",
+            "Sticker",
+            "Minions",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+          },
+          "parameters": [
+            "EnemyHealthBar",
+            "=",
+            "Minions.Health::Health()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+          },
+          "parameters": [
+            "EnemyHealthBar",
+            "=",
+            "Minions.Health::MaxHealth()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "OpacityCapability::OpacityBehavior::SetValue"
+          },
+          "parameters": [
+            "EnemyHealthBar",
+            "Opacity",
+            "=",
+            "128"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "EnemyHealthBar",
+            "\"healthBarTimer\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "EnemyHealthBar",
+            "\"healthBarTimer\"",
+            ">=",
+            "1.5"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "EnemyHealthBar",
+            ""
           ]
         }
       ]
@@ -1431,6 +1724,35 @@
       "conditions": [
         {
           "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "Bosses",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Player",
+            "Bosses",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "Health::Health::IsDamageCooldownActive"
           },
           "parameters": [
@@ -1499,6 +1821,35 @@
           "parameters": [
             "Player",
             "\"255;255;255\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Health::Health::IsJustDamaged"
+          },
+          "parameters": [
+            "Player",
+            "Health",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "CameraShake::ShakeCamera"
+          },
+          "parameters": [
+            "",
+            "0.3",
+            "0",
+            "0.1",
+            ""
           ]
         }
       ]

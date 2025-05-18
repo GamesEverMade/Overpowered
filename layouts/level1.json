@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.2912258866911118,
+    "zoomFactor": 0.34375202416123213,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -33,9 +33,9 @@
       "name": "Player",
       "persistentUuid": "dd7eda5d-9d60-4c7a-8b58-b70e31691532",
       "width": 0,
-      "x": -227,
-      "y": 332,
-      "zOrder": 1,
+      "x": 716,
+      "y": 126,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -49,8 +49,8 @@
       "name": "Boss1",
       "persistentUuid": "a9e0d8ba-e9b9-4ff5-b245-aeb9c803464c",
       "width": 0,
-      "x": 1413,
-      "y": 274,
+      "x": 2266,
+      "y": 412,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -65,8 +65,8 @@
       "name": "Minion1",
       "persistentUuid": "82a8417f-e2b3-4435-8cb4-6f88bebb6b49",
       "width": 0,
-      "x": 26,
-      "y": 24,
+      "x": 879,
+      "y": 162,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -81,8 +81,8 @@
       "name": "Minion1",
       "persistentUuid": "25f11bfa-d6ed-49f5-92ea-9a4f339d9c65",
       "width": 0,
-      "x": 24,
-      "y": 662,
+      "x": 877,
+      "y": 800,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -97,8 +97,8 @@
       "name": "Minion1",
       "persistentUuid": "21c217f2-5f1b-4236-ab74-a02a63e2b4ad",
       "width": 0,
-      "x": 1213,
-      "y": 674,
+      "x": 2066,
+      "y": 812,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -113,8 +113,8 @@
       "name": "Minion1",
       "persistentUuid": "b50e36c0-2e59-4b98-a28a-822bc1cd6320",
       "width": 0,
-      "x": 1239,
-      "y": 19,
+      "x": 2092,
+      "y": 157,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -130,8 +130,8 @@
       "name": "Wall",
       "persistentUuid": "0a51863f-f3f2-4c39-a7bc-55701040279a",
       "width": 2534,
-      "x": -574,
-      "y": -416,
+      "x": 279,
+      "y": -278,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -147,8 +147,8 @@
       "name": "Wall",
       "persistentUuid": "fdbb4f94-cd0d-4f18-bcab-1b34a8a09ffe",
       "width": 128,
-      "x": -559,
-      "y": -423,
+      "x": 294,
+      "y": -285,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -164,8 +164,8 @@
       "name": "Wall",
       "persistentUuid": "383683e3-f0ca-46b6-9335-04f3d9a87c2c",
       "width": 2534,
-      "x": -507,
-      "y": 1034,
+      "x": 346,
+      "y": 1172,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -181,8 +181,8 @@
       "name": "Wall",
       "persistentUuid": "2728d6ca-cc11-467c-97d4-75ad11d0d9c1",
       "width": 128,
-      "x": 1884,
-      "y": -372,
+      "x": 2737,
+      "y": -234,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -198,8 +198,8 @@
       "name": "Wall",
       "persistentUuid": "4c699a52-d10d-442c-a6ac-5d66b93b9e37",
       "width": 115,
-      "x": 1624,
-      "y": 50,
+      "x": 2477,
+      "y": 188,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -215,8 +215,8 @@
       "name": "Wall",
       "persistentUuid": "a7e73609-8409-4c78-9b7a-ceda09438f8c",
       "width": 115,
-      "x": 234,
-      "y": -282,
+      "x": 1087,
+      "y": -144,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -232,8 +232,8 @@
       "name": "Wall",
       "persistentUuid": "2636e8c7-2c97-4588-a34c-9ec3b3eb990f",
       "width": 115,
-      "x": 351,
-      "y": 236,
+      "x": 1204,
+      "y": 374,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -249,8 +249,8 @@
       "name": "Wall",
       "persistentUuid": "abe0c1a4-307a-4f16-a2c6-451bac57b6f4",
       "width": 115,
-      "x": 594,
-      "y": 714,
+      "x": 1447,
+      "y": 852,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -266,8 +266,8 @@
       "name": "Wall",
       "persistentUuid": "1d7fd3d5-47ca-4b27-92af-2c425db84500",
       "width": 115,
-      "x": 1064,
-      "y": -4,
+      "x": 1917,
+      "y": 134,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -283,8 +283,8 @@
       "name": "Wall",
       "persistentUuid": "6f5dd66f-5a15-4021-88ad-a00a01620a5a",
       "width": 115,
-      "x": 1435,
-      "y": 775,
+      "x": 2288,
+      "y": 913,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -300,9 +300,25 @@
       "name": "Wall",
       "persistentUuid": "5b212967-f3b8-4c39-bd9d-23530148ed2f",
       "width": 115,
-      "x": -144,
-      "y": 87,
+      "x": 709,
+      "y": 225,
       "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnergyPlate",
+      "persistentUuid": "bcc2bbb9-42e9-477e-aff3-25e9fd383cbf",
+      "width": 0,
+      "x": 1572,
+      "y": 386,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -406,6 +422,116 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "EnergyPlate",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "EnergyPlateOff",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "EnergyPlateOff",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 80,
+                        "y": 0
+                      },
+                      {
+                        "x": 80,
+                        "y": 80
+                      },
+                      {
+                        "x": 0,
+                        "y": 80
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "EnergyPlateOn",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 80,
+                        "y": 0
+                      },
+                      {
+                        "x": 80,
+                        "y": 80
+                      },
+                      {
+                        "x": 0,
+                        "y": 80
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -413,6 +539,9 @@
     "children": [
       {
         "objectName": "Boss1"
+      },
+      {
+        "objectName": "EnergyPlate"
       }
     ]
   },
@@ -873,7 +1002,7 @@
               "parameters": [
                 "EnemyText",
                 "=",
-                "\"Rebooting...\""
+                "\"Rerouting power back from energy plates to shield generators, please don't touch the pad\""
               ]
             },
             {
@@ -1046,7 +1175,7 @@
             "Boss1",
             "\"shieldDownTimer\"",
             ">=",
-            "4"
+            "8"
           ]
         }
       ],
@@ -1117,6 +1246,63 @@
             "FireBullet",
             "yes"
           ]
+        },
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "EnemyText",
+            "=",
+            "\"Shields back online. You can't touch this\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "BossFrame",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "EnemyText",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "TextFrame",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"dialogueTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "EnergyPlate",
+            "Animation",
+            "=",
+            "\"EnergyPlateOff\""
+          ]
         }
       ]
     },
@@ -1131,9 +1317,113 @@
             "Boss1",
             "\"shieldDownTimer\"",
             "<",
-            "3"
+            "8"
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "EnergyPlate",
+                "Animation",
+                "=",
+                "\"EnergyPlateOn\""
+              ]
+            }
           ]
         },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "EnergyPlate",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "controls.keyInteract"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Gamepads::C_Button_pressed"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        "\"A\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Effect",
+                    "\"Glow\"",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
         {
           "type": {
             "value": "CollisionNP"
@@ -1144,6 +1434,16 @@
             "",
             "",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+          },
+          "parameters": [
+            "Player",
+            "Effect",
+            "\"Glow\""
           ]
         }
       ],
