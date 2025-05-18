@@ -4,15 +4,16 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 103,
+      "height": 34,
       "keepRatio": true,
       "layer": "HUD",
       "name": "HealthBar",
       "persistentUuid": "c455ded5-bca9-4119-8941-c5b800691aff",
-      "width": 0,
+      "width": 103,
       "x": 91,
-      "y": 67,
+      "y": 49,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -95,7 +96,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.8700232859857289,
+    "zoomFactor": 0.7130377630690397,
     "windowMask": false
   }
 }

@@ -481,6 +481,16 @@
           "parameters": [
             "TextFrame"
           ]
+        },
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "currentLevel",
+            "=",
+            "\"Level1\""
+          ]
         }
       ]
     },
@@ -1306,6 +1316,10 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }

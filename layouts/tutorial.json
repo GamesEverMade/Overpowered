@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.7619362677197602,
+    "zoomFactor": 0.8993607583666636,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -33,8 +33,8 @@
       "name": "Player",
       "persistentUuid": "5a5aa18a-b162-46a9-a694-39276fad4cf8",
       "width": 0,
-      "x": 602,
-      "y": 398,
+      "x": 605,
+      "y": 397,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -66,7 +66,7 @@
       "layer": "",
       "name": "Wall",
       "persistentUuid": "b88d6642-251e-4028-b775-9a258be1b4af",
-      "width": 1053,
+      "width": 1254,
       "x": 522,
       "y": 574,
       "zOrder": 7,
@@ -116,8 +116,8 @@
       "layer": "",
       "name": "Wall",
       "persistentUuid": "2f601251-d3c6-4ad3-b5c5-042e3ec39ab1",
-      "width": 278,
-      "x": 1201,
+      "width": 174,
+      "x": 1021,
       "y": 227,
       "zOrder": 9,
       "numberProperties": [],
@@ -134,25 +134,8 @@
       "name": "Wall",
       "persistentUuid": "5d800d88-feca-465f-88ef-9ab3445351c7",
       "width": 32,
-      "x": 891,
-      "y": 310,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 145,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "66ec713d-3dd3-4059-bf88-49a9ee91b16b",
-      "width": 32,
-      "x": 1562,
-      "y": 576,
+      "x": 795,
+      "y": 308,
       "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
@@ -183,25 +166,8 @@
       "keepRatio": true,
       "layer": "",
       "name": "Wall",
-      "persistentUuid": "7dfcdc6e-0173-436f-ba2a-68110f5e49d6",
-      "width": 988,
-      "x": 1560,
-      "y": 702,
-      "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 32,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
       "persistentUuid": "7b7e8f5e-54ad-4bdb-8733-60e7f1583fd0",
-      "width": 1787,
+      "width": 1224,
       "x": 1455,
       "y": 72,
       "zOrder": 7,
@@ -218,8 +184,8 @@
       "name": "Minion1",
       "persistentUuid": "47163d90-d82f-4640-aa20-c6accba9cf5a",
       "width": 0,
-      "x": 1736,
-      "y": 502,
+      "x": 1339,
+      "y": 396,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -234,8 +200,8 @@
       "name": "Tutorial2Attack",
       "persistentUuid": "5f9c3db7-cf30-4650-958b-abb53ac9cd7c",
       "width": 0,
-      "x": 1327,
-      "y": 619,
+      "x": 958,
+      "y": 631,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -245,48 +211,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 481,
+      "height": 373,
       "keepRatio": true,
       "layer": "",
       "name": "Wall",
       "persistentUuid": "374884c2-8a52-4ee4-b922-c4eeba85e22f",
-      "width": 32,
-      "x": 2123,
-      "y": 242,
+      "width": 66,
+      "x": 1772,
+      "y": 232,
       "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 141,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "a2d02a07-3386-4a2b-b44c-43ac7b08c25c",
-      "width": 32,
-      "x": 2122,
-      "y": 74,
-      "zOrder": 9,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Minion1",
-      "persistentUuid": "42c259a5-ad79-4ede-aec4-053a21fa26d1",
-      "width": 0,
-      "x": 2241,
-      "y": 212,
-      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -300,26 +233,9 @@
       "name": "Tutorial3Ranged",
       "persistentUuid": "5d5f7649-2a85-4aaf-9a84-cdc2a1a307da",
       "width": 0,
-      "x": 1854,
-      "y": -44,
+      "x": 1577,
+      "y": -35,
       "zOrder": 14,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 295,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "cbbb8aab-73f1-4250-9bce-5726fb2c36cf",
-      "width": 32,
-      "x": 2526,
-      "y": 418,
-      "zOrder": 15,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -333,27 +249,10 @@
       "layer": "",
       "name": "Wall",
       "persistentUuid": "9c5361aa-5f00-4ed7-907c-cbe525a2cb29",
-      "width": 691,
-      "x": 2537,
+      "width": 892,
+      "x": 1792,
       "y": 418,
       "zOrder": 16,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 303,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Bullet",
-      "persistentUuid": "131c80f7-c7bf-49b0-a885-64ec94457e37",
-      "width": 32,
-      "x": 2794,
-      "y": 111,
-      "zOrder": 17,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -367,8 +266,8 @@
       "name": "Tutorial4Dash",
       "persistentUuid": "07aa7a19-b884-47b9-972d-2617c1b95ab1",
       "width": 0,
-      "x": 2694,
-      "y": -42,
+      "x": 2205,
+      "y": -41,
       "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
@@ -384,7 +283,7 @@
       "name": "Wall",
       "persistentUuid": "daee3a55-6d65-4b2a-9ee1-557a7877421e",
       "width": 32,
-      "x": 3214,
+      "x": 2672,
       "y": 71,
       "zOrder": 19,
       "numberProperties": [],
@@ -400,9 +299,115 @@
       "name": "Exit",
       "persistentUuid": "a5e5fd08-c24a-4618-967a-2320ae4570b0",
       "width": 0,
-      "x": 3118,
-      "y": 225,
+      "x": 2541,
+      "y": 220,
       "zOrder": 20,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 114,
+      "keepRatio": true,
+      "layer": "",
+      "name": "MovingWall",
+      "persistentUuid": "4ac3635a-dd3b-402d-9847-d2a1b0017bd9",
+      "width": 54,
+      "x": 1775,
+      "y": 99,
+      "zOrder": 21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TutorialButton",
+      "persistentUuid": "bbca3816-9daf-496b-8b22-84dce72afbad",
+      "width": 0,
+      "x": 1893,
+      "y": 213,
+      "zOrder": 22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 176,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "10c4977a-45d5-4e21-81c7-1b2950e0c922",
+      "width": 32,
+      "x": 1899,
+      "y": 100,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 299,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TutorialDamageArea",
+      "persistentUuid": "3872d360-f20b-465c-9637-1b25376022d1",
+      "width": 32,
+      "x": 2388,
+      "y": 106,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 299,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TutorialDamageArea",
+      "persistentUuid": "ba5c8242-e202-4ccf-a996-a8ac275ac321",
+      "width": 32,
+      "x": 2098,
+      "y": 109,
+      "zOrder": 23,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tutorial5Interact",
+      "persistentUuid": "83de8873-0e22-44f6-9fff-10d20035af76",
+      "width": 0,
+      "x": 2536,
+      "y": -34,
+      "zOrder": 24,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -565,6 +570,145 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TutorialButton",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "isEnabled",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "TutorialButton",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "TutorialButton",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 8,
+                        "y": 0
+                      },
+                      {
+                        "x": 8,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "TutorialDamageArea",
+      "texture": "TutorialDamageArea",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "Tutorial5Interact",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "name": "text",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]Interact[/b]\nE\nA\nCROSS",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Roboto-Regular.ttf",
+        "align": "center",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "TutorialLevelComplete",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "name": "text",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "content": {
+        "text": "LOADING LEVEL 1",
+        "opacity": 255,
+        "fontSize": 80,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Roboto-Regular.ttf",
+        "align": "center",
+        "verticalTextAlignment": "top"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -583,7 +727,19 @@
         "objectName": "Tutorial4Dash"
       },
       {
+        "objectName": "Tutorial5Interact"
+      },
+      {
+        "objectName": "TutorialLevelComplete"
+      },
+      {
         "objectName": "Exit"
+      },
+      {
+        "objectName": "TutorialButton"
+      },
+      {
+        "objectName": "TutorialDamageArea"
       }
     ]
   },
@@ -630,6 +786,366 @@
           },
           "parameters": [
             "TextFrame"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "currentLevel",
+            "=",
+            "\"Tutorial\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "PlayerBullet",
+            "TutorialButton",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectHeightTween2"
+          },
+          "parameters": [
+            "MovingWall",
+            "Tween",
+            "\"openWall\"",
+            "10",
+            "\"linear\"",
+            "1",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "PlayerBullet",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "TutorialDamageArea",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Health::Health::Hit"
+          },
+          "parameters": [
+            "Player",
+            "Health",
+            "1",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Tutorial knockback (may be suppressed when general knockback implemented on MainEvents)"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "!=",
+                "\"Dash\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"tutorialKnockback\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Player",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "Player",
+                "Player.Angle() + 180",
+                "200",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Player",
+                "TutorialDamageArea",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Player",
+            "\"tutorialKnockback\"",
+            ">=",
+            "0.2"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "RemoveObjectTimer"
+          },
+          "parameters": [
+            "Player",
+            "\"tutorialKnockback\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "Arreter"
+          },
+          "parameters": [
+            "Player"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Not working when put on MainEvents, maybe because they run every frame but before the events here?"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Health::Health::IsJustDamaged"
+          },
+          "parameters": [
+            "Player",
+            "Health",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "CameraShake::ShakeCamera"
+          },
+          "parameters": [
+            "",
+            "0.3",
+            "0.1",
+            "0.1",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "Exit",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "controls.keyInteract"
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_Button_pressed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"A\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "TutorialLevelComplete",
+            "285",
+            "250",
+            "\"HUD\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Level1\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "MovingWall",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Player",
+            "MovingWall",
+            ""
           ]
         }
       ]
@@ -762,6 +1278,10 @@
     {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }

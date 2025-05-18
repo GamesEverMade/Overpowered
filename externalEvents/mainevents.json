@@ -1178,6 +1178,24 @@
             "Player",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "currentLevel",
+            ""
+          ]
         }
       ]
     },
@@ -1249,6 +1267,34 @@
             "value": "CollisionNP"
           },
           "parameters": [
+            "PlayerBullet",
+            "Wall",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "PlayerBullet",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
             "Player",
             "Wall",
             "",
@@ -1295,6 +1341,83 @@
             "Player",
             "Minions",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Health::Health::IsDamageCooldownActive"
+          },
+          "parameters": [
+            "Player",
+            "Health",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ChangeBlendMode"
+          },
+          "parameters": [
+            "Player",
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "Player",
+            "\"255;255;255\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "Health::Health::IsDamageCooldownActive"
+          },
+          "parameters": [
+            "Player",
+            "Health",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ChangeBlendMode"
+          },
+          "parameters": [
+            "Player",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "Player",
+            "\"255;255;255\""
           ]
         }
       ]

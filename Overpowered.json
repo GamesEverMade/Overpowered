@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Tutorial",
   "gdVersion": {
     "build": 231,
     "major": 5,
@@ -300,6 +300,22 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/0f15d828199d38d229469b48c953574c22a34b8daeb8941f3eb40df01a8f7d22_Dot Bar Blue Fill Bar.png",
           "name": "Dot Bar Blue Fill Bar.png"
         }
+      },
+      {
+        "file": "assets/TutorialButton.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "TutorialButton",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/TutorialDamageArea.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "TutorialDamageArea",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -326,6 +342,7 @@
       "effects": [],
       "behaviors": [
         {
+          "isFolded": true,
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
           "FireCooldown": 0.2,
@@ -356,12 +373,11 @@
           "RandomizedAngle": 0
         },
         {
-          "isFolded": true,
           "name": "Health",
           "type": "Health::Health",
-          "Health": 10,
+          "Health": 4,
           "CurrentHealth": 0,
-          "MaxHealth": 10,
+          "MaxHealth": 4,
           "DamageCooldown": 1,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
@@ -438,10 +454,11 @@
           "IsCalledManually": false
         },
         {
+          "angularMaxSpeed": 1800,
+          "isFolded": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "acceleration": 700,
-          "angularMaxSpeed": 1200,
           "deceleration": 1200,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -578,8 +595,8 @@
         "UnitWidth": 16,
         "HideBackground": true,
         "ShowBackground": false,
-        "InitialValue": 10,
-        "MaxValue": 10
+        "InitialValue": 4,
+        "MaxValue": 4
       },
       "childrenContent": {
         "Background": {
@@ -738,7 +755,13 @@
       "name": "Minion1",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -1091,6 +1114,28 @@
           }
         }
       }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "MovingWall",
+      "texture": "Wall",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1119,6 +1164,9 @@
       },
       {
         "objectName": "Wall"
+      },
+      {
+        "objectName": "MovingWall"
       },
       {
         "objectName": "EnemyText"
@@ -1187,6 +1235,11 @@
           "value": "w"
         }
       ]
+    },
+    {
+      "name": "currentLevel",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [
