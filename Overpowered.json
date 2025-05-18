@@ -454,10 +454,10 @@
           "IsCalledManually": false
         },
         {
-          "angularMaxSpeed": 1800,
           "isFolded": true,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "angularMaxSpeed": 1800,
           "acceleration": 700,
           "deceleration": 1200,
           "allowDiagonals": true,

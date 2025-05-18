@@ -998,6 +998,36 @@
           "actions": [
             {
               "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Player",
+                "\"knockbackTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Player",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "Player",
+                "Player.AngleToObject(Bullet)+180",
+                "200",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "Delete"
               },
               "parameters": [
@@ -1005,6 +1035,57 @@
                 ""
               ]
             }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Player",
+            "\"knockbackTimer\"",
+            ">=",
+            "0.2"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "RemoveObjectTimer"
+          },
+          "parameters": [
+            "Player",
+            "\"knockbackTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ActivateBehavior"
+          },
+          "parameters": [
+            "Player",
+            "TopDownMovement",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "Arreter"
+          },
+          "parameters": [
+            "Player"
           ]
         }
       ]
