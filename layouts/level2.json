@@ -1755,6 +1755,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Islaughy",
+      "persistentUuid": "07780700-6bce-4de5-a2c0-4d95635f377b",
+      "width": 0,
+      "x": 608,
+      "y": 128,
+      "zOrder": 24,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -2158,7 +2174,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Islaughy",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2236,6 +2251,18 @@
                 "280",
                 ""
               ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Distance"
+              },
+              "parameters": [
+                "Islaughy",
+                "Player",
+                "200",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -2252,18 +2279,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "BUG: Enemy is not moving apart from the player"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2289,7 +2304,7 @@
                 "Islaughy",
                 "Player.AngleToObject(Islaughy)",
                 "300",
-                "1"
+                "0"
               ]
             }
           ]
