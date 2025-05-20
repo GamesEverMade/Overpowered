@@ -650,7 +650,7 @@
                     },
                     {
                       "name": "Weapon",
-                      "x": 9,
+                      "x": 19.5,
                       "y": 26
                     }
                   ],
@@ -697,7 +697,7 @@
                     },
                     {
                       "name": "Weapon",
-                      "x": 9,
+                      "x": 19.5,
                       "y": 26
                     }
                   ],
@@ -744,7 +744,7 @@
                     },
                     {
                       "name": "Weapon",
-                      "x": 9,
+                      "x": 19.5,
                       "y": 26
                     }
                   ],
@@ -791,7 +791,7 @@
                     },
                     {
                       "name": "Weapon",
-                      "x": 9,
+                      "x": 19.5,
                       "y": 26
                     }
                   ],
@@ -851,7 +851,7 @@
                     },
                     {
                       "name": "Weapon",
-                      "x": 9,
+                      "x": 19.5,
                       "y": 26
                     }
                   ],
@@ -911,7 +911,7 @@
                     },
                     {
                       "name": "Weapon",
-                      "x": 9,
+                      "x": 19.5,
                       "y": 26
                     }
                   ],
@@ -958,7 +958,7 @@
                     },
                     {
                       "name": "Weapon",
-                      "x": 9,
+                      "x": 19.5,
                       "y": 26
                     }
                   ],
@@ -1005,7 +1005,7 @@
                     },
                     {
                       "name": "Weapon",
-                      "x": 9,
+                      "x": 19.5,
                       "y": 26
                     }
                   ],
@@ -1052,7 +1052,7 @@
                     },
                     {
                       "name": "Weapon",
-                      "x": 9,
+                      "x": 19.5,
                       "y": 26
                     }
                   ],
@@ -1099,7 +1099,7 @@
                     },
                     {
                       "name": "Weapon",
-                      "x": 9,
+                      "x": 19.5,
                       "y": 26
                     }
                   ],
@@ -1146,7 +1146,7 @@
                     },
                     {
                       "name": "Weapon",
-                      "x": 9,
+                      "x": 19.5,
                       "y": 26
                     }
                   ],
@@ -1193,7 +1193,7 @@
                     },
                     {
                       "name": "Weapon",
-                      "x": 9,
+                      "x": 19.5,
                       "y": 26
                     }
                   ],
@@ -1240,7 +1240,7 @@
                     },
                     {
                       "name": "Weapon",
-                      "x": 9,
+                      "x": 19.5,
                       "y": 26
                     }
                   ],
@@ -2223,10 +2223,10 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 350000,
+          "Health": 250000,
           "CurrentHealth": 0,
-          "MaxHealth": 350000,
-          "DamageCooldown": 0,
+          "MaxHealth": 250000,
+          "DamageCooldown": 0.5,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
           "DamageToBeApplied": 0,
@@ -2249,9 +2249,11 @@
           "PercentDamageReduction": 0
         },
         {
+          "acceleration": 800,
+          "maxSpeed": 75,
           "name": "Pathfinding",
+          "rotateObject": false,
           "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 400,
           "allowDiagonals": true,
           "angleOffset": 0,
           "angularMaxSpeed": 180,
@@ -2260,8 +2262,6 @@
           "extraBorder": 0,
           "gridOffsetX": 0,
           "gridOffsetY": 0,
-          "maxSpeed": 200,
-          "rotateObject": true,
           "smoothingMaxCellGap": 1
         }
       ],
@@ -2347,11 +2347,11 @@
           "isFolded": true,
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
-          "FireCooldown": 0.2,
+          "FireCooldown": 0.8,
           "HasJustFired": false,
           "RotateBullet": true,
-          "FiringArc": 45,
-          "BulletQuantity": 1,
+          "FiringArc": 15,
+          "BulletQuantity": 8,
           "AngleVariance": 15,
           "BulletSpeedVariance": 10,
           "AmmoQuantity": 0,
@@ -2378,10 +2378,10 @@
           "isFolded": true,
           "name": "Health",
           "type": "Health::Health",
-          "Health": 380000,
+          "Health": 300000,
           "CurrentHealth": 0,
-          "MaxHealth": 380000,
-          "DamageCooldown": 0,
+          "MaxHealth": 300000,
+          "DamageCooldown": 0.5,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
           "DamageToBeApplied": 0,
@@ -2406,7 +2406,7 @@
         {
           "isFolded": true,
           "name": "Pathfinding",
-          "rotateObject": true,
+          "rotateObject": false,
           "type": "PathfindingBehavior::PathfindingBehavior",
           "acceleration": 200,
           "allowDiagonals": true,
@@ -2478,7 +2478,13 @@
       "name": "BossHealthBar",
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
       "variant": "",
-      "variables": [],
+      "variables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [
         {
           "effectType": "Glow",
@@ -2681,7 +2687,7 @@
                   "centerPoint": {
                     "automatic": false,
                     "name": "centre",
-                    "x": 5.5,
+                    "x": 15,
                     "y": 14
                   },
                   "customCollisionMask": [
