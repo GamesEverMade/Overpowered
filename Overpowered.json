@@ -92,22 +92,6 @@
   "resources": {
     "resources": [
       {
-        "file": "assets/Player.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Player.png\"}",
-        "name": "Player",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Dash.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Dash.png\"}",
-        "name": "Dash",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/tiled_Tiled Empty UI Heart.png",
         "kind": "image",
         "metadata": "",
@@ -364,13 +348,125 @@
         "name": "Islaughy",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Main5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Main5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Main6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Main6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Main7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Main7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Main8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Main8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dash4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Dash4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Untitled2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Untitled2",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
   },
   "objects": [
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Player",
       "type": "Sprite",
@@ -404,6 +500,7 @@
       ],
       "behaviors": [
         {
+          "isFolded": true,
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
           "FireCooldown": 0.4,
@@ -437,9 +534,9 @@
           "isFolded": true,
           "name": "Health",
           "type": "Health::Health",
-          "Health": 4,
+          "Health": 40,
           "CurrentHealth": 0,
-          "MaxHealth": 4,
+          "MaxHealth": 40,
           "DamageCooldown": 1,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
@@ -518,6 +615,7 @@
         {
           "isFolded": true,
           "name": "TopDownMovement",
+          "rotateObject": false,
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "angularMaxSpeed": 1800,
           "acceleration": 700,
@@ -528,28 +626,32 @@
           "ignoreDefaultControls": false,
           "maxSpeed": 200,
           "movementAngleOffset": 0,
-          "rotateObject": true,
           "viewpoint": "TopDown"
         }
       ],
       "animations": [
         {
-          "name": "Main",
+          "name": "Idle",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Player",
+                  "image": "Main5",
                   "points": [
                     {
                       "name": "Attack",
                       "x": 38,
                       "y": 16
+                    },
+                    {
+                      "name": "Weapon",
+                      "x": 9,
+                      "y": 26
                     }
                   ],
                   "originPoint": {
@@ -567,19 +669,160 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 33
                       },
                       {
-                        "x": 32,
-                        "y": 0
+                        "x": 24,
+                        "y": 33
                       },
                       {
-                        "x": 32,
-                        "y": 32
+                        "x": 24,
+                        "y": 60
                       },
                       {
                         "x": 0,
-                        "y": 32
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Main6",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 38,
+                      "y": 16
+                    },
+                    {
+                      "name": "Weapon",
+                      "x": 9,
+                      "y": 26
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 60
+                      },
+                      {
+                        "x": 0,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Main7",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 38,
+                      "y": 16
+                    },
+                    {
+                      "name": "Weapon",
+                      "x": 9,
+                      "y": 26
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 60
+                      },
+                      {
+                        "x": 0,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Main8",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 38,
+                      "y": 16
+                    },
+                    {
+                      "name": "Weapon",
+                      "x": 9,
+                      "y": 26
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 60
+                      },
+                      {
+                        "x": 0,
+                        "y": 60
                       }
                     ]
                   ]
@@ -593,18 +836,23 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Dash",
+                  "image": "Dash4",
                   "points": [
                     {
                       "name": "Attack",
                       "x": 38,
                       "y": 16
+                    },
+                    {
+                      "name": "Weapon",
+                      "x": 9,
+                      "y": 26
                     }
                   ],
                   "originPoint": {
@@ -622,19 +870,408 @@
                     [
                       {
                         "x": 0,
-                        "y": 0
+                        "y": 33
                       },
                       {
-                        "x": 32,
-                        "y": 0
+                        "x": 24,
+                        "y": 33
                       },
                       {
-                        "x": 32,
-                        "y": 32
+                        "x": 24,
+                        "y": 60
                       },
                       {
                         "x": 0,
-                        "y": 32
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Walk",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Player2",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 38,
+                      "y": 16
+                    },
+                    {
+                      "name": "Weapon",
+                      "x": 9,
+                      "y": 26
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 60
+                      },
+                      {
+                        "x": 0,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Player3",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 38,
+                      "y": 16
+                    },
+                    {
+                      "name": "Weapon",
+                      "x": 9,
+                      "y": 26
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 60
+                      },
+                      {
+                        "x": 0,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Player4",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 38,
+                      "y": 16
+                    },
+                    {
+                      "name": "Weapon",
+                      "x": 9,
+                      "y": 26
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 60
+                      },
+                      {
+                        "x": 0,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Player5",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 38,
+                      "y": 16
+                    },
+                    {
+                      "name": "Weapon",
+                      "x": 9,
+                      "y": 26
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 60
+                      },
+                      {
+                        "x": 0,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Player6",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 38,
+                      "y": 16
+                    },
+                    {
+                      "name": "Weapon",
+                      "x": 9,
+                      "y": 26
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 60
+                      },
+                      {
+                        "x": 0,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Player7",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 38,
+                      "y": 16
+                    },
+                    {
+                      "name": "Weapon",
+                      "x": 9,
+                      "y": 26
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 60
+                      },
+                      {
+                        "x": 0,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Player8",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 38,
+                      "y": 16
+                    },
+                    {
+                      "name": "Weapon",
+                      "x": 9,
+                      "y": 26
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 60
+                      },
+                      {
+                        "x": 0,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Player9",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 38,
+                      "y": 16
+                    },
+                    {
+                      "name": "Weapon",
+                      "x": 9,
+                      "y": 26
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 16,
+                    "y": 16
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 33
+                      },
+                      {
+                        "x": 24,
+                        "y": 60
+                      },
+                      {
+                        "x": 0,
+                        "y": 60
                       }
                     ]
                   ]
@@ -822,6 +1459,11 @@
           "name": "id",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "modfier",
+          "type": "number",
+          "value": 1
         }
       ],
       "effects": [],
@@ -829,9 +1471,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 2,
+          "Health": 3,
           "CurrentHealth": 0,
-          "MaxHealth": 2,
+          "MaxHealth": 3,
           "DamageCooldown": 0.5,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
@@ -950,14 +1592,14 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 24,
-                    "y": 40
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
                     "x": 0,
                     "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": -32,
+                    "y": 40
                   },
                   "customCollisionMask": [
                     [
@@ -1122,7 +1764,7 @@
         {
           "name": "Sticker",
           "type": "Sticker::Sticker",
-          "OnlyFollowPosition": false,
+          "OnlyFollowPosition": true,
           "IsDestroyedWithParent": true
         }
       ],
@@ -1425,6 +2067,649 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Boss1",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "modfier",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "id",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "isFolded": true,
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.2,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 15,
+          "BulletSpeedVariance": 10,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 10000,
+          "CurrentHealth": 0,
+          "MaxHealth": 10000,
+          "DamageCooldown": 0.5,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "Boss1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Boss1",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 170,
+                        "y": 0
+                      },
+                      {
+                        "x": 170,
+                        "y": 170
+                      },
+                      {
+                        "x": 0,
+                        "y": 170
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Orninstain",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "modfier",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "id",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 350000,
+          "CurrentHealth": 0,
+          "MaxHealth": 350000,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        },
+        {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "rotateObject": true,
+          "smoothingMaxCellGap": 1
+        }
+      ],
+      "animations": [
+        {
+          "name": "Ornistain",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Ornistain",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 64,
+                      "y": 32
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 8
+                      },
+                      {
+                        "x": 60,
+                        "y": 8
+                      },
+                      {
+                        "x": 60,
+                        "y": 51
+                      },
+                      {
+                        "x": 2,
+                        "y": 51
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Islaughy",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "modfier",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "id",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "isFolded": true,
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.2,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 15,
+          "BulletSpeedVariance": 10,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
+        {
+          "isFolded": true,
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 380000,
+          "CurrentHealth": 0,
+          "MaxHealth": 380000,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        },
+        {
+          "isFolded": true,
+          "name": "Pathfinding",
+          "rotateObject": true,
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 200,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 100,
+          "smoothingMaxCellGap": 1
+        }
+      ],
+      "animations": [
+        {
+          "name": "Islaughy",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Islaughy",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 2
+                      },
+                      {
+                        "x": 60,
+                        "y": 2
+                      },
+                      {
+                        "x": 60,
+                        "y": 53
+                      },
+                      {
+                        "x": 7,
+                        "y": 53
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "5d60da81895e1d170c135f9071369e0f617f24485a6760a717ea2d56988b8c8f",
+      "name": "BossHealthBar",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "",
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "Effect",
+          "doubleParameters": {
+            "distance": 15,
+            "innerStrength": 1,
+            "outerStrength": 2
+          },
+          "stringParameters": {
+            "color": "208;2;27"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": true,
+          "IsDestroyedWithParent": true
+        }
+      ],
+      "content": {
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": false,
+        "BarTopPadding": 0,
+        "BarBottomPadding": 0,
+        "BarLeftPadding": 0,
+        "BarRightPadding": 0,
+        "MaxValue": 2,
+        "InitialValue": 2,
+        "EasingDuration": 0.5
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 6,
+          "height": 60,
+          "leftMargin": 4,
+          "rightMargin": 4,
+          "texture": "Flat Bar White Border.png",
+          "tiled": false,
+          "topMargin": 6,
+          "width": 320
+        },
+        "Buffer": {
+          "bottomMargin": 0,
+          "height": 8,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Flat Bar Orange Fill Bar.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 8
+        },
+        "FillBar": {
+          "bottomMargin": 0,
+          "height": 8,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Flat Bar Orange Fill Bar.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 8
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 16,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "",
+            "font": "",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 16,
+            "color": "255;255;255"
+          }
+        }
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "EnemyAttack",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "AttackHitbox",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "AttackHitbox3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 24,
+                    "y": 40
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 48,
+                        "y": 0
+                      },
+                      {
+                        "x": 48,
+                        "y": 75
+                      },
+                      {
+                        "x": 0,
+                        "y": 75
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BSODGun",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "BSODGun",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Untitled2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 5.5,
+                    "y": 14
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 34,
+                        "y": 0
+                      },
+                      {
+                        "x": 34,
+                        "y": 18
+                      },
+                      {
+                        "x": 0,
+                        "y": 18
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1448,6 +2733,9 @@
             "objectName": "EnemyHealthBar"
           },
           {
+            "objectName": "BossHealthBar"
+          },
+          {
             "objectName": "HealthBar"
           },
           {
@@ -1465,6 +2753,9 @@
         "objectName": "Player"
       },
       {
+        "objectName": "BSODGun"
+      },
+      {
         "objectName": "Bullet"
       },
       {
@@ -1474,7 +2765,19 @@
         "objectName": "AttackHitbox"
       },
       {
+        "objectName": "EnemyAttack"
+      },
+      {
         "objectName": "Minion1"
+      },
+      {
+        "objectName": "Boss1"
+      },
+      {
+        "objectName": "Orninstain"
+      },
+      {
+        "objectName": "Islaughy"
       },
       {
         "objectName": "Wall"
@@ -1490,6 +2793,29 @@
       "objects": [
         {
           "name": "Boss1"
+        },
+        {
+          "name": "Islaughy"
+        },
+        {
+          "name": "Orninstain"
+        }
+      ]
+    },
+    {
+      "name": "Enemies",
+      "objects": [
+        {
+          "name": "Boss1"
+        },
+        {
+          "name": "Orninstain"
+        },
+        {
+          "name": "Islaughy"
+        },
+        {
+          "name": "Minion1"
         }
       ]
     },
@@ -1627,6 +2953,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/topdownmovementanimator"
     }
   ],
   "externalLayouts": [

@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.23089183385224915,
+    "zoomFactor": 0.5290357402156862,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -33,8 +33,8 @@
       "name": "Player",
       "persistentUuid": "dd7eda5d-9d60-4c7a-8b58-b70e31691532",
       "width": 0,
-      "x": 716,
-      "y": 126,
+      "x": 749,
+      "y": 426,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -49,8 +49,8 @@
       "name": "Boss1",
       "persistentUuid": "a9e0d8ba-e9b9-4ff5-b245-aeb9c803464c",
       "width": 0,
-      "x": 2266,
-      "y": 412,
+      "x": 2061,
+      "y": 427,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -322,107 +322,25 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "BossHealthBar",
+      "persistentUuid": "a91a2e59-b78b-46ba-9148-724ef4c957f1",
+      "width": 0,
+      "x": 525,
+      "y": 635,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Boss1",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "modfier",
-          "type": "number",
-          "value": 1
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "FireBullet",
-          "type": "FireBullet::FireBullet",
-          "FireCooldown": 0.2,
-          "HasJustFired": false,
-          "RotateBullet": true,
-          "FiringArc": 45,
-          "BulletQuantity": 1,
-          "AngleVariance": 15,
-          "BulletSpeedVariance": 10,
-          "AmmoQuantity": 0,
-          "ShotsPerReload": 0,
-          "ReloadDuration": 1,
-          "MaxAmmo": 0,
-          "ShotsBeforeNextReload": 0,
-          "TotalShotsFired": 0,
-          "TotalBulletsCreated": 0,
-          "StartingAmmo": 0,
-          "TotalReloadsCompleted": 0,
-          "UnlimitedAmmo": true,
-          "ReloadInProgress": false,
-          "HeatIncreasePerShot": 0,
-          "HeatLevel": 0,
-          "AutomaticReloading": true,
-          "OverheatDuration": 0,
-          "LinearCoolingRate": 0.1,
-          "ExponentialCoolingRate": 0.3,
-          "BulletLayer": "",
-          "RandomizedAngle": 0
-        }
-      ],
-      "animations": [
-        {
-          "name": "Boss1",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Boss1",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 170,
-                        "y": 0
-                      },
-                      {
-                        "x": 170,
-                        "y": 170
-                      },
-                      {
-                        "x": 0,
-                        "y": 170
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
@@ -538,9 +456,6 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "Boss1"
-      },
-      {
         "objectName": "EnergyPlate"
       }
     ]
@@ -619,6 +534,34 @@
             "currentLevel",
             "=",
             "\"Level1\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+          },
+          "parameters": [
+            "BossHealthBar",
+            "=",
+            "Boss1.Health::MaxHealth()",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+          },
+          "parameters": [
+            "BossHealthBar",
+            "=",
+            "Boss1.Health::Health()",
+            ""
           ]
         }
       ]
@@ -1596,6 +1539,10 @@
     {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Pathfinding",
+      "type": "PathfindingBehavior::PathfindingBehavior"
     },
     {
       "name": "Resizable",
