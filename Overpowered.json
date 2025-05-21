@@ -924,6 +924,38 @@
         "name": "Walk18",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/CarSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "CarSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/CarSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "CarSprite2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BossSpawn.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BossSpawn",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BossSpawn2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BossSpawn2",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -5417,6 +5449,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/level2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/level3"
     }
   ],
   "externalEvents": [
