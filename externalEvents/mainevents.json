@@ -723,6 +723,17 @@
                     "=",
                     "\"Dash\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Player",
+                    "isDashing",
+                    "True",
+                    ""
+                  ]
                 }
               ]
             },
@@ -854,6 +865,17 @@
                     "Player",
                     "TopDownMovement",
                     "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Player",
+                    "isDashing",
+                    "False",
+                    ""
                   ]
                 }
               ]

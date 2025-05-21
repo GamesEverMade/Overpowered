@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5468750000000007,
+    "zoomFactor": 0.511778403521018,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -26,12 +26,12 @@
     {
       "name": "BossAttackInterval",
       "type": "number",
-      "value": 1
+      "value": 2
     },
     {
       "name": "BossAttackSpeed",
       "type": "number",
-      "value": 500
+      "value": 1000
     }
   ],
   "instances": [
@@ -60,8 +60,8 @@
       "name": "BossCar",
       "persistentUuid": "dd634e5e-b182-4a58-b811-ece896d64398",
       "width": 0,
-      "x": 512,
-      "y": 0,
+      "x": 480,
+      "y": 160,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -84,9 +84,10 @@
       "initialVariables": []
     },
     {
-      "angle": 180,
+      "angle": 0,
       "customSize": true,
       "depth": 1,
+      "flippedX": true,
       "height": 64,
       "keepRatio": true,
       "layer": "",
@@ -101,8 +102,9 @@
       "initialVariables": []
     },
     {
-      "angle": 180,
+      "angle": 0,
       "customSize": false,
+      "flippedX": true,
       "height": 0,
       "keepRatio": true,
       "layer": "",
@@ -165,9 +167,10 @@
       "initialVariables": []
     },
     {
-      "angle": 180,
+      "angle": 0,
       "customSize": true,
       "depth": 1,
+      "flippedX": true,
       "height": 64,
       "keepRatio": true,
       "layer": "",
@@ -182,9 +185,10 @@
       "initialVariables": []
     },
     {
-      "angle": 180,
+      "angle": 0,
       "customSize": true,
       "depth": 1,
+      "flippedX": true,
       "height": 64,
       "keepRatio": true,
       "layer": "",
@@ -194,6 +198,22 @@
       "x": 1248,
       "y": 64,
       "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BossCore",
+      "persistentUuid": "c44d52da-5c39-466f-86bd-f4cb686dd6ac",
+      "width": 0,
+      "x": 544,
+      "y": 224,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -208,24 +228,7 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "acceleration": 2000,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "maxSpeed": 600,
-          "name": "Pathfinding",
-          "rotateObject": false,
-          "smoothingMaxCellGap": 1,
-          "type": "PathfindingBehavior::PathfindingBehavior"
-        }
-      ],
+      "behaviors": [],
       "animations": [
         {
           "name": "CarSprite",
@@ -344,6 +347,74 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BossCore",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": true,
+          "IsDestroyedWithParent": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "BossCore",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "BossCore",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -351,6 +422,9 @@
     "children": [
       {
         "objectName": "BossCar"
+      },
+      {
+        "objectName": "BossCore"
       },
       {
         "objectName": "BossSpawn"
@@ -386,129 +460,60 @@
             "",
             "\"BossAttackTimer\""
           ]
+        },
+        {
+          "type": {
+            "value": "Sticker::Sticker::Stick"
+          },
+          "parameters": [
+            "BossCore",
+            "Sticker",
+            "BossCar",
+            ""
+          ]
         }
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CompareTimer"
-          },
-          "parameters": [
-            "",
-            "\"BossAttackTimer\"",
-            ">=",
-            "BossAttackInterval"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "AjoutHasard"
-          },
-          "parameters": [
-            "",
-            "BossSpawn"
-          ]
-        },
-        {
-          "type": {
-            "value": "Arreter"
-          },
-          "parameters": [
-            "BossCar"
-          ]
-        }
-      ],
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Boss Attack",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Facing Right"
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "CenterX"
+                "value": "CompareTimer"
               },
               "parameters": [
-                "BossSpawn",
-                "<",
-                "BossSpawn.PointX(\"Direction\")"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "BossCar",
-                "=",
-                "BossSpawn.CenterX()-BossCar.Width()/2",
-                "=",
-                "BossSpawn.CenterY()-BossCar.Height()/2"
+                "",
+                "\"BossAttackTimer\"",
+                ">=",
+                "BossAttackInterval"
               ]
             },
             {
               "type": {
-                "value": "AddForceXY"
+                "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [
-                "BossCar",
-                "BossAttackSpeed",
-                "0",
-                "1"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Facing Left"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CenterX"
-              },
-              "parameters": [
-                "BossSpawn",
-                ">",
-                "BossSpawn.PointX(\"Direction\")"
-              ]
+              "parameters": []
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "AjoutHasard"
+              },
+              "parameters": [
+                "",
+                "BossSpawn"
+              ]
+            },
             {
               "type": {
                 "value": "Arreter"
@@ -516,48 +521,191 @@
               "parameters": [
                 "BossCar"
               ]
-            },
-            {
-              "type": {
-                "value": "MettreXY"
-              },
-              "parameters": [
-                "BossCar",
-                "=",
-                "BossSpawn.CenterX()-BossCar.Width()/2",
-                "=",
-                "BossSpawn.CenterY()-BossCar.Height()/2"
-              ]
-            },
-            {
-              "type": {
-                "value": "AddForceXY"
-              },
-              "parameters": [
-                "BossCar",
-                "-BossAttackSpeed",
-                "0",
-                "1"
-              ]
             }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          ],
+          "events": [
             {
-              "type": {
-                "value": "ResetTimer"
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "",
-                "\"BossAttackTimer\""
+              "comment": "Facing Right"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CenterX"
+                  },
+                  "parameters": [
+                    "BossSpawn",
+                    "<",
+                    "BossSpawn.PointX(\"Direction\")"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "BossCar",
+                    "=",
+                    "BossSpawn.CenterX()-BossCar.Width()/2",
+                    "=",
+                    "BossSpawn.CenterY()-BossCar.Height()/2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "BossCar",
+                    "BossAttackSpeed",
+                    "0",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Facing Left"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CenterX"
+                  },
+                  "parameters": [
+                    "BossSpawn",
+                    ">",
+                    "BossSpawn.PointX(\"Direction\")"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Arreter"
+                  },
+                  "parameters": [
+                    "BossCar"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "BossCar",
+                    "=",
+                    "BossSpawn.CenterX()-BossCar.Width()/2",
+                    "=",
+                    "BossSpawn.CenterY()-BossCar.Height()/2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AddForceXY"
+                  },
+                  "parameters": [
+                    "BossCar",
+                    "-BossAttackSpeed",
+                    "0",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"BossAttackTimer\""
+                  ]
+                }
               ]
             }
           ]
         }
-      ]
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Boss Core Collision",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "BossCore",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Player",
+                "isDashing",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "BossCore",
+                "\"255;78;78\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [

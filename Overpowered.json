@@ -956,6 +956,14 @@
         "name": "BossSpawn2",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/BossCore.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BossCore",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -971,7 +979,7 @@
         {
           "name": "isDashing",
           "type": "boolean",
-          "value": true
+          "value": false
         },
         {
           "name": "isInvulnerable",
