@@ -320,7 +320,7 @@
       "height": 64,
       "keepRatio": true,
       "layer": "",
-      "name": "TutorialButton",
+      "name": "Button",
       "persistentUuid": "bbca3816-9daf-496b-8b22-84dce72afbad",
       "width": 8,
       "x": 1912,
@@ -589,73 +589,6 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "TutorialButton",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "isEnabled",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "TutorialButton",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "TutorialButton",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 8,
-                        "y": 0
-                      },
-                      {
-                        "x": 8,
-                        "y": 32
-                      },
-                      {
-                        "x": 0,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "assetStoreId": "",
       "height": 32,
       "name": "TutorialDamageArea",
@@ -780,9 +713,6 @@
         "objectName": "Exit"
       },
       {
-        "objectName": "TutorialButton"
-      },
-      {
         "objectName": "TutorialDamageArea"
       }
     ]
@@ -853,7 +783,7 @@
           },
           "parameters": [
             "PlayerBullet",
-            "TutorialButton",
+            "Button",
             "",
             "",
             ""

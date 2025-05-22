@@ -1570,7 +1570,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player Attacks",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2414,6 +2413,35 @@
               },
               "parameters": [
                 "Player",
+                "GlassWall",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Player",
+                "GlassWall",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
                 "Minions",
                 "",
                 "",
@@ -2564,6 +2592,133 @@
                 "0.3",
                 "0",
                 "0.1",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Player Overpower",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "Player",
+                "Effect",
+                "\"Glow\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Player",
+                "meleeDamage",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Player",
+                "rangedDamage",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::SetFlatDamageReductionOp"
+              },
+              "parameters": [
+                "Player",
+                "Health",
+                "=",
+                "0",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "Player",
+                "Effect",
+                "\"Glow\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Player",
+                "meleeDamage",
+                "*",
+                "1000"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Player",
+                "rangedDamage",
+                "*",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::SetFlatDamageReductionOp"
+              },
+              "parameters": [
+                "Player",
+                "Health",
+                "=",
+                "1000",
                 ""
               ]
             }

@@ -18,11 +18,27 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.2725359896772951,
+    "zoomFactor": 0.5468750000000046,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "OverPowerTriggerTime",
+      "type": "number",
+      "value": 4
+    },
+    {
+      "name": "OverPowerDuration",
+      "type": "number",
+      "value": 8
+    },
+    {
+      "name": "MagneticFloorDuration",
+      "type": "number",
+      "value": 4
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -163,23 +179,6 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 96,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "7546a980-a025-461b-bfbd-0e0c5031bf63",
-      "width": 32,
-      "x": 2016,
-      "y": 736,
-      "zOrder": 14,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 128,
       "keepRatio": true,
       "layer": "",
@@ -202,7 +201,7 @@
       "layer": "",
       "name": "Wall",
       "persistentUuid": "6a0bb8f5-5e07-4e2a-ba1e-0fb2059e551b",
-      "width": 96,
+      "width": 64,
       "x": 1920,
       "y": -128,
       "zOrder": 16,
@@ -219,7 +218,7 @@
       "layer": "",
       "name": "Wall",
       "persistentUuid": "cf83842a-7577-4106-afc8-5c54e2a1b728",
-      "width": 128,
+      "width": 64,
       "x": 768,
       "y": -128,
       "zOrder": 17,
@@ -246,13 +245,14 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
       "keepRatio": true,
       "layer": "",
       "name": "MagneticFloor",
       "persistentUuid": "39cee7b0-6d60-4402-8fed-af27cbaa30f0",
-      "width": 0,
+      "width": 64,
       "x": 1376,
       "y": 256,
       "zOrder": 5,
@@ -321,8 +321,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "9c34fe19-dda0-4f8f-8f93-967643449ea6",
       "width": 64,
-      "x": 1504,
-      "y": 256,
+      "x": 1024,
+      "y": 480,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -338,8 +338,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "2c0c62f3-e246-44d6-bf8e-40749be6a416",
       "width": 64,
-      "x": 1568,
-      "y": 256,
+      "x": 1632,
+      "y": 800,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -355,8 +355,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "7fc2c3e4-3905-4e29-93cf-ccafbcaf73f4",
       "width": 64,
-      "x": 1504,
-      "y": 320,
+      "x": 1024,
+      "y": 544,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -372,8 +372,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "f2ffec3a-1397-4a52-b2c3-8477a8914794",
       "width": 64,
-      "x": 1568,
-      "y": 320,
+      "x": 1632,
+      "y": 864,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -389,8 +389,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "7118c4d2-e9a2-4659-811f-247dd0b5a1ec",
       "width": 64,
-      "x": 1504,
-      "y": 384,
+      "x": 1024,
+      "y": 608,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -406,42 +406,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "e876618f-2801-42e9-8621-33cfcfc11642",
       "width": 64,
-      "x": 1568,
-      "y": 384,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "MagneticFloor",
-      "persistentUuid": "560b594e-a140-4058-a7b0-7fbc1efa7ff5",
-      "width": 64,
-      "x": 1376,
-      "y": 448,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "MagneticFloor",
-      "persistentUuid": "88e0d604-4cf8-4d76-b228-de74c600e6e6",
-      "width": 64,
-      "x": 1440,
-      "y": 448,
+      "x": 1632,
+      "y": 928,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -457,8 +423,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "08ef5187-09f8-48cd-a062-59352a46342c",
       "width": 64,
-      "x": 1504,
-      "y": 448,
+      "x": 1696,
+      "y": 800,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -474,8 +440,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "132a0f42-3b30-49ea-84e0-4a2096e0f1f4",
       "width": 64,
-      "x": 1568,
-      "y": 448,
+      "x": 1760,
+      "y": 800,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -491,8 +457,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "b7ee9a66-af71-438d-bf53-2bb1ad0dc08c",
       "width": 64,
-      "x": 1632,
-      "y": 448,
+      "x": 1824,
+      "y": 800,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -508,8 +474,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "937fda71-b7c7-4186-a807-8d3a6f40248b",
       "width": 64,
-      "x": 1632,
-      "y": 384,
+      "x": 1856,
+      "y": 256,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -525,8 +491,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "8fd6ed7f-63d5-4890-b7ad-0cd2d748638f",
       "width": 64,
-      "x": 1632,
-      "y": 320,
+      "x": 1856,
+      "y": 192,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -542,8 +508,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "0f30794f-9e56-4dd5-8631-e1ad33c6938c",
       "width": 64,
-      "x": 1632,
-      "y": 256,
+      "x": 1856,
+      "y": 128,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -559,8 +525,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "6d502527-95ff-4085-8356-8cfa647cb016",
       "width": 64,
-      "x": 1632,
-      "y": 192,
+      "x": 2048,
+      "y": 320,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -576,8 +542,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "30378722-e6d6-43a4-81c0-45b0a1d2c564",
       "width": 64,
-      "x": 1568,
-      "y": 192,
+      "x": 1984,
+      "y": 320,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -593,8 +559,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "09342edf-c380-41c6-9601-ad5f9f403ae0",
       "width": 64,
-      "x": 1504,
-      "y": 192,
+      "x": 1920,
+      "y": 320,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -610,25 +576,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "a5a1a06d-a1e4-47d8-8c11-5e22d7d1d27e",
       "width": 64,
-      "x": 1440,
-      "y": 192,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "MagneticFloor",
-      "persistentUuid": "2ad4967c-9c2c-472b-8140-fb074a7cba5b",
-      "width": 64,
-      "x": 1376,
-      "y": 128,
+      "x": 1856,
+      "y": 320,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -644,8 +593,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "dc83a9ae-c821-4ff2-bddc-25d2913051fe",
       "width": 64,
-      "x": 1440,
-      "y": 128,
+      "x": 1632,
+      "y": 736,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -661,8 +610,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "5c31dc11-9bf3-4565-a0e6-2f6eb4620f48",
       "width": 64,
-      "x": 1504,
-      "y": 128,
+      "x": 1696,
+      "y": 736,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -678,8 +627,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "785369e6-3587-497c-a07a-6630f12ecabc",
       "width": 64,
-      "x": 1568,
-      "y": 128,
+      "x": 1760,
+      "y": 736,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -695,25 +644,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "7a753e5d-0c26-46bb-8f34-d9c04541597f",
       "width": 64,
-      "x": 1632,
-      "y": 128,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "MagneticFloor",
-      "persistentUuid": "673f03bf-83ba-473c-8e73-bc846157adbc",
-      "width": 64,
-      "x": 1440,
-      "y": 512,
+      "x": 1824,
+      "y": 736,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -729,8 +661,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "1e8e621e-bef1-4b30-922d-fbe22e247b07",
       "width": 64,
-      "x": 1504,
-      "y": 512,
+      "x": 1696,
+      "y": 864,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -746,8 +678,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "bfb7192f-2125-4b55-be28-71d2115e6a4e",
       "width": 64,
-      "x": 1568,
-      "y": 512,
+      "x": 1760,
+      "y": 864,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -763,8 +695,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "1f0163fe-d1f6-42bf-ab00-cda26400dea7",
       "width": 64,
-      "x": 1632,
-      "y": 512,
+      "x": 1824,
+      "y": 864,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -780,8 +712,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "909be2dc-c015-479c-a39b-4a6a3259aae0",
       "width": 64,
-      "x": 1376,
-      "y": 576,
+      "x": 1120,
+      "y": -32,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -797,8 +729,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "f805ba34-8abd-431b-8a13-d5a7dafb586b",
       "width": 64,
-      "x": 1440,
-      "y": 576,
+      "x": 1184,
+      "y": -32,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -814,8 +746,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "b322bd6d-3d2d-4124-935c-f7bbb878bd80",
       "width": 64,
-      "x": 1504,
-      "y": 576,
+      "x": 1696,
+      "y": 928,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -831,8 +763,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "a59a752c-df91-4dea-bb0f-ca0d7bd1c08b",
       "width": 64,
-      "x": 1568,
-      "y": 576,
+      "x": 1760,
+      "y": 928,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -848,8 +780,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "6e6e5e0f-8c14-4095-bce9-be3f43d23f7f",
       "width": 64,
-      "x": 1632,
-      "y": 576,
+      "x": 1824,
+      "y": 928,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -865,8 +797,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "9d6d6487-0133-4a6e-9ed4-7d05612631c9",
       "width": 64,
-      "x": 1312,
-      "y": 576,
+      "x": 1056,
+      "y": -32,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -882,8 +814,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "a32e0ea3-61ae-4f8c-a1d2-545c860e54f4",
       "width": 64,
-      "x": 1248,
-      "y": 576,
+      "x": 960,
+      "y": 608,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -900,24 +832,7 @@
       "persistentUuid": "9a7342b3-495a-45dd-a050-2afff42bff90",
       "width": 64,
       "x": 1312,
-      "y": 512,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "MagneticFloor",
-      "persistentUuid": "811ae32c-9a8c-4fc7-bf14-f6742726afca",
-      "width": 64,
-      "x": 1312,
-      "y": 448,
+      "y": 256,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -967,8 +882,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "ee38f2d1-dc2e-4181-ae41-aab29bd22803",
       "width": 64,
-      "x": 1312,
-      "y": 256,
+      "x": 1248,
+      "y": -32,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -984,8 +899,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "a812dfeb-c371-447a-b002-7f5a8794961f",
       "width": 64,
-      "x": 1312,
-      "y": 192,
+      "x": 1248,
+      "y": -96,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1001,8 +916,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "b4450f90-7d37-4f42-bf29-b0846ae322e9",
       "width": 64,
-      "x": 1312,
-      "y": 128,
+      "x": 1248,
+      "y": -160,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1018,8 +933,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "be4dce5f-7803-4c35-a6f1-685793bd76e2",
       "width": 64,
-      "x": 1248,
-      "y": 128,
+      "x": 1184,
+      "y": -160,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1035,8 +950,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "d6494a21-e042-4309-a71c-aba4f29c6e19",
       "width": 64,
-      "x": 1184,
-      "y": 128,
+      "x": 1120,
+      "y": -160,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1052,8 +967,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "9880be89-84eb-43e6-a342-e3f1930fba5e",
       "width": 64,
-      "x": 1248,
-      "y": 192,
+      "x": 1184,
+      "y": -96,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1069,8 +984,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "266afd6d-292f-45eb-94be-50d680800740",
       "width": 64,
-      "x": 1248,
-      "y": 256,
+      "x": 2048,
+      "y": 128,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1086,8 +1001,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "94d23c47-a9c2-4252-a191-3a37e20ae6b8",
       "width": 64,
-      "x": 1248,
-      "y": 320,
+      "x": 2048,
+      "y": 192,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1103,8 +1018,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "53c0bf9b-9b9c-4257-a686-d40b73a4b569",
       "width": 64,
-      "x": 1248,
-      "y": 384,
+      "x": 2048,
+      "y": 256,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1120,8 +1035,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "0d70ee89-e8b9-49d9-a12c-31c3b28e0862",
       "width": 64,
-      "x": 1248,
-      "y": 448,
+      "x": 960,
+      "y": 480,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1137,8 +1052,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "13c846ee-5e79-4149-a35d-b3c3b25e5b2e",
       "width": 64,
-      "x": 1248,
-      "y": 512,
+      "x": 960,
+      "y": 544,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1154,8 +1069,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "60ea94a1-f2f2-4e28-b36d-fbb621bef196",
       "width": 64,
-      "x": 1184,
-      "y": 512,
+      "x": 896,
+      "y": 544,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1171,8 +1086,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "bf1df8d7-160b-457d-8f6d-fb46103fccec",
       "width": 64,
-      "x": 1184,
-      "y": 576,
+      "x": 896,
+      "y": 608,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1188,8 +1103,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "2bdf2ec7-1733-4a5b-91ff-017f04f36652",
       "width": 64,
-      "x": 1184,
-      "y": 448,
+      "x": 896,
+      "y": 480,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1205,8 +1120,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "fa454bc7-5269-45f7-8bb1-2ee9c8fc73aa",
       "width": 64,
-      "x": 1184,
-      "y": 384,
+      "x": 1984,
+      "y": 256,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1222,8 +1137,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "beeb9d67-47cd-4e28-9cce-5dd67cac27f7",
       "width": 64,
-      "x": 1184,
-      "y": 320,
+      "x": 1984,
+      "y": 192,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1239,8 +1154,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "76412498-887e-43c4-8717-b9689e8784a5",
       "width": 64,
-      "x": 1184,
-      "y": 256,
+      "x": 1984,
+      "y": 128,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1256,8 +1171,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "5ae0b73a-1fc4-4bbd-b8c3-ce05c819fdf7",
       "width": 64,
-      "x": 1184,
-      "y": 192,
+      "x": 1120,
+      "y": -96,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1273,8 +1188,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "3b7c8a4e-b63d-4a8d-a7f5-aa338ba8db0b",
       "width": 64,
-      "x": 1120,
-      "y": 128,
+      "x": 1056,
+      "y": -160,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1290,8 +1205,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "f2e7494c-aaf2-40b3-8879-1f824b0151ba",
       "width": 64,
-      "x": 1120,
-      "y": 192,
+      "x": 1056,
+      "y": -96,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1307,8 +1222,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "321fd18f-e08a-43d9-9da4-59d46ff04576",
       "width": 64,
-      "x": 1120,
-      "y": 256,
+      "x": 1920,
+      "y": 128,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1324,8 +1239,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "ddec85a3-c73f-4a58-a781-996dfc6e6b32",
       "width": 64,
-      "x": 1120,
-      "y": 320,
+      "x": 1920,
+      "y": 192,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1341,8 +1256,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "4a7be582-827c-4451-bc49-9a37fc597fc2",
       "width": 64,
-      "x": 1120,
-      "y": 384,
+      "x": 1920,
+      "y": 256,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1358,8 +1273,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "b944d65c-3075-4c77-88e2-01dab01ace79",
       "width": 64,
-      "x": 1120,
-      "y": 448,
+      "x": 832,
+      "y": 480,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1375,8 +1290,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "1e307cb4-bc72-4116-aaba-743ef5b6d145",
       "width": 64,
-      "x": 1120,
-      "y": 512,
+      "x": 832,
+      "y": 544,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1392,8 +1307,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "8cb65ead-f23c-40f4-9ad4-6d0dec4a0e7f",
       "width": 64,
-      "x": 1120,
-      "y": 576,
+      "x": 832,
+      "y": 608,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1437,47 +1352,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "MagneticFloor",
-      "persistentUuid": "a880b690-c22a-4a4f-8a26-9903442447aa",
-      "width": 64,
-      "x": 1376,
-      "y": 192,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "MagneticFloor",
-      "persistentUuid": "30053423-c2c7-428a-8c67-f1aa1f4fc24a",
-      "width": 64,
-      "x": 1376,
-      "y": 512,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 32,
       "keepRatio": true,
       "layer": "",
       "name": "Wall",
       "persistentUuid": "94c8d498-e782-40f9-a408-fac3aaec2f31",
-      "width": 96,
-      "x": 800,
+      "width": 64,
+      "x": 832,
       "y": -32,
       "zOrder": 22,
       "numberProperties": [],
@@ -1488,14 +1369,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 64,
+      "height": 96,
       "keepRatio": true,
       "layer": "",
       "name": "Wall",
       "persistentUuid": "579ccd8e-9753-4d15-aac7-3d5d6c7747d4",
       "width": 32,
       "x": 864,
-      "y": -96,
+      "y": -128,
       "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
@@ -1505,7 +1386,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 64,
+      "height": 32,
       "keepRatio": true,
       "layer": "",
       "name": "Wall",
@@ -1527,8 +1408,8 @@
       "layer": "",
       "name": "Wall",
       "persistentUuid": "87fb63a6-fdd2-4c1b-b7bb-94b5669065bc",
-      "width": 96,
-      "x": 1920,
+      "width": 32,
+      "x": 1984,
       "y": -32,
       "zOrder": 22,
       "numberProperties": [],
@@ -1561,8 +1442,8 @@
       "layer": "",
       "name": "Wall",
       "persistentUuid": "eee67652-0f2f-45e7-ba38-372d651eb299",
-      "width": 96,
-      "x": 800,
+      "width": 32,
+      "x": 864,
       "y": 736,
       "zOrder": 22,
       "numberProperties": [],
@@ -1573,31 +1454,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "b9875c28-9f1b-420d-afdc-82fc65447ef7",
-      "width": 32,
-      "x": 864,
-      "y": 768,
-      "zOrder": 23,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
+      "height": 96,
       "keepRatio": true,
       "layer": "",
       "name": "Wall",
       "persistentUuid": "28790ab5-55a9-4517-ab8c-856a85a6d791",
       "width": 32,
       "x": 1920,
-      "y": 768,
+      "y": 736,
       "zOrder": 23,
       "numberProperties": [],
       "stringProperties": [],
@@ -1614,7 +1478,7 @@
       "persistentUuid": "0cf01eb2-341a-430f-8834-15fb8084173e",
       "width": 64,
       "x": 1120,
-      "y": 64,
+      "y": -224,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1631,7 +1495,7 @@
       "persistentUuid": "5bd99296-9431-4797-8029-6c41880e336c",
       "width": 64,
       "x": 1184,
-      "y": 64,
+      "y": -224,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1647,8 +1511,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "464063af-e9cf-46e9-88d7-c3d4fca521d4",
       "width": 64,
-      "x": 1248,
-      "y": 64,
+      "x": 1056,
+      "y": -224,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1664,25 +1528,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "ff427a58-e560-4b5a-ae80-bd540d76e67c",
       "width": 64,
-      "x": 1312,
-      "y": 64,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 64,
-      "keepRatio": true,
-      "layer": "",
-      "name": "MagneticFloor",
-      "persistentUuid": "fe0a3bf2-85cf-4959-a3aa-4df3a0ad7482",
-      "width": 64,
-      "x": 1376,
-      "y": 64,
+      "x": 1248,
+      "y": -224,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1698,8 +1545,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "0c04af2a-bd6f-40d3-8a35-a1523fdcc1a5",
       "width": 64,
-      "x": 1440,
-      "y": 64,
+      "x": 832,
+      "y": 416,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1715,8 +1562,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "53165bfc-e6fa-4dc5-82b2-c0c684c85bd3",
       "width": 64,
-      "x": 1504,
-      "y": 64,
+      "x": 896,
+      "y": 416,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1732,8 +1579,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "67b37d93-15eb-4c71-863b-0eed946249b5",
       "width": 64,
-      "x": 1568,
-      "y": 64,
+      "x": 960,
+      "y": 416,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1749,8 +1596,8 @@
       "name": "MagneticFloor",
       "persistentUuid": "a510752d-17be-4d0e-9e82-eb6e3d3bfacc",
       "width": 64,
-      "x": 1632,
-      "y": 64,
+      "x": 1024,
+      "y": 416,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -1783,8 +1630,8 @@
       "name": "Orninstain",
       "persistentUuid": "36728a34-d32d-43bc-a230-17327533be7d",
       "width": 128,
-      "x": 1664,
-      "y": 864,
+      "x": 1536,
+      "y": 832,
       "zOrder": 25,
       "numberProperties": [],
       "stringProperties": [],
@@ -1835,6 +1682,203 @@
           "value": 1
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GlassWall",
+      "persistentUuid": "e69b3277-d21f-418a-b292-4d1e28a59584",
+      "width": 0,
+      "x": 800,
+      "y": -32,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GlassWall",
+      "persistentUuid": "43ade53d-b770-485e-89ff-51e0f6573091",
+      "width": 0,
+      "x": 832,
+      "y": -128,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GlassWall",
+      "persistentUuid": "77b116db-61fe-4f95-a741-82e9964dc621",
+      "width": 64,
+      "x": 800,
+      "y": 736,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GlassWall",
+      "persistentUuid": "cfe6622b-bf66-438e-b06d-d150533a24c4",
+      "width": 32,
+      "x": 864,
+      "y": 768,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GlassWall",
+      "persistentUuid": "0df065c5-a20c-46b0-a871-ac50f5831f8d",
+      "width": 32,
+      "x": 1920,
+      "y": -64,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GlassWall",
+      "persistentUuid": "5ddb1344-5195-435a-b32f-2f6c09187248",
+      "width": 0,
+      "x": 1952,
+      "y": -32,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GlassWall",
+      "persistentUuid": "21a52db3-20dd-40de-ac32-4e965ca39db1",
+      "width": 32,
+      "x": 1984,
+      "y": -128,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GlassWall",
+      "persistentUuid": "0b75bedb-ea14-4140-896e-8dcced85fb97",
+      "width": 32,
+      "x": 2016,
+      "y": 736,
+      "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Button",
+      "persistentUuid": "049fc867-fae2-4d85-850f-c47c15de2a2d",
+      "width": 0,
+      "x": 1952,
+      "y": 768,
+      "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Button",
+      "persistentUuid": "06cb187c-6ec8-4d4d-8cd1-6e305f653fa1",
+      "width": 0,
+      "x": 800,
+      "y": 800,
+      "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 91,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Button",
+      "persistentUuid": "eb792143-e574-4604-8157-93431512da9b",
+      "width": 0,
+      "x": 812,
+      "y": -108,
+      "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Button",
+      "persistentUuid": "f5836748-5323-447a-9005-5753dfa11c53",
+      "width": 0,
+      "x": 2008,
+      "y": -64,
+      "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [],
@@ -2287,6 +2331,32 @@
           "conditions": [
             {
               "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Orninstain",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Orninstain",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "CollisionNP"
               },
               "parameters": [
@@ -2316,339 +2386,13 @@
           "conditions": [
             {
               "type": {
-                "inverted": true,
-                "value": "Distance"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "Orninstain",
-                "Player",
-                "110",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PathfindingBehavior::SetDestination"
-              },
-              "parameters": [
-                "Orninstain",
-                "Pathfinding",
+                "GlassWall",
                 "",
-                "Player.X()",
-                "Player.Y()"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Distance"
-              },
-              "parameters": [
-                "Orninstain",
-                "Player",
-                "110",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Orninstain",
-                "\"AttackCooldown\"",
-                ">=",
-                "0.5"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Orninstain",
-                "\"AttackTimer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "PathfindingBehavior::SetDestination"
-              },
-              "parameters": [
-                "Orninstain",
-                "Pathfinding",
                 "",
-                "Orninstain.X()",
-                "Orninstain.Y()"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Orninstain",
-                "\"AttackTimer\"",
-                ">=",
-                "0.5"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "EnemyAttack",
-                "Orninstain.PointX(\"Attack\")",
-                "Orninstain.PointY(\"Attack\")",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "EnemyAttack",
-                "=",
-                "Orninstain.Angle()"
-              ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "EnemyAttack",
-                "Scale",
-                "=",
-                "1.3"
-              ]
-            },
-            {
-              "type": {
-                "value": "RemoveObjectTimer"
-              },
-              "parameters": [
-                "Orninstain",
-                "\"AttackTimer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "EnemyAttack",
-                "\"AttackTimer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Orninstain",
-                "\"AttackCooldown\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "EnemyAttack",
-                "\"AttackTimer\"",
-                ">=",
-                "0.3"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "EnemyAttack",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "RemoveObjectTimer"
-              },
-              "parameters": [
-                "Player",
-                "\"attackTimer\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Orninstain",
-                "\"DashCooldown\"",
-                ">=",
-                "5"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Orninstain",
-                "\"DashDuration\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Orninstain",
-                "\"DashDuration\"",
-                "<",
-                "2"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PathfindingBehavior::MaxSpeed"
-              },
-              "parameters": [
-                "Orninstain",
-                "Pathfinding",
-                "=",
-                "600"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Orninstain",
-                "\"DashDuration\"",
-                ">=",
-                "2"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PathfindingBehavior::MaxSpeed"
-              },
-              "parameters": [
-                "Orninstain",
-                "Pathfinding",
-                "=",
-                "75"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Orninstain",
-                "\"DashCooldown\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Orninstain",
-                "\"DashCooldown\"",
-                "<",
-                "5"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RemoveObjectTimer"
-              },
-              "parameters": [
-                "Orninstain",
-                "\"DashDuration\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Health::Health::IsDead"
-              },
-              "parameters": [
-                "Orninstain",
-                "Health",
                 ""
               ]
             }
@@ -2656,11 +2400,359 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
+                "value": "SeparateFromObjects"
               },
               "parameters": [
                 "Orninstain",
+                "GlassWall",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Orninstain",
+                "isStunned",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "Player",
+                    "110",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "Pathfinding",
+                    "",
+                    "Player.X()",
+                    "Player.Y()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "Player",
+                    "110",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "\"AttackCooldown\"",
+                    ">=",
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "\"AttackTimer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "Pathfinding",
+                    "",
+                    "Orninstain.X()",
+                    "Orninstain.Y()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "\"AttackTimer\"",
+                    ">=",
+                    "0.5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EnemyAttack",
+                    "Orninstain.PointX(\"Attack\")",
+                    "Orninstain.PointY(\"Attack\")",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "EnemyAttack",
+                    "=",
+                    "Orninstain.Angle()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "EnemyAttack",
+                    "Scale",
+                    "=",
+                    "1.3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "RemoveObjectTimer"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "\"AttackTimer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "EnemyAttack",
+                    "\"AttackTimer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "\"AttackCooldown\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "EnemyAttack",
+                    "\"AttackTimer\"",
+                    ">=",
+                    "0.3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "EnemyAttack",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "RemoveObjectTimer"
+                  },
+                  "parameters": [
+                    "Player",
+                    "\"attackTimer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "\"DashCooldown\"",
+                    ">=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "\"DashDuration\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "\"DashDuration\"",
+                    "<",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "Pathfinding",
+                    "=",
+                    "600"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "\"DashDuration\"",
+                    ">=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "Pathfinding",
+                    "=",
+                    "75"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "\"DashCooldown\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "\"DashCooldown\"",
+                    "<",
+                    "5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RemoveObjectTimer"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    "\"DashDuration\""
+                  ]
+                }
               ]
             }
           ]
@@ -2694,6 +2786,32 @@
           "conditions": [
             {
               "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Islaughy",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Islaughy",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "CollisionNP"
               },
               "parameters": [
@@ -2723,13 +2841,13 @@
           "conditions": [
             {
               "type": {
-                "inverted": true,
-                "value": "Distance"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "Islaughy",
-                "Player",
-                "500",
+                "GlassWall",
+                "",
+                "",
                 ""
               ]
             }
@@ -2737,14 +2855,12 @@
           "actions": [
             {
               "type": {
-                "value": "PathfindingBehavior::SetDestination"
+                "value": "SeparateFromObjects"
               },
               "parameters": [
                 "Islaughy",
-                "Pathfinding",
-                "",
-                "Player.X()",
-                "Player.Y()"
+                "GlassWall",
+                ""
               ]
             }
           ]
@@ -2754,39 +2870,224 @@
           "conditions": [
             {
               "type": {
-                "value": "Distance"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
                 "Islaughy",
+                "isStunned",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Islaughy",
+                    "Player",
+                    "500",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "Islaughy",
+                    "Pathfinding",
+                    "",
+                    "Player.X()",
+                    "Player.Y()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Islaughy",
+                    "Player",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Islaughy",
+                    "Player",
+                    "300",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "Islaughy",
+                    "Pathfinding",
+                    "",
+                    "Islaughy.X()",
+                    "Islaughy.Y()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Islaughy",
+                    "Player",
+                    "300",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "Islaughy",
+                    "Player.AngleToObject(Islaughy)",
+                    "100",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Islaughy",
+                    "\"AttackTimer\"",
+                    ">=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::FireTowardObject"
+                  },
+                  "parameters": [
+                    "Islaughy",
+                    "FireBullet",
+                    "Islaughy.CenterX()",
+                    "Islaughy.CenterY()",
+                    "Bullet",
+                    "Player",
+                    "200*Islaughy.modfier",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Islaughy",
+                    "\"AttackTimer\"",
+                    ">=",
+                    "4"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Islaughy",
+                    "\"AttackTimer\""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Energize Player",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
                 "Player",
-                "500",
+                "MagneticTile",
+                "",
+                "",
                 ""
               ]
             },
             {
               "type": {
-                "inverted": true,
-                "value": "Distance"
+                "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [
-                "Islaughy",
-                "Player",
-                "300",
-                ""
-              ]
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "PathfindingBehavior::SetDestination"
+                "value": "ResetTimer"
               },
               "parameters": [
-                "Islaughy",
-                "Pathfinding",
                 "",
-                "Islaughy.X()",
-                "Islaughy.Y()"
+                "\"OverPowerTimer\""
               ]
             }
           ]
@@ -2796,26 +3097,32 @@
           "conditions": [
             {
               "type": {
-                "value": "Distance"
+                "inverted": true,
+                "value": "CollisionNP"
               },
               "parameters": [
-                "Islaughy",
                 "Player",
-                "300",
+                "MagneticTile",
+                "",
+                "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "AddForceAL"
+                "value": "RemoveTimer"
               },
               "parameters": [
-                "Islaughy",
-                "Player.AngleToObject(Islaughy)",
-                "100",
-                "0"
+                "",
+                "\"OverPowerTimer\""
               ]
             }
           ]
@@ -2825,64 +3132,102 @@
           "conditions": [
             {
               "type": {
-                "value": "CompareObjectTimer"
+                "value": "CompareTimer"
               },
               "parameters": [
-                "Islaughy",
-                "\"AttackTimer\"",
+                "",
+                "\"OverPowerTimer\"",
                 ">=",
-                "2"
+                "OverPowerTriggerTime"
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "FireBullet::FireBullet::FireTowardObject"
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
               },
               "parameters": [
-                "Islaughy",
-                "FireBullet",
-                "Islaughy.CenterX()",
-                "Islaughy.CenterY()",
-                "Bullet",
                 "Player",
-                "200*Islaughy.modfier",
+                "Effect",
+                "\"Glow\"",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"OverPowerDurationTimer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"OverPowerDurationTimer\"",
+                ">=",
+                "OverPowerDuration"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Player",
+                "Effect",
+                "\"Glow\"",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"OverPowerDurationTimer\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Both Bosses Dead",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Orninstain",
+                "Health",
                 ""
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Islaughy",
-                "\"AttackTimer\"",
-                ">=",
-                "4"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Islaughy",
-                "\"AttackTimer\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
                 "value": "Health::Health::IsDead"
@@ -2897,11 +3242,235 @@
           "actions": [
             {
               "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"levelTimer\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "bestTimes.level2BestTime",
+                    ">",
+                    "TimerElapsedTime(\"levelTimer\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "bestTimes.level2BestTime",
+                    "=",
+                    "TimerElapsedTime(\"levelTimer\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierExp"
+                  },
+                  "parameters": [
+                    "\"Storage\"",
+                    "\"level2BestTime\"",
+                    "bestTimes.level2BestTime"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Level3\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Buttons",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Button",
+                "PlayerBullet",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
                 "value": "Delete"
               },
               "parameters": [
-                "Islaughy",
+                "PlayerBullet",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"MagneticFloorTimer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"MagneticFloorTimer\"",
+                "<=",
+                "MagneticFloorDuration"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Bosses",
+                    "MagneticFloor",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Bosses",
+                    "isStunned",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "Bosses",
+                    "Pathfinding",
+                    "=",
+                    "Bosses.X()",
+                    "Bosses.Y()"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"MagneticFloorTimer\"",
+                ">",
+                "MagneticFloorDuration"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Bosses",
+                "isStunned",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"MagneticFloorTimer\""
               ]
             }
           ]

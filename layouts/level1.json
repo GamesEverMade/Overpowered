@@ -61,8 +61,8 @@
       "name": "Boss1",
       "persistentUuid": "a9e0d8ba-e9b9-4ff5-b245-aeb9c803464c",
       "width": 0,
-      "x": 2125,
-      "y": 279,
+      "x": 1615,
+      "y": 175,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -2609,106 +2609,6 @@
                 }
               ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-          },
-          "parameters": [
-            "Player",
-            "Effect",
-            "\"Glow\""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberObjectVariable"
-          },
-          "parameters": [
-            "Player",
-            "meleeDamage",
-            "*",
-            "1000"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberObjectVariable"
-          },
-          "parameters": [
-            "Player",
-            "rangedDamage",
-            "*",
-            "10"
-          ]
-        },
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "TextPopUp",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": true,
-            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
-          },
-          "parameters": [
-            "Player",
-            "Effect",
-            "\"Glow\""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberObjectVariable"
-          },
-          "parameters": [
-            "Player",
-            "meleeDamage",
-            "=",
-            "2"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetNumberObjectVariable"
-          },
-          "parameters": [
-            "Player",
-            "rangedDamage",
-            "=",
-            "1"
           ]
         }
       ]

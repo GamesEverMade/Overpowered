@@ -996,6 +996,14 @@
         "name": "GEMLogo_ColorAndWhite_BlackBG_1080.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/GlassWall.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "GlassWall",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1027,6 +1035,11 @@
           "name": "rangedDamage",
           "type": "number",
           "value": 1
+        },
+        {
+          "name": "isOverPowered",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [
@@ -2657,6 +2670,11 @@
           "name": "id",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "isStunned",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [],
@@ -2719,6 +2737,23 @@
           "ShieldDamageTaken": 2.0247e-320,
           "FlatDamageReduction": 0,
           "PercentDamageReduction": 0
+        },
+        {
+          "acceleration": 0,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "isFolded": true,
+          "maxSpeed": 0,
+          "name": "Pathfinding",
+          "rotateObject": true,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
         }
       ],
       "animations": [
@@ -4880,6 +4915,11 @@
           "name": "id",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "isStunned",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [],
@@ -4887,9 +4927,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 250000,
+          "Health": 20000,
           "CurrentHealth": 0,
-          "MaxHealth": 250000,
+          "MaxHealth": 20000,
           "DamageCooldown": 0.5,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
@@ -5003,6 +5043,11 @@
           "name": "id",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "isStunned",
+          "type": "boolean",
+          "value": false
         }
       ],
       "effects": [],
@@ -5039,12 +5084,11 @@
           "RandomizedAngle": 0
         },
         {
-          "isFolded": true,
           "name": "Health",
           "type": "Health::Health",
-          "Health": 300000,
+          "Health": 30000,
           "CurrentHealth": 0,
-          "MaxHealth": 300000,
+          "MaxHealth": 30000,
           "DamageCooldown": 0.5,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
@@ -5511,6 +5555,84 @@
         "align": "left",
         "verticalTextAlignment": "top"
       }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "GlassWall",
+      "texture": "GlassWall",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Button",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "isEnabled",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "TutorialButton",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "TutorialButton",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 8,
+                        "y": 0
+                      },
+                      {
+                        "x": 8,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -5593,7 +5715,13 @@
         "objectName": "Wall"
       },
       {
+        "objectName": "GlassWall"
+      },
+      {
         "objectName": "MovingWall"
+      },
+      {
+        "objectName": "Button"
       }
     ]
   },
