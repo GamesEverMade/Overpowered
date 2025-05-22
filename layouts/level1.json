@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4335774304702403,
+    "zoomFactor": 0.14039857806034123,
     "windowMask": false
   },
   "objectsGroups": [
@@ -47,7 +47,7 @@
       "width": 0,
       "x": 648,
       "y": 352,
-      "zOrder": 2,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -77,9 +77,9 @@
       "name": "Minion1",
       "persistentUuid": "82a8417f-e2b3-4435-8cb4-6f88bebb6b49",
       "width": 0,
-      "x": 960,
-      "y": 32,
-      "zOrder": 3,
+      "x": 896,
+      "y": -64,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -93,9 +93,9 @@
       "name": "Minion1",
       "persistentUuid": "25f11bfa-d6ed-49f5-92ea-9a4f339d9c65",
       "width": 0,
-      "x": 1120,
-      "y": 768,
-      "zOrder": 4,
+      "x": 1056,
+      "y": 672,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -109,9 +109,9 @@
       "name": "Minion1",
       "persistentUuid": "21c217f2-5f1b-4236-ab74-a02a63e2b4ad",
       "width": 0,
-      "x": 2048,
-      "y": 736,
-      "zOrder": 5,
+      "x": 1984,
+      "y": 672,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -125,9 +125,9 @@
       "name": "Minion1",
       "persistentUuid": "b50e36c0-2e59-4b98-a28a-822bc1cd6320",
       "width": 0,
-      "x": 2464,
-      "y": 128,
-      "zOrder": 6,
+      "x": 2432,
+      "y": 32,
+      "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -216,29 +216,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 160,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnergyPlate",
-      "persistentUuid": "bcc2bbb9-42e9-477e-aff3-25e9fd383cbf",
-      "width": 160,
-      "x": 2400,
-      "y": 64,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "id",
-          "type": "number",
-          "value": 4
-        }
-      ]
     },
     {
       "angle": 0,
@@ -534,29 +511,6 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 160,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnergyPlate",
-      "persistentUuid": "4ce0a8a7-ee9d-4faf-89a0-3fc4403eecd0",
-      "width": 160,
-      "x": 896,
-      "y": -32,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "id",
-          "type": "number",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 32,
       "keepRatio": true,
       "layer": "",
@@ -712,29 +666,6 @@
       ]
     },
     {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 160,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnergyPlate",
-      "persistentUuid": "2e0bcd2d-059b-4784-b178-49a1d53cd20b",
-      "width": 160,
-      "x": 1056,
-      "y": 704,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "id",
-          "type": "number",
-          "value": 2
-        }
-      ]
-    },
-    {
       "angle": 90,
       "customSize": true,
       "depth": 1,
@@ -836,29 +767,6 @@
       "width": 160,
       "x": 2048,
       "y": 256,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "id",
-          "type": "number",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 160,
-      "keepRatio": true,
-      "layer": "",
-      "name": "EnergyPlate",
-      "persistentUuid": "513daadb-5f43-467c-8085-f9b34dca22db",
-      "width": 160,
-      "x": 1984,
-      "y": 672,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -1224,6 +1132,115 @@
           "value": 4
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 2880,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FloorCircuitBlank",
+      "persistentUuid": "cceba5f8-b7a7-453e-8557-abcdb913125c",
+      "width": 4352,
+      "x": -544,
+      "y": -1056,
+      "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 192,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnergyPlate",
+      "persistentUuid": "2cef5f73-cc88-43d1-aa27-e0ae6589ed3b",
+      "width": 192,
+      "x": 896,
+      "y": -64,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 192,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnergyPlate",
+      "persistentUuid": "4ff0beab-b246-4441-9aef-276af5e3398c",
+      "width": 192,
+      "x": 1056,
+      "y": 672,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 192,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnergyPlate",
+      "persistentUuid": "f776db28-f08f-43db-9451-2d49645980d8",
+      "width": 192,
+      "x": 1984,
+      "y": 672,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 192,
+      "keepRatio": true,
+      "layer": "",
+      "name": "EnergyPlate",
+      "persistentUuid": "3c58664e-29c8-497e-9a63-de82148b7198",
+      "width": 192,
+      "x": 2432,
+      "y": 32,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 4
+        }
+      ]
     }
   ],
   "objects": [
@@ -1304,6 +1321,55 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "NewSprite2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 80,
+                        "y": 0
+                      },
+                      {
+                        "x": 80,
+                        "y": 80
+                      },
+                      {
+                        "x": 0,
+                        "y": 80
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MinionPlate",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "MinionPlate3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1631,6 +1697,37 @@
           "parameters": [
             "",
             "\"levelTimer\""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "EnergyPlate",
+                "id",
+                "!=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "EnergyPlate",
+                "Animation",
+                "=",
+                "\"MinionPlate\""
+              ]
+            }
           ]
         }
       ]
@@ -2239,49 +2336,60 @@
         },
         {
           "type": {
+            "value": "SetBooleanObjectVariable"
+          },
+          "parameters": [
+            "Player",
+            "isOverPowered",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "Create"
           },
           "parameters": [
             "",
             "Minion1",
-            "960",
+            "896",
+            "-64",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Minion1",
+            "1056",
+            "672",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Minion1",
+            "1984",
+            "672",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Minion1",
+            "2432",
             "32",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Minion1",
-            "1120",
-            "768",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Minion1",
-            "2048",
-            "738",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Minion1",
-            "2464",
-            "128",
             ""
           ]
         },
@@ -2606,6 +2714,17 @@
                     "\"Glow\"",
                     "yes"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Player",
+                    "isOverPowered",
+                    "True",
+                    ""
+                  ]
                 }
               ]
             }
@@ -2830,7 +2949,19 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "EnergyPlate",
+                "Animation",
+                "=",
+                "\"MinionPlate\""
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -3139,6 +3270,39 @@
     }
   ],
   "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Bottom",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
     {
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,

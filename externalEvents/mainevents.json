@@ -58,6 +58,28 @@
         },
         {
           "type": {
+            "value": "EffectCapability::EffectBehavior::EnableEffect"
+          },
+          "parameters": [
+            "Player",
+            "Effect",
+            "\"DashBlur\"",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::EnableEffect"
+          },
+          "parameters": [
+            "Player",
+            "Effect",
+            "\"DashGlow\"",
+            "no"
+          ]
+        },
+        {
+          "type": {
             "value": "TiledUnitsBar::TiledUnitsBar::SetMaxValue"
           },
           "parameters": [
@@ -114,6 +136,14 @@
         },
         {
           "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "AttackHitbox"
+          ]
+        },
+        {
+          "type": {
             "value": "Create"
           },
           "parameters": [
@@ -122,14 +152,6 @@
             "0",
             "0",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Cache"
-          },
-          "parameters": [
-            "AttackHitbox"
           ]
         },
         {
@@ -356,6 +378,18 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "AnimatableCapability::AnimatableBehavior::Name"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "\"Melee\""
+          ]
         }
       ],
       "actions": [
@@ -365,6 +399,16 @@
           },
           "parameters": [
             "BSODGun",
+            "Flippable",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlipY"
+          },
+          "parameters": [
+            "AttackHitbox",
             "Flippable",
             "no"
           ]
@@ -395,6 +439,18 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "AnimatableCapability::AnimatableBehavior::Name"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "\"Melee\""
+          ]
         }
       ],
       "actions": [
@@ -404,6 +460,16 @@
           },
           "parameters": [
             "BSODGun",
+            "Flippable",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlipY"
+          },
+          "parameters": [
+            "AttackHitbox",
             "Flippable",
             "yes"
           ]
@@ -476,7 +542,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -523,15 +588,36 @@
                 "Player",
                 "TopDownMovement"
               ]
-            },
+            }
+          ],
+          "events": [
             {
-              "type": {
-                "value": "FlippableCapability::FlippableBehavior::FlipX"
-              },
-              "parameters": [
-                "Player",
-                "Flippable",
-                "no"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Animation",
+                    "=",
+                    "\"Melee\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Flippable",
+                    "no"
+                  ]
+                }
               ]
             }
           ]
@@ -623,15 +709,36 @@
                 "Player",
                 "TopDownMovement"
               ]
-            },
+            }
+          ],
+          "events": [
             {
-              "type": {
-                "value": "FlippableCapability::FlippableBehavior::FlipX"
-              },
-              "parameters": [
-                "Player",
-                "Flippable",
-                "yes"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Animation",
+                    "=",
+                    "\"Melee\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
               ]
             }
           ]
@@ -862,6 +969,36 @@
                     "True",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Effect",
+                    "\"DashBlur\"",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Effect",
+                    "\"DashGlow\"",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "BSODGun"
+                  ]
                 }
               ]
             },
@@ -1043,6 +1180,37 @@
                     "=",
                     "\"Walk\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Effect",
+                    "\"DashBlur\"",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Effect",
+                    "\"DashGlow\"",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "BSODGun",
+                    ""
+                  ]
                 }
               ]
             }
@@ -1134,6 +1302,90 @@
                     "no"
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Animation",
+                        "=",
+                        "\"Melee\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CursorX"
+                      },
+                      "parameters": [
+                        "",
+                        "<=",
+                        "Player.CenterX()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Flippable",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CursorX"
+                      },
+                      "parameters": [
+                        "",
+                        ">",
+                        "Player.CenterX()",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Flippable",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -1141,34 +1393,106 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "CompareObjectTimer"
+                    "value": "TopDownMovementBehavior::IsMoving"
                   },
                   "parameters": [
                     "Player",
-                    "\"attackTimer\"",
-                    ">=",
-                    "0"
+                    "TopDownMovement"
                   ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"attackTimer\"",
+                        ">=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Player.TopDownMovement::Angle()",
+                        "100",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "BSODGun"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
-                    "value": "AddForceAL"
+                    "inverted": true,
+                    "value": "TopDownMovementBehavior::IsMoving"
                   },
                   "parameters": [
                     "Player",
-                    "Player.TopDownMovement::Angle()",
-                    "100",
-                    "0"
+                    "TopDownMovement"
                   ]
-                },
+                }
+              ],
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "BSODGun"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Player",
+                        "\"attackTimer\"",
+                        ">=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Player.AngleToPosition(CursorX(),CursorY())",
+                        "100",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "BSODGun"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -1304,6 +1628,17 @@
                     "BSODGun",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Animation",
+                    "=",
+                    "\"Idle\""
+                  ]
                 }
               ]
             }
@@ -1315,7 +1650,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Alt attack",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1357,7 +1691,7 @@
                     "Player.CenterY()",
                     "PlayerBullet",
                     "AngleBetweenPositions(Player.CenterX(),Player.CenterY(),CursorX(),CursorY())",
-                    "300",
+                    "350",
                     ""
                   ]
                 },
@@ -1412,7 +1746,7 @@
                     "Player.CenterY()",
                     "PlayerBullet",
                     "Player.Angle()",
-                    "300",
+                    "350",
                     ""
                   ]
                 },
@@ -1615,6 +1949,7 @@
           ],
           "events": [
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1686,6 +2021,7 @@
           ],
           "events": [
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1720,6 +2056,32 @@
                     "1"
                   ]
                 },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "PlayerBullet",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::IsJustDamaged"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "Health",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
                 {
                   "type": {
                     "value": "Delete"
@@ -2134,8 +2496,8 @@
               "parameters": [
                 "",
                 "EnemyHealthBar",
-                "Minions.CenterX() - Minions.Width()/2",
-                "Minions.CenterY() - Minions.Height()-8",
+                "Minions.CenterX() - Minions.Width()*0.15",
+                "Minions.CenterY() - Minions.Height()*0.6",
                 ""
               ]
             },
@@ -2614,13 +2976,13 @@
           "conditions": [
             {
               "type": {
-                "inverted": true,
-                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
                 "Player",
-                "Effect",
-                "\"Glow\""
+                "isOverPowered",
+                "False",
+                ""
               ]
             },
             {
@@ -2672,12 +3034,13 @@
           "conditions": [
             {
               "type": {
-                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
                 "Player",
-                "Effect",
-                "\"Glow\""
+                "isOverPowered",
+                "True",
+                ""
               ]
             },
             {
@@ -2707,7 +3070,7 @@
                 "Player",
                 "rangedDamage",
                 "*",
-                "10"
+                "800"
               ]
             },
             {

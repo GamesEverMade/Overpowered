@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5468750000000046,
+    "zoomFactor": 0.33253870912507993,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -26,7 +26,7 @@
     {
       "name": "OverPowerTriggerTime",
       "type": "number",
-      "value": 4
+      "value": 2.5
     },
     {
       "name": "OverPowerDuration",
@@ -37,6 +37,11 @@
       "name": "MagneticFloorDuration",
       "type": "number",
       "value": 4
+    },
+    {
+      "name": "OrninstainDashCooldownTime",
+      "type": "number",
+      "value": 5
     }
   ],
   "instances": [
@@ -1647,8 +1652,8 @@
       "name": "BossHealthBar",
       "persistentUuid": "c6b9182d-cca1-4a1c-8430-126d6536ce84",
       "width": 320,
-      "x": 512,
-      "y": 668,
+      "x": 448,
+      "y": 80,
       "zOrder": 26,
       "numberProperties": [],
       "stringProperties": [],
@@ -1670,8 +1675,8 @@
       "name": "BossHealthBar",
       "persistentUuid": "9b6e5e54-9ccd-468d-a96d-d95a348e4097",
       "width": 320,
-      "x": 512,
-      "y": 608,
+      "x": 448,
+      "y": 22,
       "zOrder": 26,
       "numberProperties": [],
       "stringProperties": [],
@@ -2349,6 +2354,18 @@
                 "Orninstain",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::SetCooldownOp"
+              },
+              "parameters": [
+                "Islaughy",
+                "FireBullet",
+                "=",
+                "0.4",
+                ""
+              ]
             }
           ]
         },
@@ -2622,7 +2639,7 @@
                     "value": "RemoveObjectTimer"
                   },
                   "parameters": [
-                    "Player",
+                    "EnemyAttack",
                     "\"attackTimer\""
                   ]
                 }
@@ -2739,7 +2756,7 @@
                     "Orninstain",
                     "\"DashCooldown\"",
                     "<",
-                    "5"
+                    "OrninstainDashCooldownTime"
                   ]
                 }
               ],
@@ -2803,6 +2820,16 @@
               "parameters": [
                 "Islaughy",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "OrninstainDashCooldownTime",
+                "=",
+                "4"
               ]
             }
           ]
@@ -3089,6 +3116,17 @@
                 "",
                 "\"OverPowerTimer\""
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MagneticTile",
+                "Animation",
+                "=",
+                "\"MagneticTilePressed\""
+              ]
             }
           ]
         },
@@ -3123,6 +3161,17 @@
               "parameters": [
                 "",
                 "\"OverPowerTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MagneticTile",
+                "Animation",
+                "=",
+                "\"MagneticTileUnpressed\""
               ]
             }
           ]
@@ -3162,6 +3211,157 @@
                 "",
                 "\"OverPowerDurationTimer\""
               ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Player",
+                "isOverPowered",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"OverPowerDurationTimer\"",
+                ">=",
+                "OverPowerDuration -0.8"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Player",
+                "Effect",
+                "\"Glow\"",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"OverPowerDurationTimer\"",
+                ">=",
+                "OverPowerDuration -0.6"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Player",
+                "Effect",
+                "\"Glow\"",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"OverPowerDurationTimer\"",
+                ">=",
+                "OverPowerDuration -0.4"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Player",
+                "Effect",
+                "\"Glow\"",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"OverPowerDurationTimer\"",
+                ">=",
+                "OverPowerDuration -0.2"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Player",
+                "Effect",
+                "\"Glow\"",
+                "yes"
+              ]
             }
           ]
         },
@@ -3200,6 +3400,17 @@
                 "",
                 "\"OverPowerDurationTimer\""
               ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Player",
+                "isOverPowered",
+                "False",
+                ""
+              ]
             }
           ]
         }
@@ -3220,22 +3431,11 @@
           "conditions": [
             {
               "type": {
-                "value": "Health::Health::IsDead"
+                "value": "AjoutObjConcern"
               },
               "parameters": [
-                "Orninstain",
-                "Health",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Health::Health::IsDead"
-              },
-              "parameters": [
-                "Islaughy",
-                "Health",
-                ""
+                "",
+                "Bosses"
               ]
             }
           ],
@@ -3256,47 +3456,14 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "NumberVariable"
+                    "value": "PickedInstancesCount"
                   },
                   "parameters": [
-                    "bestTimes.level2BestTime",
-                    ">",
-                    "TimerElapsedTime(\"levelTimer\")"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "bestTimes.level2BestTime",
+                    "Bosses",
                     "=",
-                    "TimerElapsedTime(\"levelTimer\")"
+                    "0"
                   ]
                 },
-                {
-                  "type": {
-                    "value": "EcrireFichierExp"
-                  },
-                  "parameters": [
-                    "\"Storage\"",
-                    "\"level2BestTime\"",
-                    "bestTimes.level2BestTime"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
                 {
                   "type": {
                     "value": "BuiltinCommonInstructions::Once"
@@ -3304,23 +3471,80 @@
                   "parameters": []
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "Wait"
-                  },
-                  "parameters": [
-                    "2"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "bestTimes.level2BestTime",
+                        ">",
+                        "TimerElapsedTime(\"levelTimer\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "bestTimes.level2BestTime",
+                        "=",
+                        "TimerElapsedTime(\"levelTimer\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierExp"
+                      },
+                      "parameters": [
+                        "\"Storage\"",
+                        "\"level2BestTime\"",
+                        "bestTimes.level2BestTime"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Level3\"",
-                    ""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Level3\"",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -3391,7 +3615,19 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MagneticFloor",
+                "Animation",
+                "=",
+                "\"MagneticGroundOn\""
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -3471,6 +3707,17 @@
               "parameters": [
                 "",
                 "\"MagneticFloorTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "MagneticFloor",
+                "Animation",
+                "=",
+                "\"MagneticGround\""
               ]
             }
           ]
