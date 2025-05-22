@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.37971210019479573,
+    "zoomFactor": 0.4335774304702403,
     "windowMask": false
   },
   "objectsGroups": [
@@ -144,7 +144,7 @@
       "width": 2528,
       "x": 384,
       "y": -384,
-      "zOrder": 7,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -212,7 +212,7 @@
       "width": 96,
       "x": 1472,
       "y": -160,
-      "zOrder": 12,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -269,7 +269,7 @@
       "width": 96,
       "x": 768,
       "y": 96,
-      "zOrder": 12,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -286,7 +286,7 @@
       "width": 96,
       "x": 2240,
       "y": 0,
-      "zOrder": 12,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -303,7 +303,7 @@
       "width": 96,
       "x": 2464,
       "y": 800,
-      "zOrder": 12,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -320,7 +320,7 @@
       "width": 96,
       "x": 928,
       "y": 640,
-      "zOrder": 12,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -337,7 +337,7 @@
       "width": 96,
       "x": 1216,
       "y": 288,
-      "zOrder": 12,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -354,7 +354,7 @@
       "width": 96,
       "x": 1600,
       "y": 736,
-      "zOrder": 12,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -371,7 +371,7 @@
       "width": 96,
       "x": 2016,
       "y": 544,
-      "zOrder": 12,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -388,7 +388,7 @@
       "width": 96,
       "x": 1856,
       "y": 128,
-      "zOrder": 12,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1130,7 +1130,7 @@
       "width": 96,
       "x": 2624,
       "y": 416,
-      "zOrder": 12,
+      "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1622,6 +1622,15 @@
             "Animation",
             "=",
             "\"Walk\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"levelTimer\""
           ]
         }
       ]
@@ -2524,6 +2533,16 @@
                     "Player",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "TextPopUp",
+                    "=",
+                    "15"
+                  ]
                 }
               ]
             },
@@ -2780,20 +2799,96 @@
       "actions": [
         {
           "type": {
-            "value": "Wait"
+            "value": "PauseTimer"
           },
           "parameters": [
-            "2"
+            "",
+            "\"levelTimer\""
           ]
         },
         {
           "type": {
-            "value": "Scene"
+            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
           },
           "parameters": [
-            "",
-            "\"Level2\"",
-            ""
+            "Boss1",
+            "Animation"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "bestTimes.level1BestTime",
+                ">",
+                "TimerElapsedTime(\"levelTimer\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "bestTimes.level1BestTime",
+                "=",
+                "TimerElapsedTime(\"levelTimer\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Storage\"",
+                "\"level1BestTime\"",
+                "bestTimes.level1BestTime"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Level2\"",
+                ""
+              ]
+            }
           ]
         }
       ]

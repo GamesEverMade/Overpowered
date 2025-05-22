@@ -85,6 +85,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "TimerDisplay",
+      "persistentUuid": "7f889db8-0ce5-4d25-b69a-73c260b938d7",
+      "width": 0,
+      "x": 96,
+      "y": 112,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "editionSettings": {
@@ -97,7 +113,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.6897782140104503,
+    "zoomFactor": 0.9610368693714726,
     "windowMask": false
   }
 }

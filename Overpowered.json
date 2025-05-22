@@ -988,6 +988,14 @@
         "name": "Burned",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "GEMLogo_ColorAndWhite_BlackBG_1080.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GEMLogo_ColorAndWhite_BlackBG_1080.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1206,11 +1214,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
@@ -1253,11 +1261,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
@@ -1300,11 +1308,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
@@ -1347,11 +1355,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
@@ -1407,11 +1415,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
@@ -1467,11 +1475,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
@@ -1514,11 +1522,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
@@ -1561,11 +1569,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
@@ -1608,11 +1616,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
@@ -1655,11 +1663,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
@@ -1702,11 +1710,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
@@ -1749,11 +1757,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
@@ -1796,11 +1804,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
-                        "y": 33
+                        "y": 28
                       },
                       {
                         "x": 24,
@@ -5485,6 +5493,24 @@
         "align": "left",
         "verticalTextAlignment": "top"
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "TimerDisplay",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "0",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Roboto-Regular.ttf",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -5524,6 +5550,9 @@
           },
           {
             "objectName": "EnemyText"
+          },
+          {
+            "objectName": "TimerDisplay"
           },
           {
             "objectName": "TextPopUp"
@@ -5660,6 +5689,37 @@
       "name": "currentLevel",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "bestTimes",
+      "type": "structure",
+      "children": [
+        {
+          "name": "level1BestTime",
+          "type": "number",
+          "value": 9999
+        },
+        {
+          "name": "level2BestTime",
+          "type": "number",
+          "value": 8888
+        },
+        {
+          "name": "level3BestTime",
+          "type": "number",
+          "value": 7777
+        },
+        {
+          "name": "timeAttackBestTime",
+          "type": "number",
+          "value": 6666
+        }
+      ]
+    },
+    {
+      "name": "levelReached",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
