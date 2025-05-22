@@ -124,14 +124,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/Boss1.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Boss1.png\"}",
-        "name": "Boss1",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Minion2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Minion2.png\"}",
@@ -458,14 +450,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Untitled2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/processor_inactive.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\processor_inactive.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -926,26 +910,10 @@
         "userAdded": false
       },
       {
-        "file": "assets/CarSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "CarSprite",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/CarSprite2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "CarSprite2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/BossSpawn.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "BossSpawn",
         "smoothed": false,
         "userAdded": false
       },
@@ -962,6 +930,62 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "BossCore",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FloorCircuit3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "FloorCircuit3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "processor_boss_burned.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "processor_boss_burned.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Dot Bar Blue Border2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dot Bar Blue Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/aa81b97c3211cf1e7cd040b96f5409851e3f1141c496b064157588294f09e662_Dot Bar Blue Border.png",
+          "name": "Dot Bar Blue Border.png"
+        }
+      },
+      {
+        "file": "assets/Dot Bar Blue Fill Bar2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Dot Bar Blue Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/0f15d828199d38d229469b48c953574c22a34b8daeb8941f3eb40df01a8f7d22_Dot Bar Blue Fill Bar.png",
+          "name": "Dot Bar Blue Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Burned.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Burned",
         "smoothed": false,
         "userAdded": false
       }
@@ -985,6 +1009,16 @@
           "name": "isInvulnerable",
           "type": "boolean",
           "value": true
+        },
+        {
+          "name": "meleeDamage",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "name": "rangedDamage",
+          "type": "number",
+          "value": 1
         }
       ],
       "effects": [
@@ -1017,17 +1051,17 @@
           "AmmoQuantity": 0,
           "ShotsPerReload": 0,
           "ReloadDuration": 1,
-          "MaxAmmo": 4,
+          "MaxAmmo": 8,
           "ShotsBeforeNextReload": 0,
           "TotalShotsFired": 0,
           "TotalBulletsCreated": 0,
-          "StartingAmmo": 4,
+          "StartingAmmo": 8,
           "TotalReloadsCompleted": 0,
-          "UnlimitedAmmo": true,
+          "UnlimitedAmmo": false,
           "ReloadInProgress": false,
           "HeatIncreasePerShot": 0,
           "HeatLevel": 0,
-          "AutomaticReloading": true,
+          "AutomaticReloading": false,
           "OverheatDuration": 0,
           "LinearCoolingRate": 0.1,
           "ExponentialCoolingRate": 0.3,
@@ -1038,9 +1072,9 @@
           "isFolded": true,
           "name": "Health",
           "type": "Health::Health",
-          "Health": 40,
+          "Health": 4,
           "CurrentHealth": 0,
-          "MaxHealth": 40,
+          "MaxHealth": 4,
           "DamageCooldown": 1,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
@@ -1064,7 +1098,6 @@
           "PercentDamageReduction": 0
         },
         {
-          "isFolded": true,
           "name": "SmoothCamera",
           "type": "SmoothCamera::SmoothCamera",
           "LeftwardSpeed": 0.9,
@@ -1783,6 +1816,17 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Melee",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": []
+            }
+          ]
         }
       ]
     },
@@ -2232,7 +2276,24 @@
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Adjustment",
+          "name": "Effect",
+          "doubleParameters": {
+            "alpha": 0.5,
+            "blue": 1,
+            "brightness": 1,
+            "contrast": 1,
+            "gamma": 1,
+            "green": 1,
+            "red": 1,
+            "saturation": 1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": []
     },
     {
@@ -2573,7 +2634,7 @@
       ]
     },
     {
-      "adaptCollisionMaskAutomatically": true,
+      "adaptCollisionMaskAutomatically": false,
       "assetStoreId": "",
       "name": "Boss1",
       "type": "Sprite",
@@ -2680,19 +2741,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -2729,19 +2790,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -2765,19 +2826,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -2801,19 +2862,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -2837,19 +2898,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -2873,19 +2934,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -2909,19 +2970,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -2945,19 +3006,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -2981,19 +3042,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3017,19 +3078,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3053,19 +3114,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3089,19 +3150,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3125,19 +3186,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3161,19 +3222,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3197,19 +3258,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3233,19 +3294,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3269,19 +3330,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3305,19 +3366,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3341,19 +3402,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3377,19 +3438,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3413,19 +3474,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3449,19 +3510,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3485,19 +3546,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3521,19 +3582,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3557,19 +3618,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3593,19 +3654,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3629,19 +3690,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3665,19 +3726,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3701,19 +3762,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3737,19 +3798,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3773,19 +3834,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3809,19 +3870,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3845,19 +3906,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3881,19 +3942,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3917,19 +3978,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3953,19 +4014,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -3989,19 +4050,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4025,19 +4086,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4061,19 +4122,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4090,7 +4151,7 @@
             {
               "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.125,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -4110,19 +4171,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4146,19 +4207,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4182,19 +4243,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4218,19 +4279,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4254,19 +4315,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4290,19 +4351,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4326,19 +4387,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4362,19 +4423,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4398,19 +4459,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4434,19 +4495,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4470,19 +4531,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4506,19 +4567,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4542,19 +4603,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4578,19 +4639,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4614,19 +4675,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4650,19 +4711,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4686,19 +4747,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -4722,19 +4783,68 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 28,
-                        "y": 28
+                        "x": 30,
+                        "y": 30
                       },
                       {
                         "x": 164,
-                        "y": 28
+                        "y": 30
                       },
                       {
                         "x": 164,
                         "y": 164
                       },
                       {
-                        "x": 28,
+                        "x": 30,
+                        "y": 164
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Burned",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Burned",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 30,
+                        "y": 30
+                      },
+                      {
+                        "x": 164,
+                        "y": 30
+                      },
+                      {
+                        "x": 164,
+                        "y": 164
+                      },
+                      {
+                        "x": 30,
                         "y": 164
                       }
                     ]
@@ -5057,13 +5167,13 @@
       "content": {
         "PreviousHighValueDuration": 0,
         "ShowLabel": false,
-        "BarTopPadding": 0,
-        "BarBottomPadding": 0,
-        "BarLeftPadding": 0,
-        "BarRightPadding": 0,
+        "BarTopPadding": 5,
+        "BarBottomPadding": 5,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
         "MaxValue": 2,
         "InitialValue": 2,
-        "EasingDuration": 0.5
+        "EasingDuration": 0.2
       },
       "childrenContent": {
         "Background": {
@@ -5262,6 +5372,119 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "98213fe7f1e2289ef501a2e0a96ed2292535e720bfa616da42cf780d99a3c6d0",
+      "name": "AmmoBar",
+      "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 3,
+        "BarLeftPadding": 4,
+        "BarRightPadding": 4,
+        "BarBottomPadding": 4,
+        "EasingDuration": 0,
+        "PreviousHighValueDuration": 0,
+        "ShowLabel": false,
+        "InitialValue": 8,
+        "MaxValue": 8
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 4,
+          "height": 26,
+          "leftMargin": 2,
+          "rightMargin": 2,
+          "texture": "Dot Bar Blue Border.png",
+          "tiled": false,
+          "topMargin": 3,
+          "width": 118
+        },
+        "Buffer": {
+          "bottomMargin": 0,
+          "height": 19,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Dot Bar Blue Fill Bar.png",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 21
+        },
+        "FillBar": {
+          "bottomMargin": 0,
+          "height": 19,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Dot Bar Blue Fill Bar.png",
+          "tiled": true,
+          "topMargin": 0,
+          "width": 21
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "",
+          "font": "",
+          "textAlignment": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "",
+            "font": "",
+            "textAlignment": "",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "TextPopUp",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Sticker",
+          "type": "Sticker::Sticker",
+          "OnlyFollowPosition": false,
+          "IsDestroyedWithParent": false
+        }
+      ],
+      "content": {
+        "text": "[b]E[/b] / [b]A[/b] / [b]CROSS[/b]",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Roboto-Regular.ttf",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -5291,6 +5514,9 @@
             "objectName": "HealthBar"
           },
           {
+            "objectName": "AmmoBar"
+          },
+          {
             "objectName": "TextFrame"
           },
           {
@@ -5298,6 +5524,9 @@
           },
           {
             "objectName": "EnemyText"
+          },
+          {
+            "objectName": "TextPopUp"
           }
         ]
       },

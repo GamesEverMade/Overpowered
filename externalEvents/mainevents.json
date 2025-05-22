@@ -80,6 +80,28 @@
         },
         {
           "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+          },
+          "parameters": [
+            "AmmoBar",
+            "=",
+            "8",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+          },
+          "parameters": [
+            "AmmoBar",
+            "=",
+            "Player.FireBullet::AmmoQuantity()",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "Create"
           },
           "parameters": [
@@ -125,6 +147,102 @@
             "=",
             "Player.Health::Health()",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+          },
+          "parameters": [
+            "AmmoBar",
+            "=",
+            "Player.FireBullet::AmmoQuantity()",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::AmmoQuantity"
+          },
+          "parameters": [
+            "Player",
+            "FireBullet",
+            "<",
+            "8",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"reloadTimer\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"reloadTimer\"",
+            ">=",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::AmmoQuantity"
+          },
+          "parameters": [
+            "Player",
+            "FireBullet",
+            "<",
+            "8",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::SetAmmoQuantityOp"
+          },
+          "parameters": [
+            "Player",
+            "FireBullet",
+            "+",
+            "1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"reloadTimer\""
           ]
         }
       ]
@@ -1452,7 +1570,7 @@
               "parameters": [
                 "Enemies",
                 "Health",
-                "2",
+                "Player.meleeDamage",
                 "",
                 "",
                 ""
@@ -1468,7 +1586,7 @@
                     "value": "Health::Health::IsJustDamaged"
                   },
                   "parameters": [
-                    "Minions",
+                    "Enemies",
                     "Health",
                     ""
                   ]
@@ -1508,7 +1626,7 @@
               },
               "parameters": [
                 "PlayerBullet",
-                "Minions",
+                "Enemies",
                 "",
                 "",
                 ""
@@ -1521,9 +1639,9 @@
                 "value": "Health::Health::Hit"
               },
               "parameters": [
-                "Minions",
+                "Enemies",
                 "Health",
-                "1",
+                "Player.rangedDamage",
                 "",
                 "",
                 ""
@@ -1539,7 +1657,7 @@
                     "value": "Health::Health::IsJustDamaged"
                   },
                   "parameters": [
-                    "Minions",
+                    "Enemies",
                     "Health",
                     ""
                   ]
@@ -1575,47 +1693,6 @@
                     ""
                   ]
                 }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "PlayerBullet",
-                "Bosses",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "PlayerBullet",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Health::Health::Hit"
-              },
-              "parameters": [
-                "Bosses",
-                "Health",
-                "1",
-                "",
-                "",
-                ""
               ]
             }
           ]
@@ -2214,6 +2291,15 @@
               },
               "parameters": [
                 "Player",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BSODGun",
                 ""
               ]
             },
