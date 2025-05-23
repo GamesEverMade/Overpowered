@@ -241,7 +241,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "CarSprite2",
+                  "image": "CarSprite4",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -257,20 +257,56 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 2,
+                        "y": 2
                       },
                       {
                         "x": 192,
-                        "y": 0
+                        "y": 2
                       },
                       {
                         "x": 192,
-                        "y": 192
+                        "y": 172
                       },
                       {
-                        "x": 0,
-                        "y": 192
+                        "x": 2,
+                        "y": 172
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "CarSprite5",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 96,
+                    "y": 96
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 192,
+                        "y": 2
+                      },
+                      {
+                        "x": 192,
+                        "y": 172
+                      },
+                      {
+                        "x": 2,
+                        "y": 172
                       }
                     ]
                   ]
@@ -494,6 +530,64 @@
             "Sticker",
             "BossCar",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "currentLevel",
+            "=",
+            "\"Level3\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"levelTimer\""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "levelReached",
+                "<=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "levelReached",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Storage\"",
+                "\"levelReached\"",
+                "levelReached"
+              ]
+            }
           ]
         }
       ]

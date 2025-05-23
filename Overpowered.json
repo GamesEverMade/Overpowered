@@ -1,5 +1,5 @@
 {
-  "firstLayout": "Tutorial",
+  "firstLayout": "Opening",
   "gdVersion": {
     "build": 231,
     "major": 5,
@@ -24,7 +24,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "D:\\Projetos e Códigos\\GDevelop\\#Exports\\Overpowered",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -124,30 +124,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/Minion2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Minion2.png\"}",
-        "name": "Minion2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Wall.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Wall",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Kenney High.ttf",
         "kind": "font",
         "metadata": "",
@@ -171,14 +147,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "TextFrame",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/AttackHitbox4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "AttackHitbox3",
         "smoothed": false,
         "userAdded": false
       },
@@ -326,22 +294,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/Ornistain.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Ornistain.png\"}",
-        "name": "Ornistain",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Islaughy.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Islaughy.png\"}",
-        "name": "Islaughy",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Main5.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -454,17 +406,9 @@
         "userAdded": false
       },
       {
-        "file": "assets/Boss2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Boss2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Activating.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating.png\"}",
         "name": "Activating",
         "smoothed": false,
         "userAdded": false
@@ -472,7 +416,7 @@
       {
         "file": "assets/Activating2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating2.png\"}",
         "name": "Activating2",
         "smoothed": false,
         "userAdded": false
@@ -480,7 +424,7 @@
       {
         "file": "assets/Activating3.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating3.png\"}",
         "name": "Activating3",
         "smoothed": false,
         "userAdded": false
@@ -488,7 +432,7 @@
       {
         "file": "assets/Activating4.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating4.png\"}",
         "name": "Activating4",
         "smoothed": false,
         "userAdded": false
@@ -496,7 +440,7 @@
       {
         "file": "assets/Activating5.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating5.png\"}",
         "name": "Activating5",
         "smoothed": false,
         "userAdded": false
@@ -504,7 +448,7 @@
       {
         "file": "assets/Activating6.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating6.png\"}",
         "name": "Activating6",
         "smoothed": false,
         "userAdded": false
@@ -512,7 +456,7 @@
       {
         "file": "assets/Activating7.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating7.png\"}",
         "name": "Activating7",
         "smoothed": false,
         "userAdded": false
@@ -520,7 +464,7 @@
       {
         "file": "assets/Activating8.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating8.png\"}",
         "name": "Activating8",
         "smoothed": false,
         "userAdded": false
@@ -528,7 +472,7 @@
       {
         "file": "assets/Activating9.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating9.png\"}",
         "name": "Activating9",
         "smoothed": false,
         "userAdded": false
@@ -536,7 +480,7 @@
       {
         "file": "assets/Activating10.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating10.png\"}",
         "name": "Activating10",
         "smoothed": false,
         "userAdded": false
@@ -544,7 +488,7 @@
       {
         "file": "assets/Activating11.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating11.png\"}",
         "name": "Activating11",
         "smoothed": false,
         "userAdded": false
@@ -552,7 +496,7 @@
       {
         "file": "assets/Activating12.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating12.png\"}",
         "name": "Activating12",
         "smoothed": false,
         "userAdded": false
@@ -560,7 +504,7 @@
       {
         "file": "assets/Activating13.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating13.png\"}",
         "name": "Activating13",
         "smoothed": false,
         "userAdded": false
@@ -568,7 +512,7 @@
       {
         "file": "assets/Activating14.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating14.png\"}",
         "name": "Activating14",
         "smoothed": false,
         "userAdded": false
@@ -576,7 +520,7 @@
       {
         "file": "assets/Activating15.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating15.png\"}",
         "name": "Activating15",
         "smoothed": false,
         "userAdded": false
@@ -584,7 +528,7 @@
       {
         "file": "assets/Activating16.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating16.png\"}",
         "name": "Activating16",
         "smoothed": false,
         "userAdded": false
@@ -592,7 +536,7 @@
       {
         "file": "assets/Activating17.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating17.png\"}",
         "name": "Activating17",
         "smoothed": false,
         "userAdded": false
@@ -600,7 +544,7 @@
       {
         "file": "assets/Activating18.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating18.png\"}",
         "name": "Activating18",
         "smoothed": false,
         "userAdded": false
@@ -608,7 +552,7 @@
       {
         "file": "assets/Activating19.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating19.png\"}",
         "name": "Activating19",
         "smoothed": false,
         "userAdded": false
@@ -616,7 +560,7 @@
       {
         "file": "assets/Activating20.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating20.png\"}",
         "name": "Activating20",
         "smoothed": false,
         "userAdded": false
@@ -624,7 +568,7 @@
       {
         "file": "assets/Activating21.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating21.png\"}",
         "name": "Activating21",
         "smoothed": false,
         "userAdded": false
@@ -632,7 +576,7 @@
       {
         "file": "assets/Activating22.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating22.png\"}",
         "name": "Activating22",
         "smoothed": false,
         "userAdded": false
@@ -640,7 +584,7 @@
       {
         "file": "assets/Activating23.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating23.png\"}",
         "name": "Activating23",
         "smoothed": false,
         "userAdded": false
@@ -648,7 +592,7 @@
       {
         "file": "assets/Activating24.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating24.png\"}",
         "name": "Activating24",
         "smoothed": false,
         "userAdded": false
@@ -656,7 +600,7 @@
       {
         "file": "assets/Activating25.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating25.png\"}",
         "name": "Activating25",
         "smoothed": false,
         "userAdded": false
@@ -664,7 +608,7 @@
       {
         "file": "assets/Activating26.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating26.png\"}",
         "name": "Activating26",
         "smoothed": false,
         "userAdded": false
@@ -672,7 +616,7 @@
       {
         "file": "assets/Activating27.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating27.png\"}",
         "name": "Activating27",
         "smoothed": false,
         "userAdded": false
@@ -680,7 +624,7 @@
       {
         "file": "assets/Activating28.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating28.png\"}",
         "name": "Activating28",
         "smoothed": false,
         "userAdded": false
@@ -688,7 +632,7 @@
       {
         "file": "assets/Activating29.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating29.png\"}",
         "name": "Activating29",
         "smoothed": false,
         "userAdded": false
@@ -696,7 +640,7 @@
       {
         "file": "assets/Activating30.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating30.png\"}",
         "name": "Activating30",
         "smoothed": false,
         "userAdded": false
@@ -704,7 +648,7 @@
       {
         "file": "assets/Activating31.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating31.png\"}",
         "name": "Activating31",
         "smoothed": false,
         "userAdded": false
@@ -712,7 +656,7 @@
       {
         "file": "assets/Activating32.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating32.png\"}",
         "name": "Activating32",
         "smoothed": false,
         "userAdded": false
@@ -720,7 +664,7 @@
       {
         "file": "assets/Activating33.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating33.png\"}",
         "name": "Activating33",
         "smoothed": false,
         "userAdded": false
@@ -728,7 +672,7 @@
       {
         "file": "assets/Activating34.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating34.png\"}",
         "name": "Activating34",
         "smoothed": false,
         "userAdded": false
@@ -736,7 +680,7 @@
       {
         "file": "assets/Activating35.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating35.png\"}",
         "name": "Activating35",
         "smoothed": false,
         "userAdded": false
@@ -744,7 +688,7 @@
       {
         "file": "assets/Activating36.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating36.png\"}",
         "name": "Activating36",
         "smoothed": false,
         "userAdded": false
@@ -752,7 +696,7 @@
       {
         "file": "assets/Activating37.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating37.png\"}",
         "name": "Activating37",
         "smoothed": false,
         "userAdded": false
@@ -760,7 +704,7 @@
       {
         "file": "assets/Activating38.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Activating38.png\"}",
         "name": "Activating38",
         "smoothed": false,
         "userAdded": false
@@ -768,7 +712,7 @@
       {
         "file": "assets/Walk.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk.png\"}",
         "name": "Walk",
         "smoothed": false,
         "userAdded": false
@@ -776,7 +720,7 @@
       {
         "file": "assets/Walk2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk2.png\"}",
         "name": "Walk2",
         "smoothed": false,
         "userAdded": false
@@ -784,7 +728,7 @@
       {
         "file": "assets/Walk3.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk3.png\"}",
         "name": "Walk3",
         "smoothed": false,
         "userAdded": false
@@ -792,7 +736,7 @@
       {
         "file": "assets/Walk4.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk4.png\"}",
         "name": "Walk4",
         "smoothed": false,
         "userAdded": false
@@ -800,7 +744,7 @@
       {
         "file": "assets/Walk5.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk5.png\"}",
         "name": "Walk5",
         "smoothed": false,
         "userAdded": false
@@ -808,7 +752,7 @@
       {
         "file": "assets/Walk6.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk6.png\"}",
         "name": "Walk6",
         "smoothed": false,
         "userAdded": false
@@ -816,7 +760,7 @@
       {
         "file": "assets/Walk7.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk7.png\"}",
         "name": "Walk7",
         "smoothed": false,
         "userAdded": false
@@ -824,7 +768,7 @@
       {
         "file": "assets/Walk8.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk8.png\"}",
         "name": "Walk8",
         "smoothed": false,
         "userAdded": false
@@ -832,7 +776,7 @@
       {
         "file": "assets/Walk9.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk9.png\"}",
         "name": "Walk9",
         "smoothed": false,
         "userAdded": false
@@ -840,7 +784,7 @@
       {
         "file": "assets/Walk10.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk10.png\"}",
         "name": "Walk10",
         "smoothed": false,
         "userAdded": false
@@ -848,7 +792,7 @@
       {
         "file": "assets/Walk11.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk11.png\"}",
         "name": "Walk11",
         "smoothed": false,
         "userAdded": false
@@ -856,7 +800,7 @@
       {
         "file": "assets/Walk12.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk12.png\"}",
         "name": "Walk12",
         "smoothed": false,
         "userAdded": false
@@ -864,7 +808,7 @@
       {
         "file": "assets/Walk13.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk13.png\"}",
         "name": "Walk13",
         "smoothed": false,
         "userAdded": false
@@ -872,7 +816,7 @@
       {
         "file": "assets/Walk14.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk14.png\"}",
         "name": "Walk14",
         "smoothed": false,
         "userAdded": false
@@ -880,7 +824,7 @@
       {
         "file": "assets/Walk15.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk15.png\"}",
         "name": "Walk15",
         "smoothed": false,
         "userAdded": false
@@ -888,7 +832,7 @@
       {
         "file": "assets/Walk16.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk16.png\"}",
         "name": "Walk16",
         "smoothed": false,
         "userAdded": false
@@ -896,7 +840,7 @@
       {
         "file": "assets/Walk17.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk17.png\"}",
         "name": "Walk17",
         "smoothed": false,
         "userAdded": false
@@ -904,16 +848,8 @@
       {
         "file": "assets/Walk18.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Walk18.png\"}",
         "name": "Walk18",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/CarSprite2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "CarSprite2",
         "smoothed": false,
         "userAdded": false
       },
@@ -950,14 +886,6 @@
         "userAdded": false
       },
       {
-        "file": "processor_boss_burned.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "processor_boss_burned.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Dot Bar Blue Border2.png",
         "kind": "image",
         "metadata": "",
@@ -984,7 +912,7 @@
       {
         "file": "assets/Burned.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Burned.png\"}",
         "name": "Burned",
         "smoothed": false,
         "userAdded": false
@@ -1006,50 +934,10 @@
         "userAdded": false
       },
       {
-        "file": "assets/Melee.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Melee.png\"}",
-        "name": "Melee",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Melee2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Melee2.png\"}",
-        "name": "Melee2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Melee3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Melee3.png\"}",
-        "name": "Melee3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Melee4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Melee4.png\"}",
-        "name": "Melee4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Melee5.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Melee5",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Melee6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Melee6",
         "smoothed": false,
         "userAdded": false
       },
@@ -1094,14 +982,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/Minion3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Minion1",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Minion4.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -1110,26 +990,158 @@
         "userAdded": false
       },
       {
-        "file": "assets/MinionPlate.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "MinionPlate",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/MinionPlate2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "MinionPlate2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/MinionPlate3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "MinionPlate3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "shot_charged.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "shot_charged.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/CarSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "CarSprite4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/CarSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "CarSprite5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Flat Bar Blue Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar Blue Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/f270f84b907c4d653ca7fad99ab890b31642bdbc0b22a189ff45be51240cf52b_Flat Bar Blue Fill Bar.png",
+          "name": "Flat Bar Blue Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Ornistain6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Ornistain6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ornistain7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Ornistain7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ornistain8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Ornistain8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Ornistain9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Ornistain9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Islaughy8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Islaughy8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Islaughy9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Islaughy9",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Islaughy10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Islaughy10",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/AttackHitbox7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "AttackHitbox4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack5",
         "smoothed": false,
         "userAdded": false
       }
@@ -1206,6 +1218,18 @@
           },
           "stringParameters": {
             "color": "126;211;33"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 1,
+            "thickness": 1
+          },
+          "stringParameters": {
+            "color": "255;255;255"
           },
           "booleanParameters": {}
         }
@@ -1364,6 +1388,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -1381,11 +1410,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -1411,6 +1440,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -1428,11 +1462,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -1458,6 +1492,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -1475,11 +1514,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -1505,6 +1544,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -1522,11 +1566,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -1565,6 +1609,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -1582,11 +1631,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -1625,6 +1674,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -1642,11 +1696,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -1672,6 +1726,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -1689,11 +1748,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -1719,6 +1778,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -1736,11 +1800,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -1766,6 +1830,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -1783,11 +1852,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -1813,6 +1882,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -1830,11 +1904,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -1860,6 +1934,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -1877,11 +1956,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -1907,6 +1986,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -1924,11 +2008,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -1954,6 +2038,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -1971,11 +2060,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -2014,6 +2103,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -2031,11 +2125,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -2061,6 +2155,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -2078,11 +2177,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -2108,6 +2207,11 @@
                       "name": "Weapon",
                       "x": 19.5,
                       "y": 26
+                    },
+                    {
+                      "name": "Text",
+                      "x": 10.5,
+                      "y": -10
                     }
                   ],
                   "originPoint": {
@@ -2125,11 +2229,11 @@
                     [
                       {
                         "x": 0,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
-                        "y": 28
+                        "y": 20
                       },
                       {
                         "x": 24,
@@ -2264,7 +2368,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "BaseBullet",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2274,7 +2378,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
+                  "image": "NewSprite5",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2294,16 +2398,64 @@
                         "y": 0
                       },
                       {
-                        "x": 8,
+                        "x": 30,
                         "y": 0
                       },
                       {
-                        "x": 8,
-                        "y": 8
+                        "x": 30,
+                        "y": 12
                       },
                       {
                         "x": 0,
-                        "y": 8
+                        "y": 12
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ChargedBullet",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "shot_charged.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 30,
+                        "y": 0
+                      },
+                      {
+                        "x": 30,
+                        "y": 12
+                      },
+                      {
+                        "x": 0,
+                        "y": 12
                       }
                     ]
                   ]
@@ -2515,7 +2667,7 @@
       ],
       "behaviors": [],
       "content": {
-        "text": "[b]Name[/b] \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in congue risus.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in congue risus.",
         "opacity": 255,
         "fontSize": 40,
         "visible": true,
@@ -5223,18 +5375,18 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Ornistain",
+                  "image": "Ornistain6",
                   "points": [
                     {
                       "name": "Attack",
-                      "x": 64,
-                      "y": 32
+                      "x": 122,
+                      "y": 64
                     }
                   ],
                   "originPoint": {
@@ -5243,10 +5395,359 @@
                     "y": 0
                   },
                   "centerPoint": {
-                    "automatic": true,
+                    "automatic": false,
                     "name": "centre",
+                    "x": 64,
+                    "y": 64
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 47
+                      },
+                      {
+                        "x": 7,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Ornistain7",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 122,
+                      "y": 64
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
                     "x": 0,
                     "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 64,
+                    "y": 64
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 47
+                      },
+                      {
+                        "x": 7,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Ornistain8",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 122,
+                      "y": 64
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 64,
+                    "y": 64
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 47
+                      },
+                      {
+                        "x": 7,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Ornistain9",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 122,
+                      "y": 64
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 64,
+                    "y": 64
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 47
+                      },
+                      {
+                        "x": 7,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Attack",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 122,
+                      "y": 64
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 64,
+                    "y": 64
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 47
+                      },
+                      {
+                        "x": 7,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack2",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 122,
+                      "y": 64
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 64,
+                    "y": 64
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 47
+                      },
+                      {
+                        "x": 7,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack3",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 122,
+                      "y": 64
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 64,
+                    "y": 64
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 47
+                      },
+                      {
+                        "x": 7,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack4",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 122,
+                      "y": 64
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 64,
+                    "y": 64
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 11
+                      },
+                      {
+                        "x": 55,
+                        "y": 47
+                      },
+                      {
+                        "x": 7,
+                        "y": 47
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack5",
+                  "points": [
+                    {
+                      "name": "Attack",
+                      "x": 122,
+                      "y": 64
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 64,
+                    "y": 64
                   },
                   "customCollisionMask": [
                     [
@@ -5383,13 +5884,93 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Islaughy",
+                  "image": "Islaughy8",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12,
+                        "y": 6
+                      },
+                      {
+                        "x": 48,
+                        "y": 9
+                      },
+                      {
+                        "x": 60,
+                        "y": 30
+                      },
+                      {
+                        "x": 48,
+                        "y": 49
+                      },
+                      {
+                        "x": 13,
+                        "y": 49
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Islaughy9",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12,
+                        "y": 6
+                      },
+                      {
+                        "x": 48,
+                        "y": 9
+                      },
+                      {
+                        "x": 60,
+                        "y": 30
+                      },
+                      {
+                        "x": 48,
+                        "y": 49
+                      },
+                      {
+                        "x": 13,
+                        "y": 49
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Islaughy10",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -5555,7 +6136,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "ColorReplace",
+          "name": "Effect",
+          "doubleParameters": {
+            "epsilon": 0.4
+          },
+          "stringParameters": {
+            "newColor": "208;2;27",
+            "originalColor": "3;165;252"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "name": "Sticker",
@@ -5576,7 +6170,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "AttackHitbox3",
+                  "image": "AttackHitbox4",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -5592,20 +6186,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 68,
+                        "y": 6
                       },
                       {
-                        "x": 48,
-                        "y": 0
+                        "x": 124,
+                        "y": 6
                       },
                       {
-                        "x": 48,
-                        "y": 75
+                        "x": 124,
+                        "y": 124
                       },
                       {
-                        "x": 0,
-                        "y": 75
+                        "x": 68,
+                        "y": 124
                       }
                     ]
                   ]
@@ -5623,7 +6217,20 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 1,
+            "thickness": 1
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [],
       "animations": [
         {
@@ -5770,7 +6377,20 @@
       "name": "TextPopUp",
       "type": "BBText::BBText",
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [
         {
           "name": "Sticker",
@@ -5780,14 +6400,14 @@
         }
       ],
       "content": {
-        "text": "[b]E[/b] / [b]A[/b] / [b]CROSS[/b]",
+        "text": "!",
         "opacity": 255,
-        "fontSize": 20,
+        "fontSize": 30,
         "visible": true,
-        "color": "0;0;0",
+        "color": "255;255;255",
         "fontFamily": "Roboto-Regular.ttf",
-        "align": "left",
-        "verticalTextAlignment": "top"
+        "align": "center",
+        "verticalTextAlignment": "center"
       }
     },
     {
@@ -5802,7 +6422,7 @@
         "opacity": 255,
         "fontSize": 20,
         "visible": true,
-        "color": "0;0;0",
+        "color": "255;255;255",
         "fontFamily": "Roboto-Regular.ttf",
         "align": "left",
         "verticalTextAlignment": "top"
@@ -5896,14 +6516,50 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "BossHealthNumber",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "999999",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "Roboto-Regular.ttf",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "folderName": "Stage2",
+        "folderName": "Tiles",
         "children": [
+          {
+            "objectName": "Wall"
+          },
+          {
+            "objectName": "GlassWall"
+          },
+          {
+            "objectName": "FloorCircuitBlank"
+          },
+          {
+            "objectName": "MovingWall"
+          },
           {
             "objectName": "MagneticFloor"
           },
@@ -5940,6 +6596,9 @@
             "objectName": "TimerDisplay"
           },
           {
+            "objectName": "BossHealthNumber"
+          },
+          {
             "objectName": "TextPopUp"
           }
         ]
@@ -5973,18 +6632,6 @@
       },
       {
         "objectName": "Islaughy"
-      },
-      {
-        "objectName": "Wall"
-      },
-      {
-        "objectName": "GlassWall"
-      },
-      {
-        "objectName": "FloorCircuitBlank"
-      },
-      {
-        "objectName": "MovingWall"
       },
       {
         "objectName": "Button"

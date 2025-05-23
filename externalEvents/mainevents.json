@@ -163,6 +163,86 @@
             "\"levelTimer\""
           ]
         }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Minions",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "EnemyHealthBar",
+                "Minions.CenterX() - Minions.Width()*0.15",
+                "Minions.CenterY() - Minions.Height()*0.6",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Sticker::Sticker::Stick"
+              },
+              "parameters": [
+                "EnemyHealthBar",
+                "Sticker",
+                "Minions",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "OpacityCapability::OpacityBehavior::SetValue"
+              },
+              "parameters": [
+                "EnemyHealthBar",
+                "Opacity",
+                "=",
+                "85"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
+              },
+              "parameters": [
+                "EnemyHealthBar",
+                "=",
+                "Minions.Health::MaxHealth()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "EnemyHealthBar",
+                "=",
+                "Minions.Health::Health()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "EnemyHealthBar"
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -1065,7 +1145,7 @@
                     "Player",
                     "\"dashDuration\"",
                     "<=",
-                    "0.4"
+                    "0.5"
                   ]
                 }
               ],
@@ -1077,7 +1157,7 @@
                   "parameters": [
                     "Player",
                     "Player.TopDownMovement::Angle()",
-                    "400",
+                    "300",
                     "0"
                   ]
                 },
@@ -1101,7 +1181,29 @@
                     "Player",
                     "Animation",
                     "=",
-                    "\"Main\""
+                    "\"Walk\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Effect",
+                    "\"DashBlur\"",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Effect",
+                    "\"DashGlow\"",
+                    "no"
                   ]
                 }
               ]
@@ -1117,7 +1219,7 @@
                     "Player",
                     "\"dashDuration\"",
                     ">=",
-                    "0.4"
+                    "0.5"
                   ]
                 }
               ],
@@ -1156,7 +1258,7 @@
                     "Player",
                     "\"dashDuration\"",
                     ">=",
-                    "0.6"
+                    "0.7"
                   ]
                 }
               ],
@@ -1168,39 +1270,6 @@
                   "parameters": [
                     "Player",
                     "\"dashDuration\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Player",
-                    "Animation",
-                    "=",
-                    "\"Walk\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "EffectCapability::EffectBehavior::EnableEffect"
-                  },
-                  "parameters": [
-                    "Player",
-                    "Effect",
-                    "\"DashBlur\"",
-                    "no"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "EffectCapability::EffectBehavior::EnableEffect"
-                  },
-                  "parameters": [
-                    "Player",
-                    "Effect",
-                    "\"DashGlow\"",
-                    "no"
                   ]
                 },
                 {
@@ -1691,7 +1760,7 @@
                     "Player.CenterY()",
                     "PlayerBullet",
                     "AngleBetweenPositions(Player.CenterX(),Player.CenterY(),CursorX(),CursorY())",
-                    "350",
+                    "375",
                     ""
                   ]
                 },
@@ -1746,7 +1815,7 @@
                     "Player.CenterY()",
                     "PlayerBullet",
                     "Player.Angle()",
-                    "350",
+                    "375",
                     ""
                   ]
                 },
@@ -1770,6 +1839,64 @@
                     "Animation",
                     "=",
                     "0.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Player",
+                    "isOverPowered",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "PlayerBullet",
+                    "Animation",
+                    "=",
+                    "\"ChargedBullet\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Player",
+                    "isOverPowered",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "PlayerBullet",
+                    "Animation",
+                    "=",
+                    "\"BaseBullet\""
                   ]
                 }
               ]
@@ -2122,6 +2249,34 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "PlayerBullet",
+                "MovingWall",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "PlayerBullet",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -2295,6 +2450,14 @@
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
+        {
+          "type": {
+            "value": "Visible"
+          },
+          "parameters": [
+            "EnemyAttack"
+          ]
+        },
         {
           "type": {
             "value": "CollisionNP"
@@ -2491,36 +2654,11 @@
           "actions": [
             {
               "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "EnemyHealthBar",
-                "Minions.CenterX() - Minions.Width()*0.15",
-                "Minions.CenterY() - Minions.Height()*0.6",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Sticker::Sticker::Stick"
+                "value": "Montre"
               },
               "parameters": [
                 "EnemyHealthBar",
-                "Sticker",
-                "Minions",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetMaxValue"
-              },
-              "parameters": [
-                "EnemyHealthBar",
-                "=",
-                "Minions.Health::MaxHealth()",
-                ""
+                "EnemyHealthBar"
               ]
             },
             {
@@ -2532,17 +2670,6 @@
                 "=",
                 "Minions.Health::Health()",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
-              },
-              "parameters": [
-                "EnemyHealthBar",
-                "Opacity",
-                "=",
-                "85"
               ]
             },
             {
@@ -2574,11 +2701,10 @@
           "actions": [
             {
               "type": {
-                "value": "Delete"
+                "value": "Cache"
               },
               "parameters": [
-                "EnemyHealthBar",
-                ""
+                "EnemyHealthBar"
               ]
             }
           ]

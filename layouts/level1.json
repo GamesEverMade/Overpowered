@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.14039857806034123,
+    "zoomFactor": 0.2912258866911148,
     "windowMask": false
   },
   "objectsGroups": [
@@ -34,7 +34,13 @@
       ]
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "name": "shieldDownDuration",
+      "type": "number",
+      "value": 8
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -61,8 +67,8 @@
       "name": "Boss1",
       "persistentUuid": "a9e0d8ba-e9b9-4ff5-b245-aeb9c803464c",
       "width": 0,
-      "x": 1615,
-      "y": 175,
+      "x": 1614,
+      "y": 177,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -203,23 +209,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 4,
-      "height": 96,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "5b212967-f3b8-4c39-bd9d-23530148ed2f",
-      "width": 96,
-      "x": 1472,
-      "y": -160,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "depth": 48,
       "height": 32,
       "keepRatio": true,
@@ -259,27 +248,10 @@
       "keepRatio": true,
       "layer": "",
       "name": "Wall",
-      "persistentUuid": "cf91680c-7fb6-4bb6-81f7-ce1ca70aefa4",
-      "width": 96,
-      "x": 2240,
-      "y": 0,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 4,
-      "height": 96,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
       "persistentUuid": "519d85c4-9763-4967-b391-3eb56734c761",
       "width": 96,
-      "x": 2464,
-      "y": 800,
+      "x": 1504,
+      "y": -160,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -297,74 +269,6 @@
       "width": 96,
       "x": 928,
       "y": 640,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 4,
-      "height": 96,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "21a60640-6424-45d6-840a-5c7598362229",
-      "width": 96,
-      "x": 1216,
-      "y": 288,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 4,
-      "height": 96,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "9d7383f9-4d06-47f2-80dd-a5ef6ac01d8f",
-      "width": 96,
-      "x": 1600,
-      "y": 736,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 4,
-      "height": 96,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "585f068f-7587-4484-a019-9e1c055ac6a8",
-      "width": 96,
-      "x": 2016,
-      "y": 544,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 4,
-      "height": 96,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Wall",
-      "persistentUuid": "b10b68da-efe9-41a9-8057-c399c8346163",
-      "width": 96,
-      "x": 1856,
-      "y": 128,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -1241,6 +1145,107 @@
           "value": 4
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GlassWall",
+      "persistentUuid": "c34de72f-27d9-47a2-9c6a-4992d8ddafcb",
+      "width": 96,
+      "x": 1248,
+      "y": 224,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GlassWall",
+      "persistentUuid": "bd694a33-90da-4525-b78f-b05725f26328",
+      "width": 96,
+      "x": 2240,
+      "y": -32,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GlassWall",
+      "persistentUuid": "e8c28f3d-1194-4fe5-af07-6b10f2b256e8",
+      "width": 96,
+      "x": 2080,
+      "y": 320,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GlassWall",
+      "persistentUuid": "43b676d0-44ba-408c-93ca-603f7d422702",
+      "width": 96,
+      "x": 1792,
+      "y": 640,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 96,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Wall",
+      "persistentUuid": "876916ef-b409-4f6f-b935-f97ffdba2c85",
+      "width": 96,
+      "x": 2464,
+      "y": 800,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "BossHealthNumber",
+      "persistentUuid": "98405119-0b60-443d-86ab-c66d644804be",
+      "width": 0,
+      "x": 721,
+      "y": -3,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1729,6 +1734,43 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "levelReached",
+                "<=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "levelReached",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Storage\"",
+                "\"levelReached\"",
+                "levelReached"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -1736,6 +1778,16 @@
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "BossHealthNumber",
+            "=",
+            "ToString(Bosses.Health::Health())"
+          ]
+        },
         {
           "type": {
             "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
@@ -2128,7 +2180,7 @@
               "parameters": [
                 "EnemyText",
                 "=",
-                "\"Rerouting power back from energy plates to shield generators, please don't touch the pad\""
+                "\"Rerouting power back from energy plates to shield generators...\""
               ]
             },
             {
@@ -2242,681 +2294,11 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CompareObjectTimer"
-          },
-          "parameters": [
-            "Boss1",
-            "\"attackTimer\"",
-            ">=",
-            "2"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "FireBullet::FireBullet::FireTowardObject"
-          },
-          "parameters": [
-            "Boss1",
-            "FireBullet",
-            "Boss1.CenterX()",
-            "Boss1.CenterY()",
-            "Bullet",
-            "Player",
-            "200*Boss1.modfier",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CompareObjectTimer"
-          },
-          "parameters": [
-            "Boss1",
-            "\"attackTimer\"",
-            ">=",
-            "6"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ResetObjectTimer"
-          },
-          "parameters": [
-            "Boss1",
-            "\"attackTimer\""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CompareObjectTimer"
-          },
-          "parameters": [
-            "Boss1",
-            "\"shieldDownTimer\"",
-            ">=",
-            "8"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "EffectCapability::EffectBehavior::EnableEffect"
-          },
-          "parameters": [
-            "Player",
-            "Effect",
-            "\"Glow\"",
-            "no"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanObjectVariable"
-          },
-          "parameters": [
-            "Player",
-            "isOverPowered",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Minion1",
-            "896",
-            "-64",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Minion1",
-            "1056",
-            "672",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Minion1",
-            "1984",
-            "672",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Minion1",
-            "2432",
-            "32",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ActivateBehavior"
-          },
-          "parameters": [
-            "Boss1",
-            "FireBullet",
-            "yes"
-          ]
-        },
-        {
-          "type": {
-            "value": "BBText::SetBBText"
-          },
-          "parameters": [
-            "EnemyText",
-            "=",
-            "\"Shields back online. You can't touch this\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "BossFrame",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "EnemyText",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Montre"
-          },
-          "parameters": [
-            "TextFrame",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"dialogueTimer\""
-          ]
-        },
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-          },
-          "parameters": [
-            "EnergyPlate",
-            "Animation",
-            "=",
-            "\"EnergyPlateOff\""
-          ]
-        },
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-          },
-          "parameters": [
-            "Boss1",
-            "Animation",
-            "=",
-            "\"Activating\""
-          ]
-        },
-        {
-          "type": {
-            "value": "RemoveObjectTimer"
-          },
-          "parameters": [
-            "Boss1",
-            "\"shieldDownTimer\""
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AjoutObjConcern"
-              },
-              "parameters": [
-                "",
-                "FloorCircuit1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::EnableEffect"
-              },
-              "parameters": [
-                "FloorCircuit1",
-                "Effect",
-                "\"Effect\"",
-                "yes"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AjoutObjConcern"
-              },
-              "parameters": [
-                "",
-                "FloorCircuit3"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "EffectCapability::EffectBehavior::EnableEffect"
-              },
-              "parameters": [
-                "FloorCircuit3",
-                "Effect",
-                "\"Effect\"",
-                "yes"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CompareObjectTimer"
-          },
-          "parameters": [
-            "Boss1",
-            "\"shieldDownTimer\"",
-            "<",
-            "8"
-          ]
-        }
-      ],
-      "actions": [],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "EnergyPlate",
-                "id",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "EnergyPlate",
-                "Animation",
-                "=",
-                "\"EnergyPlateOn\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Player",
-                "EnergyPlate",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "TextPopUp",
-                    "Player.CenterX() - 60",
-                    "Player.CenterY() - 60",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Sticker::Sticker::Stick"
-                  },
-                  "parameters": [
-                    "TextPopUp",
-                    "Sticker",
-                    "Player",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "TextPopUp",
-                    "=",
-                    "15"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberObjectVariable"
-                  },
-                  "parameters": [
-                    "EnergyPlate",
-                    "id",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "controls.keyInteract"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Gamepads::C_Button_pressed"
-                      },
-                      "parameters": [
-                        "",
-                        "1",
-                        "\"A\"",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "EffectCapability::EffectBehavior::EnableEffect"
-                  },
-                  "parameters": [
-                    "Player",
-                    "Effect",
-                    "\"Glow\"",
-                    "yes"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanObjectVariable"
-                  },
-                  "parameters": [
-                    "Player",
-                    "isOverPowered",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "NumberObjectVariable"
-          },
-          "parameters": [
-            "EnergyPlate",
-            "id",
-            "=",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "EnergyPlate",
-            "Player",
-            "",
-            "",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "TextPopUp",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Boss1",
-            "Wall",
-            "",
-            "",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SeparateFromObjects"
-          },
-          "parameters": [
-            "Boss1",
-            "Wall",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "Health::Health::IsDead"
-          },
-          "parameters": [
-            "Boss1",
-            "Health",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PauseTimer"
-          },
-          "parameters": [
-            "",
-            "\"levelTimer\""
-          ]
-        },
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
-          },
-          "parameters": [
-            "Boss1",
-            "Animation"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "bestTimes.level1BestTime",
-                ">",
-                "TimerElapsedTime(\"levelTimer\")"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "bestTimes.level1BestTime",
-                "=",
-                "TimerElapsedTime(\"levelTimer\")"
-              ]
-            },
-            {
-              "type": {
-                "value": "EcrireFichierExp"
-              },
-              "parameters": [
-                "\"Storage\"",
-                "\"level1BestTime\"",
-                "bestTimes.level1BestTime"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "2"
-              ]
-            },
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Level2\"",
-                ""
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Barramentos",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3267,6 +2649,1182 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Shield down",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Boss1",
+                "\"attackTimer\"",
+                ">=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "Boss1",
+                "FireBullet",
+                "Boss1.CenterX()",
+                "Boss1.CenterY()",
+                "Bullet",
+                "Player",
+                "200*Boss1.modfier",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Boss1",
+                "\"attackTimer\"",
+                ">=",
+                "6"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Boss1",
+                "\"attackTimer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Boss1",
+                "\"shieldDownTimer\"",
+                ">=",
+                "shieldDownDuration - 0.8"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Player",
+                "Effect",
+                "\"Glow\"",
+                "no"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "EnergyPlate",
+                    "id",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "EnergyPlate",
+                    "Animation",
+                    "=",
+                    "\"EnergyPlateOff\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "FloorCircuit1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "FloorCircuit3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "FloorCircuit1",
+                    "Effect",
+                    "\"Effect\"",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "FloorCircuit3",
+                    "Effect",
+                    "\"Effect\"",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Boss1",
+                "\"shieldDownTimer\"",
+                ">=",
+                "shieldDownDuration - 0.6"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Player",
+                "Effect",
+                "\"Glow\"",
+                "yes"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "EnergyPlate",
+                    "id",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "EnergyPlate",
+                    "Animation",
+                    "=",
+                    "\"EnergyPlateOn\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "FloorCircuit1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "FloorCircuit3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "FloorCircuit1",
+                    "Effect",
+                    "\"Effect\"",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "FloorCircuit3",
+                    "Effect",
+                    "\"Effect\"",
+                    "no"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Boss1",
+                "\"shieldDownTimer\"",
+                ">=",
+                "shieldDownDuration - 0.4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Player",
+                "Effect",
+                "\"Glow\"",
+                "no"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "EnergyPlate",
+                    "id",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "EnergyPlate",
+                    "Animation",
+                    "=",
+                    "\"EnergyPlateOff\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "FloorCircuit1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "FloorCircuit3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "FloorCircuit1",
+                    "Effect",
+                    "\"Effect\"",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "FloorCircuit3",
+                    "Effect",
+                    "\"Effect\"",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Boss1",
+                "\"shieldDownTimer\"",
+                ">=",
+                "shieldDownDuration - 0.2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Player",
+                "Effect",
+                "\"Glow\"",
+                "yes"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "EnergyPlate",
+                    "id",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "EnergyPlate",
+                    "Animation",
+                    "=",
+                    "\"EnergyPlateOn\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "FloorCircuit1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "FloorCircuit3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "FloorCircuit1",
+                    "Effect",
+                    "\"Effect\"",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "FloorCircuit3",
+                    "Effect",
+                    "\"Effect\"",
+                    "no"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Boss1",
+                "\"shieldDownTimer\"",
+                ">=",
+                "shieldDownDuration"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Player",
+                "Effect",
+                "\"Glow\"",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Player",
+                "isOverPowered",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Minion1",
+                "896",
+                "-64",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Minion1",
+                "1056",
+                "672",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Minion1",
+                "1984",
+                "672",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Minion1",
+                "2432",
+                "32",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Boss1",
+                "FireBullet",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "EnemyText",
+                "=",
+                "\"Shields back online. You can't touch this\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "BossFrame",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "EnemyText",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "TextFrame",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"dialogueTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Boss1",
+                "Animation",
+                "=",
+                "\"Activating\""
+              ]
+            },
+            {
+              "type": {
+                "value": "RemoveObjectTimer"
+              },
+              "parameters": [
+                "Boss1",
+                "\"shieldDownTimer\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "FloorCircuit1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "FloorCircuit1",
+                    "Effect",
+                    "\"Effect\"",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "FloorCircuit3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "FloorCircuit3",
+                    "Effect",
+                    "\"Effect\"",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "EnergyPlate",
+                    "id",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "EnergyPlate",
+                    "Animation",
+                    "=",
+                    "\"EnergyPlateOff\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Boss1",
+                "\"shieldDownTimer\"",
+                "<",
+                "8"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "EnergyPlate",
+                    "id",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "EnergyPlate",
+                    "Animation",
+                    "=",
+                    "\"EnergyPlateOn\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player",
+                    "EnergyPlate",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "TextPopUp",
+                        "Player.PointX(\"Text\")",
+                        "Player.PointY(\"Text\")",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sticker::Sticker::Stick"
+                      },
+                      "parameters": [
+                        "TextPopUp",
+                        "Sticker",
+                        "Player",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "TextPopUp",
+                        "=",
+                        "15"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "EnergyPlate",
+                        "id",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "controls.keyInteract"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_pressed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"A\"",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::EnableEffect"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Effect",
+                        "\"Glow\"",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "Player",
+                        "isOverPowered",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "EnergyPlate",
+                "id",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "EnergyPlate",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "TextPopUp",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Boss1",
+            "Wall",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Boss1",
+            "Wall",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Boss1",
+            "GlassWall",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Boss1",
+            "GlassWall",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Health::Health::IsDead"
+          },
+          "parameters": [
+            "Boss1",
+            "Health",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PauseTimer"
+          },
+          "parameters": [
+            "",
+            "\"levelTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PauseObjectTimer"
+          },
+          "parameters": [
+            "Boss1",
+            "\"shieldDownTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PauseObjectTimer"
+          },
+          "parameters": [
+            "Boss1",
+            "\"attackTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+          },
+          "parameters": [
+            "Boss1",
+            "Animation"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "bestTimes.level1BestTime",
+                ">",
+                "TimerElapsedTime(\"levelTimer\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "bestTimes.level1BestTime",
+                "=",
+                "TimerElapsedTime(\"levelTimer\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Storage\"",
+                "\"level1BestTime\"",
+                "bestTimes.level1BestTime"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Level2\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "layers": [
