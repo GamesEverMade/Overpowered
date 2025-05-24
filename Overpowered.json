@@ -1296,7 +1296,6 @@
           "PercentDamageReduction": 0
         },
         {
-          "isFolded": true,
           "name": "SmoothCamera",
           "type": "SmoothCamera::SmoothCamera",
           "LeftwardSpeed": 0.9,
@@ -1349,12 +1348,11 @@
           "IsCalledManually": false
         },
         {
-          "isFolded": true,
+          "acceleration": 1200,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
           "rotateObject": false,
           "angularMaxSpeed": 1800,
-          "acceleration": 700,
           "deceleration": 1200,
           "allowDiagonals": true,
           "angleOffset": 0,
@@ -2800,7 +2798,7 @@
           "name": "Sticker",
           "type": "Sticker::Sticker",
           "OnlyFollowPosition": true,
-          "IsDestroyedWithParent": true
+          "IsDestroyedWithParent": false
         }
       ],
       "content": {

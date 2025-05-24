@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.2912258866911148,
+    "zoomFactor": 0.2817259932079595,
     "windowMask": false
   },
   "objectsGroups": [
@@ -147,8 +147,8 @@
       "layer": "",
       "name": "Wall",
       "persistentUuid": "0a51863f-f3f2-4c39-a7bc-55701040279a",
-      "width": 2528,
-      "x": 384,
+      "width": 2432,
+      "x": 480,
       "y": -384,
       "zOrder": 0,
       "numberProperties": [],
@@ -159,15 +159,15 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1472,
+      "height": 1504,
       "keepRatio": true,
       "layer": "",
       "name": "Wall",
       "persistentUuid": "fdbb4f94-cd0d-4f18-bcab-1b34a8a09ffe",
       "width": 96,
       "x": 384,
-      "y": -352,
-      "zOrder": 8,
+      "y": -384,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -181,10 +181,10 @@
       "layer": "",
       "name": "Wall",
       "persistentUuid": "383683e3-f0ca-46b6-9335-04f3d9a87c2c",
-      "width": 2496,
-      "x": 384,
+      "width": 2336,
+      "x": 480,
       "y": 1024,
-      "zOrder": 7,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -193,15 +193,15 @@
       "angle": 180,
       "customSize": true,
       "depth": 1,
-      "height": 1495,
+      "height": 1408,
       "keepRatio": true,
       "layer": "",
       "name": "Wall",
       "persistentUuid": "2728d6ca-cc11-467c-97d4-75ad11d0d9c1",
       "width": 96,
       "x": 2816,
-      "y": -375,
-      "zOrder": 8,
+      "y": -288,
+      "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -2655,6 +2655,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Shield down",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3702,6 +3703,35 @@
       "conditions": [
         {
           "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Boss1",
+            "Minion1",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "Boss1",
+            "Minion1",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "Health::Health::IsDead"
           },
           "parameters": [
@@ -3737,6 +3767,17 @@
           "parameters": [
             "Boss1",
             "\"attackTimer\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Boss1",
+            "Animation",
+            "=",
+            "\"Burned\""
           ]
         },
         {
