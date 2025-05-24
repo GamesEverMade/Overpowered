@@ -1176,6 +1176,38 @@
         "name": "Inactive",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Vulnerable.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Vulnerable",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Vulnerable2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Vulnerable2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/blue_screen.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\blue_screen.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NextLevelTeleporter.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NextLevelTeleporter",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -5280,6 +5312,91 @@
           ]
         },
         {
+          "name": "Vulnerable",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Vulnerable",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 30,
+                        "y": 30
+                      },
+                      {
+                        "x": 164,
+                        "y": 30
+                      },
+                      {
+                        "x": 164,
+                        "y": 164
+                      },
+                      {
+                        "x": 30,
+                        "y": 164
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Vulnerable2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 30,
+                        "y": 30
+                      },
+                      {
+                        "x": 164,
+                        "y": 30
+                      },
+                      {
+                        "x": 164,
+                        "y": 164
+                      },
+                      {
+                        "x": 30,
+                        "y": 164
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Burned",
           "useMultipleDirections": false,
           "directions": [
@@ -6662,6 +6779,133 @@
         "align": "left",
         "verticalTextAlignment": "top"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BlueScreen",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "BlueScreen",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\blue_screen.png",
+                  "points": [
+                    {
+                      "name": "Exit",
+                      "x": 1161.5,
+                      "y": 126
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 640,
+                    "y": 360
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1280,
+                        "y": 0
+                      },
+                      {
+                        "x": 1280,
+                        "y": 720
+                      },
+                      {
+                        "x": 0,
+                        "y": 720
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NextLevelTeleporter",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NextLevelTeleporter",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NextLevelTeleporter",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 32,
+                    "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -6757,6 +7001,12 @@
       },
       {
         "objectName": "Button"
+      },
+      {
+        "objectName": "BlueScreen"
+      },
+      {
+        "objectName": "NextLevelTeleporter"
       }
     ]
   },

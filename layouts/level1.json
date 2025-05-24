@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.2550455473354372,
+    "zoomFactor": 0.41943397827591183,
     "windowMask": false
   },
   "objectsGroups": [
@@ -30,6 +30,17 @@
         },
         {
           "name": "FloorCircuit3"
+        }
+      ]
+    },
+    {
+      "name": "Walls",
+      "objects": [
+        {
+          "name": "Wall"
+        },
+        {
+          "name": "GlassWall"
         }
       ]
     }
@@ -53,7 +64,7 @@
       "width": 0,
       "x": 648,
       "y": 352,
-      "zOrder": 3,
+      "zOrder": 100,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1047,8 +1058,8 @@
       "name": "FloorCircuitBlank",
       "persistentUuid": "cceba5f8-b7a7-453e-8557-abcdb913125c",
       "width": 4352,
-      "x": -544,
-      "y": -1056,
+      "x": -288,
+      "y": -1088,
       "zOrder": -1,
       "numberProperties": [],
       "stringProperties": [],
@@ -2191,7 +2202,7 @@
                 "Boss1",
                 "Animation",
                 "=",
-                "\"Burned\""
+                "\"Vulnerable\""
               ]
             },
             {
@@ -3739,6 +3750,12 @@
             "Health",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
         }
       ],
       "actions": [
@@ -3788,6 +3805,68 @@
             "Boss1",
             "Animation"
           ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "BlueScreen",
+            "Player.CenterX()",
+            "Player.CenterY()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "BlueScreen",
+            "=",
+            "98"
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "NextLevelTeleporter",
+            "BlueScreen.PointX(\"Exit\")",
+            "BlueScreen.PointY(\"Exit\")",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangePlan"
+          },
+          "parameters": [
+            "NextLevelTeleporter",
+            "=",
+            "99"
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Walls",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Boss1",
+            ""
+          ]
         }
       ],
       "events": [
@@ -3833,36 +3912,42 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Player",
+            "NextLevelTeleporter",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "2"
-              ]
-            },
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Level2\"",
-                ""
-              ]
-            }
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Level2\"",
+            ""
           ]
         }
       ]
