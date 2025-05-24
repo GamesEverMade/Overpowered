@@ -281,7 +281,7 @@
             "value": "FireBullet::FireBullet::AmmoQuantity"
           },
           "parameters": [
-            "Player",
+            "BSODGun",
             "FireBullet",
             "<",
             "8",
@@ -326,7 +326,7 @@
             "value": "FireBullet::FireBullet::AmmoQuantity"
           },
           "parameters": [
-            "Player",
+            "bs",
             "FireBullet",
             "<",
             "8",
@@ -340,7 +340,7 @@
             "value": "FireBullet::FireBullet::SetAmmoQuantityOp"
           },
           "parameters": [
-            "Player",
+            "BSODGun",
             "FireBullet",
             "+",
             "1",
@@ -1809,15 +1809,16 @@
               "actions": [
                 {
                   "type": {
-                    "value": "FireBullet::FireBullet::Fire"
+                    "value": "FireBullet::FireBullet::FireTowardPosition"
                   },
                   "parameters": [
-                    "Player",
+                    "BSODGun",
                     "FireBullet",
-                    "Player.CenterX()",
-                    "Player.CenterY()",
+                    "BSODGun.PointX(\"Attack\")",
+                    "BSODGun.PointY(\"Attack\")",
                     "PlayerBullet",
-                    "AngleBetweenPositions(Player.CenterX(),Player.CenterY(),CursorX(),CursorY())",
+                    "CursorX()",
+                    "CursorY()",
                     "375",
                     ""
                   ]
