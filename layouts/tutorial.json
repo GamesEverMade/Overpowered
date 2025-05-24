@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8141881203709941,
+    "zoomFactor": 0.33253870912507855,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -34,7 +34,7 @@
       "persistentUuid": "5a5aa18a-b162-46a9-a694-39276fad4cf8",
       "width": 0,
       "x": 648,
-      "y": 388,
+      "y": 452,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -167,7 +167,7 @@
       "layer": "",
       "name": "Wall",
       "persistentUuid": "7b7e8f5e-54ad-4bdb-8733-60e7f1583fd0",
-      "width": 1408,
+      "width": 1568,
       "x": 1440,
       "y": 64,
       "zOrder": 1,
@@ -217,7 +217,7 @@
       "layer": "",
       "name": "Wall",
       "persistentUuid": "9c5361aa-5f00-4ed7-907c-cbe525a2cb29",
-      "width": 1056,
+      "width": 1216,
       "x": 1792,
       "y": 416,
       "zOrder": 16,
@@ -251,7 +251,7 @@
       "name": "Wall",
       "persistentUuid": "daee3a55-6d65-4b2a-9ee1-557a7877421e",
       "width": 32,
-      "x": 2816,
+      "x": 3008,
       "y": 64,
       "zOrder": 19,
       "numberProperties": [],
@@ -267,7 +267,7 @@
       "name": "Exit",
       "persistentUuid": "a5e5fd08-c24a-4618-967a-2320ae4570b0",
       "width": 0,
-      "x": 2688,
+      "x": 2624,
       "y": 224,
       "zOrder": 1,
       "numberProperties": [],
@@ -357,8 +357,8 @@
       "name": "Tutorial5Interact",
       "persistentUuid": "83de8873-0e22-44f6-9fff-10d20035af76",
       "width": 0,
-      "x": 2680,
-      "y": 103,
+      "x": 2617,
+      "y": 98,
       "zOrder": 24,
       "numberProperties": [],
       "stringProperties": [],
@@ -420,11 +420,12 @@
       "height": 1920,
       "keepRatio": true,
       "layer": "",
+      "locked": true,
       "name": "FloorCircuitBlank",
       "persistentUuid": "41cc2715-b92e-440f-ab29-3860c47cb384",
       "width": 3872,
-      "x": -288,
-      "y": -640,
+      "x": -576,
+      "y": -576,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -459,6 +460,40 @@
       "x": 1163,
       "y": 404,
       "zOrder": 27,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 99,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TutorialOverPower",
+      "persistentUuid": "f3bc6b61-f776-4b25-9953-5b0f28893295",
+      "width": 370,
+      "x": 2542,
+      "y": 448,
+      "zOrder": 28,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "flippedX": true,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TutorialBossMinion",
+      "persistentUuid": "3fa1d3af-5bb6-4ebe-abe2-d6057b496a0c",
+      "width": 0,
+      "x": 2784,
+      "y": 160,
+      "zOrder": 29,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -717,6 +752,130 @@
         "align": "center",
         "verticalTextAlignment": "top"
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "TutorialOverPower",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]Your goal is to become OverPowered. When you glow, you're OP[/b]",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "Arial",
+        "align": "center",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TutorialBossMinion",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "id",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "modfier",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "isStunned",
+          "persistentUuid": "73d8028d-5043-474b-836b-fc72df469bc9",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 1000,
+          "CurrentHealth": 0,
+          "MaxHealth": 1000,
+          "DamageCooldown": 0.5,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Activating38.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 28,
+                        "y": 2
+                      },
+                      {
+                        "x": 164,
+                        "y": 2
+                      },
+                      {
+                        "x": 164,
+                        "y": 190
+                      },
+                      {
+                        "x": 28,
+                        "y": 190
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -744,10 +903,16 @@
         "objectName": "TutorialLevelComplete"
       },
       {
+        "objectName": "TutorialOverPower"
+      },
+      {
         "objectName": "Exit"
       },
       {
         "objectName": "TutorialDamageArea"
+      },
+      {
+        "objectName": "TutorialBossMinion"
       }
     ]
   },
@@ -1123,42 +1288,104 @@
       "actions": [
         {
           "type": {
-            "value": "EcrireFichierExp"
+            "value": "SetBooleanObjectVariable"
           },
           "parameters": [
-            "\"Storage\"",
-            "\"levelReached\"",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "TutorialLevelComplete",
-            "285",
-            "250",
-            "\"HUD\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "2"
-          ]
-        },
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"Level1\"",
+            "Player",
+            "isOverPowered",
+            "True",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::EnableEffect"
+          },
+          "parameters": [
+            "Player",
+            "Effect",
+            "\"Glow\"",
+            "yes"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "AjoutObjConcern"
+          },
+          "parameters": [
+            "",
+            "TutorialBossMinion"
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PickedInstancesCount"
+              },
+              "parameters": [
+                "TutorialBossMinion",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Storage\"",
+                "\"levelReached\"",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "TutorialLevelComplete",
+                "285",
+                "250",
+                "\"HUD\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Level1\"",
+                ""
+              ]
+            }
           ]
         }
       ]

@@ -118,7 +118,7 @@
           "parameters": [
             "AmmoBar",
             "=",
-            "Player.FireBullet::AmmoQuantity()",
+            "BSODGun.FireBullet::AmmoQuantity()",
             ""
           ]
         },
@@ -267,7 +267,7 @@
           "parameters": [
             "AmmoBar",
             "=",
-            "Player.FireBullet::AmmoQuantity()",
+            "BSODGun.FireBullet::AmmoQuantity()",
             ""
           ]
         }
@@ -326,7 +326,7 @@
             "value": "FireBullet::FireBullet::AmmoQuantity"
           },
           "parameters": [
-            "bs",
+            "BSODGun",
             "FireBullet",
             "<",
             "8",

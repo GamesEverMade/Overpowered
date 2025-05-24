@@ -1152,6 +1152,14 @@
         "name": "BSODGun",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Activating38.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Activating38.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1357,9 +1365,9 @@
           "IsCalledManually": false
         },
         {
-          "acceleration": 1200,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 1200,
           "rotateObject": false,
           "angularMaxSpeed": 1800,
           "deceleration": 1200,
@@ -6765,6 +6773,9 @@
         },
         {
           "name": "Minion1"
+        },
+        {
+          "name": "TutorialBossMinion"
         }
       ]
     },
@@ -6773,6 +6784,9 @@
       "objects": [
         {
           "name": "Minion1"
+        },
+        {
+          "name": "TutorialBossMinion"
         }
       ]
     }
