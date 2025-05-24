@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.33253870912507855,
+    "zoomFactor": 0.34375202416123274,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -694,43 +694,6 @@
     },
     {
       "assetStoreId": "",
-      "name": "TutorialLevelComplete",
-      "type": "BBText::BBText",
-      "variables": [
-        {
-          "name": "text",
-          "type": "string",
-          "value": ""
-        }
-      ],
-      "effects": [
-        {
-          "effectType": "Outline",
-          "name": "Effect",
-          "doubleParameters": {
-            "padding": 0,
-            "thickness": 2
-          },
-          "stringParameters": {
-            "color": "255;255;255"
-          },
-          "booleanParameters": {}
-        }
-      ],
-      "behaviors": [],
-      "content": {
-        "text": "LOADING LEVEL 1",
-        "opacity": 255,
-        "fontSize": 80,
-        "visible": true,
-        "color": "255;255;255",
-        "fontFamily": "Roboto-Regular.ttf",
-        "align": "center",
-        "verticalTextAlignment": "top"
-      }
-    },
-    {
-      "assetStoreId": "",
       "name": "TutorialAmmo",
       "type": "BBText::BBText",
       "variables": [
@@ -898,9 +861,6 @@
       },
       {
         "objectName": "Tutorial5Interact"
-      },
-      {
-        "objectName": "TutorialLevelComplete"
       },
       {
         "objectName": "TutorialOverPower"
@@ -1409,7 +1369,7 @@
               },
               "parameters": [
                 "",
-                "TutorialLevelComplete",
+                "TxtLevelComplete",
                 "285",
                 "250",
                 "\"HUD\""
@@ -1417,10 +1377,20 @@
             },
             {
               "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TxtLevelComplete",
+                "=",
+                "\"LOADING LEVEL 1\""
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
-                "2"
+                "1.5"
               ]
             },
             {

@@ -2445,7 +2445,7 @@
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 0,
+                    "x": 15,
                     "y": 6
                   },
                   "centerPoint": {
@@ -2555,7 +2555,7 @@
           "Health": 10,
           "CurrentHealth": 0,
           "MaxHealth": 10,
-          "DamageCooldown": 0.5,
+          "DamageCooldown": 0.3,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
           "DamageToBeApplied": 0,
@@ -3200,7 +3200,7 @@
           "RotateBullet": true,
           "FiringArc": 45,
           "BulletQuantity": 1,
-          "AngleVariance": 15,
+          "AngleVariance": 25,
           "BulletSpeedVariance": 10,
           "AmmoQuantity": 0,
           "ShotsPerReload": 0,
@@ -3225,10 +3225,10 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 10000,
+          "Health": 1,
           "CurrentHealth": 0,
-          "MaxHealth": 10000,
-          "DamageCooldown": 0.5,
+          "MaxHealth": 1,
+          "DamageCooldown": 0.3,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
           "DamageToBeApplied": 0,
@@ -6906,6 +6906,43 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "TxtLevelComplete",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "name": "text",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "content": {
+        "text": "LOADING LEVEL 1",
+        "opacity": 255,
+        "fontSize": 80,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "Roboto-Regular.ttf",
+        "align": "center",
+        "verticalTextAlignment": "top"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -6966,6 +7003,9 @@
           },
           {
             "objectName": "TextPopUp"
+          },
+          {
+            "objectName": "TxtLevelComplete"
           }
         ]
       },
