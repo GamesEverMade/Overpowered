@@ -2417,18 +2417,6 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Implementar interação com as duas barras de HP"
-    },
-    {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [],
@@ -2743,6 +2731,41 @@
           "conditions": [
             {
               "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Orninstain",
+                "isStunned",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Orninstain",
+                "Effect",
+                "\"Effect\"",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "Health::Health::IsDead"
               },
               "parameters": [
@@ -2910,7 +2933,19 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Orninstain",
+                "Effect",
+                "\"Effect\"",
+                "no"
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -3235,11 +3270,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
             }
           ]
         },
@@ -3404,6 +3434,41 @@
           "conditions": [
             {
               "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Islaughy",
+                "isStunned",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Islaughy",
+                "Effect",
+                "\"Effect\"",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "CollisionNP"
               },
               "parameters": [
@@ -3472,7 +3537,19 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Islaughy",
+                "Effect",
+                "\"Effect\"",
+                "no"
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
