@@ -1160,6 +1160,22 @@
         "name": "assets\\Activating38.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Exit.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Exit.png\",\"extension\":\".png\"}",
+        "name": "assets\\Exit.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Inactive.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Inactive.png\"}",
+        "name": "Inactive",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

@@ -264,7 +264,7 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Exit",
+      "name": "PowerUpPad",
       "persistentUuid": "a5e5fd08-c24a-4618-967a-2320ae4570b0",
       "width": 0,
       "x": 2624,
@@ -599,7 +599,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Exit",
+      "name": "PowerUpPad",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -607,7 +607,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "Exit",
+          "name": "Inactive",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -617,7 +617,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Exit",
+                  "image": "Inactive",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -906,7 +906,7 @@
         "objectName": "TutorialOverPower"
       },
       {
-        "objectName": "Exit"
+        "objectName": "PowerUpPad"
       },
       {
         "objectName": "TutorialDamageArea"
@@ -1250,62 +1250,109 @@
           },
           "parameters": [
             "Player",
-            "Exit",
+            "PowerUpPad",
             "",
             "",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Or"
-          },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "KeyFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "controls.keyInteract"
-              ]
-            },
-            {
-              "type": {
-                "value": "Gamepads::C_Button_pressed"
-              },
-              "parameters": [
-                "",
-                "1",
-                "\"A\"",
-                ""
-              ]
-            }
           ]
         }
       ],
       "actions": [
         {
           "type": {
-            "value": "SetBooleanObjectVariable"
+            "value": "ChangeColor"
           },
           "parameters": [
-            "Player",
-            "isOverPowered",
-            "True",
-            ""
+            "PowerUpPad",
+            "\"234;241;150\""
           ]
-        },
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "controls.keyInteract"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Gamepads::C_Button_pressed"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "\"A\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Player",
+                "isOverPowered",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Player",
+                "Effect",
+                "\"Glow\"",
+                "yes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
         {
           "type": {
-            "value": "EffectCapability::EffectBehavior::EnableEffect"
+            "inverted": true,
+            "value": "CollisionNP"
           },
           "parameters": [
             "Player",
-            "Effect",
-            "\"Glow\"",
-            "yes"
+            "PowerUpPad",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ChangeColor"
+          },
+          "parameters": [
+            "PowerUpPad",
+            "\"255;255;255\""
           ]
         }
       ]
