@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4633111824514053,
+    "zoomFactor": 0.2725359896772977,
     "windowMask": false
   },
   "objectsGroups": [
@@ -30,17 +30,6 @@
         },
         {
           "name": "FloorCircuit3"
-        }
-      ]
-    },
-    {
-      "name": "Walls",
-      "objects": [
-        {
-          "name": "Wall"
-        },
-        {
-          "name": "GlassWall"
         }
       ]
     }
@@ -1643,6 +1632,16 @@
       "actions": [
         {
           "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "levelEnding",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "CentreCamera"
           },
           "parameters": [
@@ -1716,15 +1715,6 @@
             "Animation",
             "=",
             "\"Walk\""
-          ]
-        },
-        {
-          "type": {
-            "value": "ResetTimer"
-          },
-          "parameters": [
-            "",
-            "\"levelTimer\""
           ]
         },
         {
@@ -1891,6 +1881,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Boss AI",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3892,86 +3883,12 @@
         },
         {
           "type": {
-            "value": "Create"
+            "value": "SetBooleanVariable"
           },
           "parameters": [
-            "",
-            "BlueScreen",
-            "Player.CenterX()",
-            "Player.CenterY()",
+            "levelEnding",
+            "True",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ChangePlan"
-          },
-          "parameters": [
-            "BlueScreen",
-            "=",
-            "98"
-          ]
-        },
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "NextLevelTeleporter",
-            "BlueScreen.PointX(\"Exit\")",
-            "BlueScreen.PointY(\"Exit\")",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ChangePlan"
-          },
-          "parameters": [
-            "NextLevelTeleporter",
-            "=",
-            "99"
-          ]
-        },
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Walls",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Boss1",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "CentreCamera"
-          },
-          "parameters": [
-            "",
-            "BlueScreen",
-            "",
-            "",
-            "0"
-          ]
-        },
-        {
-          "type": {
-            "value": "ActivateBehavior"
-          },
-          "parameters": [
-            "Player",
-            "SmoothCamera",
-            "no"
           ]
         }
       ],
@@ -4026,111 +3943,6 @@
       "conditions": [
         {
           "type": {
-            "value": "AjoutObjConcern"
-          },
-          "parameters": [
-            "",
-            "BlueScreen"
-          ]
-        }
-      ],
-      "actions": [],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PickedInstancesCount"
-              },
-              "parameters": [
-                "BlueScreen",
-                "=",
-                "1"
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Player",
-                    "BlueScreen",
-                    "",
-                    "",
-                    "no"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ActivateBehavior"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "yes"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Player",
-                    "BlueScreen",
-                    "",
-                    "",
-                    "no"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AddForceAL"
-                  },
-                  "parameters": [
-                    "Player",
-                    "Player.AngleToObject(BlueScreen)",
-                    "1000",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ActivateBehavior"
-                  },
-                  "parameters": [
-                    "Player",
-                    "TopDownMovement",
-                    "no"
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
             "value": "CollisionNP"
           },
           "parameters": [
@@ -4150,7 +3962,7 @@
           "parameters": [
             "",
             "TxtLevelComplete",
-            "285",
+            "200",
             "250",
             "\"HUD\""
           ]
@@ -4162,7 +3974,7 @@
           "parameters": [
             "TxtLevelComplete",
             "=",
-            "\"LOADING LEVEL 2\""
+            "\"LOADING NEXT LEVEL...\""
           ]
         },
         {
@@ -4180,6 +3992,16 @@
           "parameters": [
             "",
             "\"Level2\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "levelEnding",
+            "False",
             ""
           ]
         }

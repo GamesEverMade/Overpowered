@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.34375202416123274,
+    "zoomFactor": 0.8141881203709943,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -519,7 +519,7 @@
         "fontSize": 20,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "Roboto-Regular.ttf",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
         "align": "center",
         "verticalTextAlignment": "top"
       }
@@ -543,7 +543,7 @@
         "fontSize": 20,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "Roboto-Regular.ttf",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
         "align": "center",
         "verticalTextAlignment": "top"
       }
@@ -567,7 +567,7 @@
         "fontSize": 20,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "Roboto-Regular.ttf",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
         "align": "center",
         "verticalTextAlignment": "top"
       }
@@ -591,7 +591,7 @@
         "fontSize": 20,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "Roboto-Regular.ttf",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
         "align": "center",
         "verticalTextAlignment": "top"
       }
@@ -687,7 +687,7 @@
         "fontSize": 20,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "Roboto-Regular.ttf",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
         "align": "center",
         "verticalTextAlignment": "top"
       }
@@ -711,7 +711,7 @@
         "fontSize": 20,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "Roboto-Regular.ttf",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
         "align": "center",
         "verticalTextAlignment": "top"
       }
@@ -729,7 +729,7 @@
         "fontSize": 20,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "Arial",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
         "align": "center",
         "verticalTextAlignment": "top"
       }
@@ -980,11 +980,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     },
     {
       "type": "BuiltinCommonInstructions::Standard",

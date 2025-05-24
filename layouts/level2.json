@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.39251611754882754,
+    "zoomFactor": 0.39251611754882776,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -56,7 +56,7 @@
       "width": 0,
       "x": 680,
       "y": 352,
-      "zOrder": 6,
+      "zOrder": 100,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1618,7 +1618,7 @@
       "name": "BossHealthBar",
       "persistentUuid": "c6b9182d-cca1-4a1c-8430-126d6536ce84",
       "width": 320,
-      "x": 448,
+      "x": 416,
       "y": 100,
       "zOrder": 26,
       "numberProperties": [],
@@ -1641,7 +1641,7 @@
       "name": "BossHealthBar",
       "persistentUuid": "9b6e5e54-9ccd-468d-a96d-d95a348e4097",
       "width": 320,
-      "x": 448,
+      "x": 416,
       "y": 42,
       "zOrder": 26,
       "numberProperties": [],
@@ -2080,6 +2080,16 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "levelEnding",
+            "False",
+            ""
+          ]
+        },
         {
           "type": {
             "value": "Cache"
@@ -2796,6 +2806,17 @@
                 "0.4",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Heal"
+              },
+              "parameters": [
+                "Islaughy",
+                "Health",
+                "9999",
+                ""
+              ]
             }
           ],
           "events": [
@@ -2804,56 +2825,83 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "BBText::SetBBText"
-                  },
-                  "parameters": [
-                    "EnemyText",
-                    "=",
-                    "\"My greater half... You shall pay, human\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "BossFrame",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "EnemyText",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Montre"
-                  },
-                  "parameters": [
-                    "TextFrame",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ResetTimer"
+                    "value": "AjoutObjConcern"
                   },
                   "parameters": [
                     "",
-                    "\"dialogueTimer\""
+                    "Islaughy"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PickedInstancesCount"
+                      },
+                      "parameters": [
+                        "Islaughy",
+                        ">",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "EnemyText",
+                        "=",
+                        "\"Overcharge the cannons! Exterminate!\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "BossFrame",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "EnemyText",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "TextFrame",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"dialogueTimer\""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -3365,12 +3413,48 @@
                 "=",
                 "4"
               ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Heal"
+              },
+              "parameters": [
+                "Orninstain",
+                "Health",
+                "9999",
+                ""
+              ]
             }
           ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
+                {
+                  "type": {
+                    "value": "AjoutObjConcern"
+                  },
+                  "parameters": [
+                    "",
+                    "Orninstain"
+                  ]
+                }
+              ],
+              "actions": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PickedInstancesCount"
+                  },
+                  "parameters": [
+                    "Orninstain",
+                    ">",
+                    "0"
+                  ]
+                },
                 {
                   "type": {
                     "value": "BuiltinCommonInstructions::Once"
@@ -3386,7 +3470,7 @@
                   "parameters": [
                     "EnemyText",
                     "=",
-                    "\"Overcharge the cannons! Exterminate all humans!\""
+                    "\"My greater half... You shall pay, human\""
                   ]
                 },
                 {
@@ -4109,17 +4193,7 @@
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "PauseTimer"
-              },
-              "parameters": [
-                "",
-                "\"levelTimer\""
-              ]
-            }
-          ],
+          "actions": [],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -4141,7 +4215,17 @@
                   "parameters": []
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"levelTimer\""
+                  ]
+                }
+              ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -4166,6 +4250,16 @@
                   "actions": [
                     {
                       "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "levelEnding",
+                        "True",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "SetNumberVariable"
                       },
                       "parameters": [
@@ -4183,40 +4277,105 @@
                         "\"level2BestTime\"",
                         "bestTimes.level2BestTime"
                       ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
+                    },
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Wait"
+                        "value": "RemoveTimer"
                       },
                       "parameters": [
-                        "2"
+                        "",
+                        "\"MagneticFloorTimer\""
                       ]
                     },
                     {
                       "type": {
-                        "value": "Scene"
+                        "value": "RemoveTimer"
                       },
                       "parameters": [
                         "",
-                        "\"Level3\"",
-                        ""
+                        "\"OverPowerDurationTimer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "RemoveTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"OverPowerTimer\""
                       ]
                     }
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "NextLevelTeleporter",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "TxtLevelComplete",
+                "200",
+                "250",
+                "\"HUD\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TxtLevelComplete",
+                "=",
+                "\"LOADING NEXT LEVEL...\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1.5"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Ending\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "levelEnding",
+                "False",
+                ""
               ]
             }
           ]
@@ -4229,7 +4388,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Buttons",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4247,6 +4405,18 @@
                 "",
                 "",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "MagneticFloor",
+                "Animation",
+                "=",
+                "\"MagneticGroundOn\""
               ]
             }
           ],

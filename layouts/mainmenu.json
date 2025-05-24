@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4950840073748888,
+    "zoomFactor": 0.4789341884535246,
     "windowMask": false
   },
   "objectsGroups": [
@@ -48,7 +48,7 @@
       "name": "Title",
       "persistentUuid": "7be02d66-531a-4ffb-bf8a-8ec640b3cba4",
       "width": 0,
-      "x": 119,
+      "x": 466,
       "y": 32,
       "zOrder": 4,
       "numberProperties": [],
@@ -100,7 +100,7 @@
           "smoothed": true,
           "underlined": false,
           "string": "Start Game",
-          "font": "Roboto-Regular.ttf",
+          "font": "Perfect DOS VGA 437 Win.ttf",
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
@@ -123,7 +123,7 @@
             "smoothed": true,
             "underlined": false,
             "text": "Start Game",
-            "font": "Roboto-Regular.ttf",
+            "font": "Perfect DOS VGA 437 Win.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
@@ -185,7 +185,7 @@
           "smoothed": true,
           "underlined": false,
           "string": "Settings",
-          "font": "Roboto-Regular.ttf",
+          "font": "Perfect DOS VGA 437 Win.ttf",
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
@@ -208,7 +208,7 @@
             "smoothed": true,
             "underlined": false,
             "text": "Settings",
-            "font": "Roboto-Regular.ttf",
+            "font": "Perfect DOS VGA 437 Win.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
@@ -240,8 +240,8 @@
         "fontSize": 140,
         "visible": true,
         "color": "0;0;0",
-        "fontFamily": "Roboto-Regular.ttf",
-        "align": "left",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
+        "align": "center",
         "verticalTextAlignment": "top"
       }
     },
@@ -288,7 +288,7 @@
           "smoothed": true,
           "underlined": false,
           "string": "Time Attack",
-          "font": "Roboto-Regular.ttf",
+          "font": "Perfect DOS VGA 437 Win.ttf",
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
@@ -311,7 +311,7 @@
             "smoothed": true,
             "underlined": false,
             "text": "Time Attack",
-            "font": "Roboto-Regular.ttf",
+            "font": "Perfect DOS VGA 437 Win.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
@@ -383,7 +383,7 @@
           "smoothed": true,
           "underlined": false,
           "string": "Level 1",
-          "font": "Roboto-Regular.ttf",
+          "font": "Perfect DOS VGA 437 Win.ttf",
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
@@ -406,7 +406,7 @@
             "smoothed": true,
             "underlined": false,
             "text": "Level 1",
-            "font": "Roboto-Regular.ttf",
+            "font": "Perfect DOS VGA 437 Win.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
@@ -478,7 +478,7 @@
           "smoothed": true,
           "underlined": false,
           "string": "Level 2",
-          "font": "Roboto-Regular.ttf",
+          "font": "Perfect DOS VGA 437 Win.ttf",
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
@@ -501,7 +501,7 @@
             "smoothed": true,
             "underlined": false,
             "text": "Level 2",
-            "font": "Roboto-Regular.ttf",
+            "font": "Perfect DOS VGA 437 Win.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
@@ -573,7 +573,7 @@
           "smoothed": true,
           "underlined": false,
           "string": "Level 3",
-          "font": "Roboto-Regular.ttf",
+          "font": "Perfect DOS VGA 437 Win.ttf",
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
@@ -596,7 +596,7 @@
             "smoothed": true,
             "underlined": false,
             "text": "Level 3",
-            "font": "Roboto-Regular.ttf",
+            "font": "Perfect DOS VGA 437 Win.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
@@ -633,7 +633,7 @@
       "effects": [],
       "behaviors": [],
       "string": "Text",
-      "font": "",
+      "font": "Perfect DOS VGA 437 Win.ttf",
       "textAlignment": "left",
       "characterSize": 20,
       "color": {
@@ -656,7 +656,7 @@
         "smoothed": true,
         "underlined": false,
         "text": "Text",
-        "font": "",
+        "font": "Perfect DOS VGA 437 Win.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "center",
         "characterSize": 20,
@@ -744,6 +744,38 @@
             "Effect",
             "\"Effect\"",
             "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetStringVariable"
+          },
+          "parameters": [
+            "currentLevel",
+            "=",
+            "\"Settings\""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCameraCenterX"
+          },
+          "parameters": [
+            "",
+            "=",
+            "Title.CenterX()",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ModGlobalVolume"
+          },
+          "parameters": [
+            "",
+            "=",
+            "globalVolume"
           ]
         }
       ],

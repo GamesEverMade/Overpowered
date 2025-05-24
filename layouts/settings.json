@@ -9,7 +9,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -17,8 +17,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 0.546875,
+    "snap": true,
+    "zoomFactor": 0.7619362677197604,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -26,16 +26,226 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 38.4,
+      "height": 80,
       "keepRatio": true,
       "layer": "",
       "name": "BtnBack",
       "persistentUuid": "6e4d6373-27d1-4e77-998c-81bfca4d5a26",
-      "width": 0,
-      "x": 27,
-      "y": 588,
+      "width": 200,
+      "x": 32,
+      "y": 576,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 38.4,
+      "height": 80,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BtnClearSave",
+      "persistentUuid": "906ea005-b7f9-4db7-9a7f-033c12243a4d",
+      "width": 200,
+      "x": 1024,
+      "y": 576,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 96,
+      "layer": "",
+      "name": "BtnKeybind",
+      "persistentUuid": "c55694f3-f1f8-4108-99b6-d8717d3157e6",
+      "width": 160,
+      "x": 128,
+      "y": 416,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Left"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 41.739130434782595,
+      "height": 96,
+      "layer": "",
+      "name": "BtnKeybind",
+      "persistentUuid": "e1228c9a-a861-49b6-95f2-c7f3a7223c29",
+      "width": 160,
+      "x": 768,
+      "y": 288,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Dash"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 43.3333333333333,
+      "height": 96,
+      "layer": "",
+      "name": "BtnKeybind",
+      "persistentUuid": "d93c8d33-5382-4250-908a-dd9f5dfb8533",
+      "width": 160,
+      "x": 320,
+      "y": 288,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Up"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 50.08695652173911,
+      "height": 96,
+      "layer": "",
+      "name": "BtnKeybind",
+      "persistentUuid": "170d4b76-8de6-4348-8e57-e4813cef884a",
+      "width": 160,
+      "x": 320,
+      "y": 416,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Down"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 41.739130434782595,
+      "height": 96,
+      "layer": "",
+      "name": "BtnKeybind",
+      "persistentUuid": "f618a700-c877-403a-86ad-22db86f9159c",
+      "width": 160,
+      "x": 512,
+      "y": 416,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Right"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 41.739130434782595,
+      "height": 96,
+      "layer": "",
+      "name": "BtnKeybind",
+      "persistentUuid": "3725c044-0362-46df-b14f-23992f2678db",
+      "width": 160,
+      "x": 896,
+      "y": -192,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "AltAttack"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 41.739130434782595,
+      "height": 96,
+      "layer": "",
+      "name": "BtnKeybind",
+      "persistentUuid": "c00479cc-29df-458e-82fd-4cc7296f5d29",
+      "width": 160,
+      "x": 512,
+      "y": 288,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Start"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 41.739130434782595,
+      "height": 96,
+      "layer": "",
+      "name": "BtnKeybind",
+      "persistentUuid": "2ee2dbc8-c5c2-4c92-a530-13e7c1c65d85",
+      "width": 160,
+      "x": 896,
+      "y": -192,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Attack"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "VolumeSlider",
+      "persistentUuid": "12cd04d1-c2ef-4942-9741-5e894ac6851c",
+      "width": 0,
+      "x": 254,
+      "y": 83,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -46,12 +256,79 @@
       "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "BtnClearSave",
-      "persistentUuid": "906ea005-b7f9-4db7-9a7f-033c12243a4d",
+      "name": "TxtSettings",
+      "persistentUuid": "b78e5a21-5fb2-4d8d-9f03-1ded2f4b3b97",
       "width": 0,
-      "x": 978,
-      "y": 566,
-      "zOrder": 2,
+      "x": 64,
+      "y": 224,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "txt",
+          "type": "string",
+          "value": "Change keybinds:"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TxtSettings",
+      "persistentUuid": "3e7323f5-ad69-483c-9e52-27d3f059a5ed",
+      "width": 0,
+      "x": 64,
+      "y": 64,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "txt",
+          "type": "string",
+          "value": "Volume:"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 41.739130434782595,
+      "height": 96,
+      "layer": "",
+      "name": "BtnKeybind",
+      "persistentUuid": "f5c35e94-37b2-48e7-b3ad-a44c574f56c0",
+      "width": 160,
+      "x": 768,
+      "y": 416,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": "Interact"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 100,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BtnDefaultControls",
+      "persistentUuid": "78b45aab-4c70-4aad-be28-906ca5d46923",
+      "width": 186,
+      "x": 1024,
+      "y": 288,
+      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -101,9 +378,9 @@
           "smoothed": true,
           "underlined": false,
           "string": "Back",
-          "font": "Roboto-Regular.ttf",
+          "font": "Perfect DOS VGA 437 Win.ttf",
           "textAlignment": "center",
-          "characterSize": 40,
+          "characterSize": 30,
           "color": {
             "b": 255,
             "g": 255,
@@ -124,10 +401,10 @@
             "smoothed": true,
             "underlined": false,
             "text": "Back",
-            "font": "Roboto-Regular.ttf",
+            "font": "Perfect DOS VGA 437 Win.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
-            "characterSize": 40,
+            "characterSize": 30,
             "color": "255;255;255"
           }
         },
@@ -185,10 +462,10 @@
           "italic": false,
           "smoothed": true,
           "underlined": false,
-          "string": "Clear Save",
-          "font": "Roboto-Regular.ttf",
+          "string": "Clear\nSave",
+          "font": "Perfect DOS VGA 437 Win.ttf",
           "textAlignment": "center",
-          "characterSize": 40,
+          "characterSize": 30,
           "color": {
             "b": 255,
             "g": 255,
@@ -208,11 +485,323 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Clear Save",
-            "font": "Roboto-Regular.ttf",
+            "text": "Clear\nSave",
+            "font": "Perfect DOS VGA 437 Win.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
-            "characterSize": 40,
+            "characterSize": 30,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 0,
+          "height": 100,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Green Button With Stone Frame_Pressed.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 250
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "TxtSettings",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "name": "txt",
+          "type": "string",
+          "value": "\"\""
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "Text",
+        "opacity": 255,
+        "fontSize": 40,
+        "visible": true,
+        "color": "0;0;0",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
+        "align": "left",
+        "verticalTextAlignment": "top"
+      }
+    },
+    {
+      "assetStoreId": "0364dbe0c9a504055bcfd65a3e898b58b0cb0aea76c15cc0b9961815b88ba4e6",
+      "name": "BtnKeybind",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
+      "variables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "BlackAndWhite",
+          "name": "Effect",
+          "doubleParameters": {
+            "opacity": 1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 2,
+        "BottomPadding": 0,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0.2
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 0,
+          "height": 100,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Green Button With Stone Frame_Hovered.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 260
+        },
+        "Idle": {
+          "bottomMargin": 0,
+          "height": 100,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Green Button With Stone Frame_Idle.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 250
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "",
+          "font": "Perfect DOS VGA 437 Win.ttf",
+          "textAlignment": "center",
+          "characterSize": 25,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "",
+            "font": "Perfect DOS VGA 437 Win.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 25,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 0,
+          "height": 96,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Green Button With Stone Frame_Pressed.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 160
+        }
+      }
+    },
+    {
+      "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
+      "name": "VolumeSlider",
+      "type": "PanelSpriteSlider::PanelSpriteSlider",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 6,
+        "BarLeftPadding": 6,
+        "BarRightPadding": 6,
+        "BarBottomPadding": 6,
+        "LabelMargin": 6,
+        "InitialValue": 50,
+        "MinValue": 0
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 4,
+          "height": 28,
+          "leftMargin": 2,
+          "rightMargin": 2,
+          "texture": "Square White Slider Border.png",
+          "tiled": false,
+          "topMargin": 4,
+          "width": 265
+        },
+        "FillBar": {
+          "bottomMargin": 2,
+          "height": 16,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Square White Slider Fill Bar.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 16
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "",
+          "font": "Perfect DOS VGA 437 Win.ttf",
+          "textAlignment": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "",
+            "font": "Perfect DOS VGA 437 Win.ttf",
+            "textAlignment": "",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
+        },
+        "Thumb": {
+          "bottomMargin": 2,
+          "height": 36,
+          "leftMargin": 1,
+          "rightMargin": 1,
+          "texture": "Square White Slider Thumb.png",
+          "tiled": false,
+          "topMargin": 2,
+          "width": 22
+        }
+      }
+    },
+    {
+      "assetStoreId": "0364dbe0c9a504055bcfd65a3e898b58b0cb0aea76c15cc0b9961815b88ba4e6",
+      "name": "BtnDefaultControls",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
+      "variables": [
+        {
+          "name": "function",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 2,
+        "BottomPadding": 0,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0.2
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 0,
+          "height": 100,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Green Button With Stone Frame_Hovered.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 260
+        },
+        "Idle": {
+          "bottomMargin": 0,
+          "height": 100,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "Green Button With Stone Frame_Idle.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 250
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Reset\ndefaults",
+          "font": "Perfect DOS VGA 437 Win.ttf",
+          "textAlignment": "center",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Reset\ndefaults",
+            "font": "Perfect DOS VGA 437 Win.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 30,
             "color": "255;255;255"
           }
         },
@@ -236,46 +825,43 @@
         "objectName": "BtnBack"
       },
       {
+        "objectName": "BtnKeybind"
+      },
+      {
+        "objectName": "BtnDefaultControls"
+      },
+      {
         "objectName": "BtnClearSave"
+      },
+      {
+        "objectName": "TxtSettings"
+      },
+      {
+        "objectName": "VolumeSlider"
       }
     ]
   },
   "events": [
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-          },
-          "parameters": [
-            "BtnBack",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Scene"
-          },
-          "parameters": [
-            "",
-            "\"MainMenu\"",
-            ""
-          ]
-        }
-      ]
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Mouse controls are not working on keybinds, I will remove the option for now"
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+            "value": "DepartScene"
           },
           "parameters": [
-            "BtnClearSave",
             ""
           ]
         }
@@ -283,21 +869,1694 @@
       "actions": [
         {
           "type": {
-            "value": "DeleteFichier"
+            "value": "SetStringVariable"
           },
           "parameters": [
-            "\"Storage\""
+            "currentLevel",
+            "=",
+            "\"Settings\""
           ]
         },
+        {
+          "type": {
+            "value": "ModGlobalVolume"
+          },
+          "parameters": [
+            "",
+            "=",
+            "globalVolume"
+          ]
+        },
+        {
+          "type": {
+            "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+          },
+          "parameters": [
+            "VolumeSlider",
+            "=",
+            "globalVolume",
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "function",
+                "=",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "key",
+                "=",
+                "controls.keyLeft"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "function",
+                "=",
+                "\"Right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "key",
+                "=",
+                "controls.keyRight"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "function",
+                "=",
+                "\"Up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "key",
+                "=",
+                "controls.keyUp"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "function",
+                "=",
+                "\"Down\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "key",
+                "=",
+                "controls.keyDown"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "function",
+                "=",
+                "\"Start\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "key",
+                "=",
+                "controls.keyStart"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "function",
+                "=",
+                "\"Attack\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "key",
+                "=",
+                "controls.keyAttack"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "BtnKeybind"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "function",
+                "=",
+                "\"AltAttack\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "key",
+                "=",
+                "controls.keyAltAttack"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "BtnKeybind"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "function",
+                "=",
+                "\"Dash\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "key",
+                "=",
+                "controls.keyDash"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "function",
+                "=",
+                "\"Interact\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "key",
+                "=",
+                "controls.keyInteract"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "BtnKeybind",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "BtnKeybind.function + NewLine() + \"[\" + BtnKeybind.key + \"]\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "BtnKeybind",
+                "Effect",
+                "\"Effect\"",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "TxtSettings",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "TxtSettings",
+                "=",
+                "TxtSettings.txt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Remove keybind",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "controls.keyLeft",
+                "!=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "controls.keyRight",
+                "!=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "controls.keyUp",
+                "!=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "controls.keyDown",
+                "!=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "controls.keyAltAttack",
+                "!=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "controls.keyAttack",
+                "!=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "controls.keyDash",
+                "!=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "controls.keyInteract",
+                "!=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "StringVariable"
+              },
+              "parameters": [
+                "controls.keyStart",
+                "!=",
+                "\"\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::EnableEffect"
+                      },
+                      "parameters": [
+                        "BtnKeybind",
+                        "Effect",
+                        "\"Effect\"",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "BtnKeybind",
+                        "function",
+                        "=",
+                        "\"Left\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "controls.keyLeft",
+                        "=",
+                        "\"\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "BtnKeybind",
+                        "function",
+                        "=",
+                        "\"Right\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "controls.keyRight",
+                        "=",
+                        "\"\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "BtnKeybind",
+                        "function",
+                        "=",
+                        "\"Up\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "controls.keyUp",
+                        "=",
+                        "\"\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "BtnKeybind",
+                        "function",
+                        "=",
+                        "\"Down\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "controls.keyDown",
+                        "=",
+                        "\"\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "BtnKeybind",
+                        "function",
+                        "=",
+                        "\"Start\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "controls.keyStart",
+                        "=",
+                        "\"\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "BtnKeybind",
+                        "function",
+                        "=",
+                        "\"Attack\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "controls.keyAttack",
+                        "=",
+                        "\"\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "BtnKeybind",
+                        "function",
+                        "=",
+                        "\"AltAttack\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "controls.keyAltAttack",
+                        "=",
+                        "\"\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "BtnKeybind",
+                        "function",
+                        "=",
+                        "\"Dash\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "controls.keyDash",
+                        "=",
+                        "\"\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "StringObjectVariable"
+                      },
+                      "parameters": [
+                        "BtnKeybind",
+                        "function",
+                        "=",
+                        "\"Interact\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "controls.keyInteract",
+                        "=",
+                        "\"\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Change keybind",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnyKeyPressed"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyLeft",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "function",
+                    "=",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyLeft",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "key",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "BtnKeybind.function + NewLine() + \"[\" + BtnKeybind.key + \"]\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyRight",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "function",
+                    "=",
+                    "\"Right\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyRight",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "key",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "BtnKeybind.function + NewLine() + \"[\" + BtnKeybind.key + \"]\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyUp",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "function",
+                    "=",
+                    "\"Up\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyUp",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "key",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "BtnKeybind.function + NewLine() + \"[\" + BtnKeybind.key + \"]\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyDown",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "function",
+                    "=",
+                    "\"Down\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyDown",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "key",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "BtnKeybind.function + NewLine() + \"[\" + BtnKeybind.key + \"]\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyStart",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "function",
+                    "=",
+                    "\"Start\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyStart",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "key",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "BtnKeybind.function + NewLine() + \"[\" + BtnKeybind.key + \"]\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyAttack",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "function",
+                    "=",
+                    "\"Attack\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyAttack",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "key",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "BtnKeybind.function + NewLine() + \"[\" + BtnKeybind.key + \"]\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyAltAttack",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "function",
+                    "=",
+                    "\"AltAttack\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyAltAttack",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "key",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "BtnKeybind.function + NewLine() + \"[\" + BtnKeybind.key + \"]\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyDash",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "function",
+                    "=",
+                    "\"Dash\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyDash",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "key",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "BtnKeybind.function + NewLine() + \"[\" + BtnKeybind.key + \"]\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyInteract",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "function",
+                    "=",
+                    "\"Interact\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "controls.keyInteract",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "key",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "BtnKeybind.function + NewLine() + \"[\" + BtnKeybind.key + \"]\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "Effect",
+                    "\"Effect\"",
+                    "no"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Other buttons",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BtnBack",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"MainMenu\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BtnClearSave",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DeleteFichier"
+              },
+              "parameters": [
+                "\"Storage\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "levelReached",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Reset default controls",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BtnDefaultControls",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "controls.keyLeft",
+                "=",
+                "\"a\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "controls.keyRight",
+                "=",
+                "\"d\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "controls.keyUp",
+                "=",
+                "\"w\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "controls.keyDown",
+                "=",
+                "\"s\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "controls.keyDash",
+                "=",
+                "\"Space\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "controls.keyInteract",
+                "=",
+                "\"e\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "controls.keyStart",
+                "=",
+                "\"Escape\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "BUG: Não está atualizando o texto de todos os botões"
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "BtnKeybind",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "BtnKeybind.function + NewLine() + \"[\" + BtnKeybind.key + \"]\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "BtnKeybind",
+                    "Effect",
+                    "\"Effect\"",
+                    "no"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonFromTextReleased"
+          },
+          "parameters": [
+            "",
+            "\"Left\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
         {
           "type": {
             "value": "SetNumberVariable"
           },
           "parameters": [
-            "levelReached",
+            "globalVolume",
             "=",
-            "0"
+            "VolumeSlider.Value()"
           ]
+        },
+        {
+          "type": {
+            "value": "ModGlobalVolume"
+          },
+          "parameters": [
+            "",
+            "=",
+            "VolumeSlider.Value()"
+          ]
+        },
+        {
+          "type": {
+            "value": "EcrireFichierExp"
+          },
+          "parameters": [
+            "\"Storage\"",
+            "\"globalVolume\"",
+            "globalVolume"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Save controls"
         }
       ]
     }

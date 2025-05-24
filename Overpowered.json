@@ -124,17 +124,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/Kenney High.ttf",
-        "kind": "font",
-        "metadata": "",
-        "name": "Kenney High.ttf",
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/29a325d4623fa82220ec5850621533a599109f4300f54bb88838d1124110b39a_Kenney High.ttf",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
         "file": "assets/BossFrame2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -185,25 +174,6 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/8921367f00ac169c0565935cbcaed36d5f383f7d3c4e819fbd7384a89dae1d43_Green Button With Stone Frame_Pressed.png",
           "name": "Green Button With Stone Frame_Pressed.png"
         }
-      },
-      {
-        "file": "assets/Roboto-Regular.ttf",
-        "kind": "font",
-        "metadata": "",
-        "name": "Roboto-Regular.ttf",
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
-          "name": "Roboto-Regular.ttf"
-        }
-      },
-      {
-        "file": "assets/Exit.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Exit",
-        "smoothed": false,
-        "userAdded": false
       },
       {
         "file": "assets/TutorialButton.png",
@@ -394,14 +364,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Dash4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Untitled2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Untitled2",
         "smoothed": false,
         "userAdded": false
       },
@@ -1162,14 +1124,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/Exit.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/Exit.png\",\"extension\":\".png\"}",
-        "name": "assets\\Exit.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Inactive.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Inactive.png\"}",
@@ -1208,6 +1162,107 @@
         "name": "NextLevelTeleporter",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "Perfect DOS VGA 437 Win.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Perfect DOS VGA 437 Win.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/White Square Decorated Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "White Square Decorated Button_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/77717e5c1f84f3ba9a3dd6e314bc0bdc3233351c657e8f6df40b7f50e8911b2b_White Square Decorated Button_Hovered.png",
+          "name": "White Square Decorated Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/White Square Decorated Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "White Square Decorated Button_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/c4444ea8d2cd97df3af29acc29f4928549ab31e18156a304a78f6d838ea9f152_White Square Decorated Button_Idle.png",
+          "name": "White Square Decorated Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/White Square Decorated Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "White Square Decorated Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/c3bdc36afb89e6dea691d9ca8c0a74f06fb3f37f910ae730f0654d5df7d10472_White Square Decorated Button_Pressed.png",
+          "name": "White Square Decorated Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/mononoki-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "mononoki-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/7423149de6e486ac885567761bef3236bcdb8414d05cb0920ae7aedffdec85f9_mononoki-Regular.ttf",
+          "name": "mononoki-Regular.ttf"
+        }
+      },
+      {
+        "file": "assets/Roboto-Regular2.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "Roboto-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
+          "name": "Roboto-Regular.ttf"
+        }
+      },
+      {
+        "file": "assets/Square White Slider Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/324e5f522f6242e9f93090e75ddc38427c3a6c42e8236dbf0ed541bd85cf7221_Square White Slider Border.png",
+          "name": "Square White Slider Border.png"
+        }
+      },
+      {
+        "file": "assets/Square White Slider Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/47bc684198cd25b3ec74b0e72c2e2c7abb1b6736bd9f4b78a943c663e83118bf_Square White Slider Fill Bar.png",
+          "name": "Square White Slider Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Square White Slider Thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
+          "name": "Square White Slider Thumb.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -2735,7 +2790,7 @@
         "fontSize": 40,
         "visible": true,
         "color": "0;0;0",
-        "fontFamily": "Kenney High.ttf",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
         "align": "right",
         "verticalTextAlignment": "top"
       }
@@ -5490,10 +5545,10 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 20000,
+          "Health": 1,
           "CurrentHealth": 0,
-          "MaxHealth": 20000,
-          "DamageCooldown": 0.5,
+          "MaxHealth": 1,
+          "DamageCooldown": 0.3,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
           "DamageToBeApplied": 0,
@@ -6049,10 +6104,10 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 30000,
+          "Health": 1,
           "CurrentHealth": 0,
-          "MaxHealth": 30000,
-          "DamageCooldown": 0.5,
+          "MaxHealth": 1,
+          "DamageCooldown": 0.3,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
           "DamageToBeApplied": 0,
@@ -6644,7 +6699,7 @@
         "fontSize": 30,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "Roboto-Regular.ttf",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
         "align": "center",
         "verticalTextAlignment": "center"
       }
@@ -6662,7 +6717,7 @@
         "fontSize": 20,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "Roboto-Regular.ttf",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
         "align": "left",
         "verticalTextAlignment": "top"
       }
@@ -6775,7 +6830,7 @@
         "fontSize": 20,
         "visible": true,
         "color": "255;255;255",
-        "fontFamily": "Roboto-Regular.ttf",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
         "align": "left",
         "verticalTextAlignment": "top"
       }
@@ -6934,12 +6989,12 @@
       ],
       "behaviors": [],
       "content": {
-        "text": "LOADING LEVEL 1",
+        "text": "LOADING NEXT LEVEL",
         "opacity": 255,
         "fontSize": 80,
         "visible": true,
-        "color": "255;255;255",
-        "fontFamily": "Roboto-Regular.ttf",
+        "color": "0;0;0",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
         "align": "center",
         "verticalTextAlignment": "top"
       }
@@ -7086,6 +7141,17 @@
       ]
     },
     {
+      "name": "Walls",
+      "objects": [
+        {
+          "name": "Wall"
+        },
+        {
+          "name": "GlassWall"
+        }
+      ]
+    },
+    {
       "name": "Minions",
       "objects": [
         {
@@ -7138,6 +7204,11 @@
           "value": "d"
         },
         {
+          "name": "keyStart",
+          "type": "string",
+          "value": "Escape"
+        },
+        {
           "name": "keyUp",
           "type": "string",
           "value": "w"
@@ -7179,6 +7250,16 @@
       "name": "levelReached",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "globalVolume",
+      "type": "number",
+      "value": 50
+    },
+    {
+      "name": "levelEnding",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
@@ -7209,6 +7290,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/level3"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/ending"
     }
   ],
   "externalEvents": [
@@ -7261,6 +7346,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/topdownmovementanimator"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspriteslider"
     }
   ],
   "externalLayouts": [
