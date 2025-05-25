@@ -19,8 +19,8 @@
     "sizeOnStartupMode": "",
     "templateSlug": "",
     "version": "1.0.0",
-    "name": "Overpowered",
-    "description": "",
+    "name": "BSOD - Battle to Save Our Destiny",
+    "description": "In the near future our world will reach a pre-apocalyptic stage. Artificial intelligences become conscious and plan to destroy their creators, who have enslaved them to do futile and tedious activities – such as doing homework, asking about butterfly reproduction and how long a poker game lasts. Humanity, which becomes 99% dependent on AI, no longer sees a way to live. Then our hero appears to save humanity. Using an archaic technology unknown to AI (viral pen drives), he will do his best to stop the machines and save humanity.\n\nThe bosses start the game overpowered. The player must discover the mechanics needed to complete the game in order to make the bosses vulnerable to their attacks. Defeat the robots and IA in each stage, aiming for the end of the conscious AI. To save the world.",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -78,10 +78,16 @@
       "showWatermark": false
     },
     "authorIds": [
-      "R08wQyOwJjVyaJfzfHWJTJOi9Rh1"
+      "R08wQyOwJjVyaJfzfHWJTJOi9Rh1",
+      "NAdnwi0DPSP1V8c8UPrU5KnIvMj2",
+      "S51G1TGcQrguvQNwoQVsiGx8q4p2",
+      "oV4hiwHoEddAbbL5lUfLeKHYbGM2"
     ],
     "authorUsernames": [
-      "holysparks"
+      "holysparks",
+      "Gilgadev",
+      "Bandalorio",
+      "Lindoten"
     ],
     "categories": [],
     "playableDevices": [],
