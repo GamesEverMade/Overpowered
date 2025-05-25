@@ -5,7 +5,7 @@
     {
       "angle": 0,
       "customSize": true,
-      "depth": 103,
+      "depth": 155,
       "height": 32,
       "keepRatio": true,
       "layer": "HUD",
@@ -81,7 +81,7 @@
       "persistentUuid": "3a6d444d-8ff6-4187-9d06-b5239c1287f4",
       "width": 64,
       "x": 96,
-      "y": 70,
+      "y": 83,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -97,7 +97,7 @@
       "persistentUuid": "7f889db8-0ce5-4d25-b69a-73c260b938d7",
       "width": 0,
       "x": 96,
-      "y": 112,
+      "y": 128,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -114,7 +114,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.511778403521018,
+    "zoomFactor": 0.8416428125373115,
     "windowMask": false
   }
 }

@@ -8,15 +8,125 @@
   "stopSoundsOnStartup": true,
   "title": "",
   "v": 209,
-  "uiSettings": {},
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.39251611754882226,
+    "windowMask": false
+  },
   "objectsGroups": [],
   "variables": [],
-  "instances": [],
-  "objects": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1099,
+      "keepRatio": true,
+      "layer": "",
+      "name": "FloorCircuitBlank",
+      "persistentUuid": "188ed17f-0697-42ca-869f-50b9a5a9824d",
+      "width": 1719,
+      "x": -180,
+      "y": -186,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TxtCredits",
+      "persistentUuid": "d78ed6fa-530f-4507-ad25-e9049d1ac1bb",
+      "width": 0,
+      "x": -94,
+      "y": 28,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "TxtCredits",
+      "type": "BBText::BBText",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[size=42]CONGRATULATIONS[/size] \nYou have vanquished the AI menance with \nthe powers the mythical infected pendrive.\n\nThanks for playing Battle for Saving Our Destiny.\n\n\n[size=42]CREDITS[/size] \nGAMES EVER MADE\n[b]Alisson Lindote[/b]: PM, Marketing, Developer and Composer\n[b]Andrew Mendes[/b]: Lead visual artist and Composer\n[b]Felipe Gil[/b]: Developer, Composer and Level designer\n[b]Marcelo 'Holy' Moreira[/b]: Lead game designer and Developer\n\nADDITIONAL ASSETS\nSFXs: \n",
+        "opacity": 255,
+        "fontSize": 30,
+        "visible": true,
+        "color": "223;223;223",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
+        "align": "center",
+        "verticalTextAlignment": "top"
+      }
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "TxtCredits"
+      }
+    ]
   },
-  "events": [],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "CentreCamera"
+          },
+          "parameters": [
+            "",
+            "FloorCircuitBlank",
+            "",
+            "",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "TxtCredits",
+            "=",
+            "FloorCircuitBlank.CenterX()",
+            "=",
+            "FloorCircuitBlank.CenterY()"
+          ]
+        }
+      ]
+    }
+  ],
   "layers": [
     {
       "ambientLightColorB": 200,

@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.7619362677197604,
+    "zoomFactor": 0.46331118245139813,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -89,7 +89,7 @@
       "name": "BtnKeybind",
       "persistentUuid": "e1228c9a-a861-49b6-95f2-c7f3a7223c29",
       "width": 160,
-      "x": 768,
+      "x": 608,
       "y": 288,
       "zOrder": 3,
       "numberProperties": [],
@@ -199,7 +199,7 @@
       "name": "BtnKeybind",
       "persistentUuid": "c00479cc-29df-458e-82fd-4cc7296f5d29",
       "width": 160,
-      "x": 512,
+      "x": 64,
       "y": 288,
       "zOrder": 3,
       "numberProperties": [],
@@ -303,8 +303,8 @@
       "name": "BtnKeybind",
       "persistentUuid": "f5c35e94-37b2-48e7-b3ad-a44c574f56c0",
       "width": 160,
-      "x": 768,
-      "y": 416,
+      "x": 800,
+      "y": 288,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -2368,7 +2368,7 @@
           "conditions": [
             {
               "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
               },
               "parameters": [
                 "BtnDefaultControls",
@@ -2446,47 +2446,15 @@
                 "=",
                 "\"Escape\""
               ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "BUG: Não está atualizando o texto de todos os botões"
             },
             {
-              "type": "BuiltinCommonInstructions::ForEach",
-              "object": "BtnKeybind",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
-                  },
-                  "parameters": [
-                    "BtnKeybind",
-                    "BtnKeybind.function + NewLine() + \"[\" + BtnKeybind.key + \"]\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "EffectCapability::EffectBehavior::EnableEffect"
-                  },
-                  "parameters": [
-                    "BtnKeybind",
-                    "Effect",
-                    "\"Effect\"",
-                    "no"
-                  ]
-                }
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Settings\"",
+                ""
               ]
             }
           ]

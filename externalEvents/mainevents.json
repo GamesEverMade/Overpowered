@@ -26,6 +26,18 @@
         },
         {
           "type": {
+            "value": "CentreCamera"
+          },
+          "parameters": [
+            "",
+            "Player",
+            "",
+            "",
+            "0"
+          ]
+        },
+        {
+          "type": {
             "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
           },
           "parameters": [
@@ -521,6 +533,16 @@
             "Flippable",
             "no"
           ]
+        },
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlipX"
+          },
+          "parameters": [
+            "PlayerBullet",
+            "Flippable",
+            "no"
+          ]
         }
       ]
     },
@@ -579,6 +601,16 @@
           },
           "parameters": [
             "Player",
+            "Flippable",
+            "yes"
+          ]
+        },
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlipX"
+          },
+          "parameters": [
+            "PlayerBullet",
             "Flippable",
             "yes"
           ]
@@ -641,7 +673,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1934,6 +1965,90 @@
                     "Animation",
                     "=",
                     "0.5"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CursorX"
+                      },
+                      "parameters": [
+                        "",
+                        ">",
+                        "Player.CenterX()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Animation",
+                        "=",
+                        "\"Melee\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipY"
+                      },
+                      "parameters": [
+                        "PlayerBullet",
+                        "Flippable",
+                        "no"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CursorX"
+                      },
+                      "parameters": [
+                        "",
+                        "<=",
+                        "Player.CenterX()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Animation",
+                        "=",
+                        "\"Melee\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipY"
+                      },
+                      "parameters": [
+                        "PlayerBullet",
+                        "Flippable",
+                        "yes"
+                      ]
+                    }
                   ]
                 }
               ]

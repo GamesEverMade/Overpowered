@@ -104,18 +104,6 @@
         }
       },
       {
-        "file": "assets/tiled_Tiled Filler UI Heart.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tiled_Tiled Filler UI Heart.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/5b5c6c85ec4e1f5b6688be565c9a06920a76ee191915738afd61da1481fd6493_tiled_Tiled Filler UI Heart.png",
-          "name": "tiled_Tiled Filler UI Heart.png"
-        }
-      },
-      {
         "file": "assets/Bullet2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -1171,64 +1159,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/White Square Decorated Button_Hovered.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "White Square Decorated Button_Hovered.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/77717e5c1f84f3ba9a3dd6e314bc0bdc3233351c657e8f6df40b7f50e8911b2b_White Square Decorated Button_Hovered.png",
-          "name": "White Square Decorated Button_Hovered.png"
-        }
-      },
-      {
-        "file": "assets/White Square Decorated Button_Idle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "White Square Decorated Button_Idle.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/c4444ea8d2cd97df3af29acc29f4928549ab31e18156a304a78f6d838ea9f152_White Square Decorated Button_Idle.png",
-          "name": "White Square Decorated Button_Idle.png"
-        }
-      },
-      {
-        "file": "assets/White Square Decorated Button_Pressed.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "White Square Decorated Button_Pressed.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/c3bdc36afb89e6dea691d9ca8c0a74f06fb3f37f910ae730f0654d5df7d10472_White Square Decorated Button_Pressed.png",
-          "name": "White Square Decorated Button_Pressed.png"
-        }
-      },
-      {
-        "file": "assets/mononoki-Regular.ttf",
-        "kind": "font",
-        "metadata": "",
-        "name": "mononoki-Regular.ttf",
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/7423149de6e486ac885567761bef3236bcdb8414d05cb0920ae7aedffdec85f9_mononoki-Regular.ttf",
-          "name": "mononoki-Regular.ttf"
-        }
-      },
-      {
-        "file": "assets/Roboto-Regular2.ttf",
-        "kind": "font",
-        "metadata": "",
-        "name": "Roboto-Regular.ttf",
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
-          "name": "Roboto-Regular.ttf"
-        }
-      },
-      {
         "file": "assets/Square White Slider Border.png",
         "kind": "image",
         "metadata": "",
@@ -1263,6 +1193,14 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
           "name": "Square White Slider Thumb.png"
         }
+      },
+      {
+        "file": "assets/tiled_Tiled Filler UI Heart.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "tiled_Tiled Filler UI Heart.png2",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2403,7 +2341,7 @@
         },
         "FillBar": {
           "height": 16,
-          "texture": "tiled_Tiled Filler UI Heart.png",
+          "texture": "tiled_Tiled Filler UI Heart.png2",
           "width": 16
         }
       }
@@ -6714,7 +6652,7 @@
       "content": {
         "text": "0",
         "opacity": 255,
-        "fontSize": 20,
+        "fontSize": 22,
         "visible": true,
         "color": "255;255;255",
         "fontFamily": "Perfect DOS VGA 437 Win.ttf",
@@ -7232,17 +7170,17 @@
         {
           "name": "level2BestTime",
           "type": "number",
-          "value": 8888
+          "value": 9999
         },
         {
           "name": "level3BestTime",
           "type": "number",
-          "value": 7777
+          "value": 9999
         },
         {
           "name": "timeAttackBestTime",
           "type": "number",
-          "value": 6666
+          "value": 9999
         }
       ]
     },

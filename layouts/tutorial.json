@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.8141881203709943,
+    "zoomFactor": 0.6040838749988895,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -100,8 +100,8 @@
       "name": "Tutorial1Move",
       "persistentUuid": "1f1d04fc-7d84-44ed-8d52-fc44262d6a43",
       "width": 0,
-      "x": 576,
-      "y": 109,
+      "x": 599,
+      "y": 128,
       "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
@@ -184,8 +184,8 @@
       "name": "Tutorial2Attack",
       "persistentUuid": "5f9c3db7-cf30-4650-958b-abb53ac9cd7c",
       "width": 0,
-      "x": 960,
-      "y": 630,
+      "x": 949,
+      "y": 608,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -234,8 +234,8 @@
       "name": "Tutorial4Dash",
       "persistentUuid": "07aa7a19-b884-47b9-972d-2617c1b95ab1",
       "width": 0,
-      "x": 2227,
-      "y": -42,
+      "x": 2225,
+      "y": -25,
       "zOrder": 18,
       "numberProperties": [],
       "stringProperties": [],
@@ -357,8 +357,8 @@
       "name": "Tutorial5Interact",
       "persistentUuid": "83de8873-0e22-44f6-9fff-10d20035af76",
       "width": 0,
-      "x": 2617,
-      "y": 98,
+      "x": 2592,
+      "y": -25,
       "zOrder": 24,
       "numberProperties": [],
       "stringProperties": [],
@@ -374,7 +374,7 @@
       "persistentUuid": "cf97a290-06b0-4808-bb05-e0a23ea1a416",
       "width": 0,
       "x": 1536,
-      "y": -42,
+      "y": -32,
       "zOrder": 14,
       "numberProperties": [],
       "stringProperties": [],
@@ -390,7 +390,7 @@
       "persistentUuid": "3e0ae859-2999-4771-a892-801744808a09",
       "width": 0,
       "x": 1856,
-      "y": 475,
+      "y": 448,
       "zOrder": 25,
       "numberProperties": [],
       "stringProperties": [],
@@ -494,6 +494,92 @@
       "x": 2784,
       "y": 160,
       "zOrder": 29,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 128,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Minion1",
+      "persistentUuid": "64000ca0-a901-463e-90f8-3dbaf119e53b",
+      "width": 128,
+      "x": 1376,
+      "y": 256,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1920,
+      "keepRatio": true,
+      "layer": "",
+      "locked": true,
+      "name": "FloorCircuitBlank",
+      "persistentUuid": "bd77b533-af8e-4203-8d60-3b68989571bd",
+      "width": 3872,
+      "x": -576,
+      "y": -576,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 128,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Minion1",
+      "persistentUuid": "6e6ea0e5-a915-4682-ab4b-31864dc16d24",
+      "width": 128,
+      "x": 1536,
+      "y": 352,
+      "zOrder": 30,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1920,
+      "keepRatio": true,
+      "layer": "",
+      "locked": true,
+      "name": "FloorCircuitBlank",
+      "persistentUuid": "38d64714-7ee4-4929-a871-3e2ed557e047",
+      "width": 3872,
+      "x": -576,
+      "y": -576,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Tutorial6Start",
+      "persistentUuid": "3ea3ac25-70f1-4345-9617-648485c8b566",
+      "width": 0,
+      "x": 2797,
+      "y": -6,
+      "zOrder": 31,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -839,6 +925,30 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Tutorial6Start",
+      "type": "BBText::BBText",
+      "variables": [
+        {
+          "name": "text",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "[b]Back to menu[/b]\nESCAPE\nSTART",
+        "opacity": 255,
+        "fontSize": 20,
+        "visible": true,
+        "color": "255;255;255",
+        "fontFamily": "Perfect DOS VGA 437 Win.ttf",
+        "align": "center",
+        "verticalTextAlignment": "top"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -861,6 +971,9 @@
       },
       {
         "objectName": "Tutorial5Interact"
+      },
+      {
+        "objectName": "Tutorial6Start"
       },
       {
         "objectName": "TutorialOverPower"
@@ -929,6 +1042,46 @@
             "currentLevel",
             "=",
             "\"Tutorial\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "Tutorial1Move",
+            "=",
+            "\"[b]Move character[/b]\" + NewLine() +  ToUpperCase(controls.keyUp) + \", \" + ToUpperCase(controls.keyLeft) + \", \" + ToUpperCase(controls.keyDown) + \", \" + ToUpperCase(controls.keyRight) + NewLine() + \"ANALOG STICK\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "Tutorial4Dash",
+            "=",
+            "\"[b]Dash[/b]\" + NewLine() + ToUpperCase(controls.keyDash) + NewLine() + \"X\" + NewLine() + \"SQUARE\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "Tutorial5Interact",
+            "=",
+            "\"[b]Interact[/b]\" + NewLine() + ToUpperCase(controls.keyInteract) + NewLine() + \"A\" + NewLine() + \"CROSS\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BBText::SetBBText"
+          },
+          "parameters": [
+            "Tutorial6Start",
+            "=",
+            "\"[b]Back to menu[/b]\" + NewLine() + ToUpperCase(controls.keyStart) + NewLine() + \"START\""
           ]
         }
       ]
