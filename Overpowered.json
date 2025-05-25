@@ -132,42 +132,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/Green Button With Stone Frame_Hovered.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Green Button With Stone Frame_Hovered.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/a835b9f7fa283fad672fb8607fae99c67b44cb853e81b878926ed7804816be23_Green Button With Stone Frame_Hovered.png",
-          "name": "Green Button With Stone Frame_Hovered.png"
-        }
-      },
-      {
-        "file": "assets/Green Button With Stone Frame_Idle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Green Button With Stone Frame_Idle.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/d13ac936a5ce1b628ec20f6031582f6fce805d090e77e5e05d27344bac08ba98_Green Button With Stone Frame_Idle.png",
-          "name": "Green Button With Stone Frame_Idle.png"
-        }
-      },
-      {
-        "file": "assets/Green Button With Stone Frame_Pressed.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Green Button With Stone Frame_Pressed.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/8921367f00ac169c0565935cbcaed36d5f383f7d3c4e819fbd7384a89dae1d43_Green Button With Stone Frame_Pressed.png",
-          "name": "Green Button With Stone Frame_Pressed.png"
-        }
-      },
-      {
         "file": "assets/TutorialButton.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -206,38 +170,6 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
           "name": "Flat Bar White Border.png"
         }
-      },
-      {
-        "file": "assets/EnergyPlateOff.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/EnergyPlateOff.png\"}",
-        "name": "EnergyPlateOff",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite3.png\"}",
-        "name": "NewSprite2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/MagneticTileUnpressed.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "MagneticTileUnpressed",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/MagneticTilePressed.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "MagneticTilePressed",
-        "smoothed": false,
-        "userAdded": false
       },
       {
         "file": "assets/NewSprite4.png",
@@ -944,14 +876,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/MinionPlate3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "MinionPlate3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/NewSprite6.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -1116,14 +1040,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/Inactive.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Inactive.png\"}",
-        "name": "Inactive",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/Vulnerable.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -1204,7 +1120,7 @@
         "metadata": "",
         "name": "Boss1Gun.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -1214,7 +1130,7 @@
         "metadata": "",
         "name": "Boss2Gun.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -1224,7 +1140,7 @@
         "metadata": "",
         "name": "Boss2Punch.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -1234,7 +1150,7 @@
         "metadata": "",
         "name": "BsodGun.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -1244,7 +1160,7 @@
         "metadata": "",
         "name": "ButtonClick.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -1254,7 +1170,7 @@
         "metadata": "",
         "name": "Dash.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -1264,7 +1180,7 @@
         "metadata": "",
         "name": "EnemyBlock.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -1274,7 +1190,7 @@
         "metadata": "",
         "name": "Dash2.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -1284,7 +1200,7 @@
         "metadata": "",
         "name": "EnemyDeath.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -1294,7 +1210,7 @@
         "metadata": "",
         "name": "EnemyHurt.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -1304,7 +1220,7 @@
         "metadata": "",
         "name": "EnergyUp.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -1314,7 +1230,7 @@
         "metadata": "",
         "name": "MeleeAttack.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -1324,7 +1240,7 @@
         "metadata": "",
         "name": "PlayerHurt.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -1334,16 +1250,8 @@
         "metadata": "",
         "name": "PoweredUp.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NextLevelTeleporter2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NextLevelTeleporter2",
-        "smoothed": false,
         "userAdded": false
       },
       {
@@ -1352,7 +1260,7 @@
         "metadata": "",
         "name": "Windows.mp3",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -1361,6 +1269,143 @@
         "kind": "image",
         "metadata": "",
         "name": "small_circuit_spritesheet.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/White Square Decorated Button_Hovered2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "White Square Decorated Button_Hovered.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/77717e5c1f84f3ba9a3dd6e314bc0bdc3233351c657e8f6df40b7f50e8911b2b_White Square Decorated Button_Hovered.png",
+          "name": "White Square Decorated Button_Hovered.png"
+        }
+      },
+      {
+        "file": "assets/White Square Decorated Button_Idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "White Square Decorated Button_Idle.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/c4444ea8d2cd97df3af29acc29f4928549ab31e18156a304a78f6d838ea9f152_White Square Decorated Button_Idle.png",
+          "name": "White Square Decorated Button_Idle.png"
+        }
+      },
+      {
+        "file": "assets/White Square Decorated Button_Pressed2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "White Square Decorated Button_Pressed.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/c3bdc36afb89e6dea691d9ca8c0a74f06fb3f37f910ae730f0654d5df7d10472_White Square Decorated Button_Pressed.png",
+          "name": "White Square Decorated Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/mononoki-Regular2.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "mononoki-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/7423149de6e486ac885567761bef3236bcdb8414d05cb0920ae7aedffdec85f9_mononoki-Regular.ttf",
+          "name": "mononoki-Regular.ttf"
+        }
+      },
+      {
+        "file": "metau.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "metau.ogg",
+        "preloadAsMusic": true,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MagneticTile.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MagneticTile",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MagneticTile2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MagneticTile2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PowerUpPad.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PowerUpPad",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PowerUpPad2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PowerUpPad2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/EnergyPlateOn5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "EnergyPlateOn5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/EnergyPlateOn6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "EnergyPlateOn6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/EnergyPlateOff6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "EnergyPlateOff6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/EnergyPlateOff7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "EnergyPlateOff7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MinionPlate6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "MinionPlate6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "portal.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "portal.png",
         "smoothed": false,
         "userAdded": false
       }
@@ -3112,17 +3157,17 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "MagneticTileUnpressed",
+          "name": "MagneticTile",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.5,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "MagneticTileUnpressed",
+                  "image": "MagneticTile",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3155,23 +3200,10 @@
                       }
                     ]
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "MagneticTilePressed",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
+                },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "MagneticTilePressed",
+                  "image": "MagneticTile2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -6275,19 +6307,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
+                        "x": 10,
                         "y": 50
                       },
                       {
                         "x": 270,
-                        "y": 15
+                        "y": 20
                       },
                       {
                         "x": 270,
-                        "y": 270
+                        "y": 260
                       },
                       {
-                        "x": 0,
+                        "x": 10,
                         "y": 240
                       }
                     ]
@@ -6311,19 +6343,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
+                        "x": 10,
                         "y": 50
                       },
                       {
                         "x": 270,
-                        "y": 15
+                        "y": 20
                       },
                       {
                         "x": 270,
-                        "y": 270
+                        "y": 260
                       },
                       {
-                        "x": 0,
+                        "x": 10,
                         "y": 240
                       }
                     ]
@@ -6347,19 +6379,19 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
+                        "x": 10,
                         "y": 50
                       },
                       {
                         "x": 270,
-                        "y": 15
+                        "y": 20
                       },
                       {
                         "x": 270,
-                        "y": 270
+                        "y": 260
                       },
                       {
-                        "x": 0,
+                        "x": 10,
                         "y": 240
                       }
                     ]
@@ -7012,7 +7044,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "NextLevelTeleporter",
+          "name": "portal",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -7022,12 +7054,12 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NextLevelTeleporter2",
+                  "image": "portal.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
-                    "x": 32,
-                    "y": 32
+                    "x": 0,
+                    "y": 0
                   },
                   "centerPoint": {
                     "automatic": true,
@@ -7038,20 +7070,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 2,
+                        "y": 24
                       },
                       {
-                        "x": 64,
-                        "y": 0
+                        "x": 62,
+                        "y": 24
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 62,
+                        "y": 63
                       },
                       {
-                        "x": 0,
-                        "y": 64
+                        "x": 2,
+                        "y": 63
                       }
                     ]
                   ]

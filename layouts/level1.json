@@ -5,7 +5,7 @@
   "name": "Level1",
   "r": 209,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 209,
   "uiSettings": {
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.5290357402156948,
+    "zoomFactor": 0.46331118245140723,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1354,13 +1354,13 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 1,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "EnergyPlateOff",
+                  "image": "EnergyPlateOff6",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1380,16 +1380,52 @@
                         "y": 0
                       },
                       {
-                        "x": 80,
+                        "x": 160,
                         "y": 0
                       },
                       {
-                        "x": 80,
-                        "y": 80
+                        "x": 160,
+                        "y": 160
                       },
                       {
                         "x": 0,
-                        "y": 80
+                        "y": 160
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "EnergyPlateOff7",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
                       }
                     ]
                   ]
@@ -1403,13 +1439,13 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.1,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite2",
+                  "image": "EnergyPlateOn5",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1429,16 +1465,52 @@
                         "y": 0
                       },
                       {
-                        "x": 80,
+                        "x": 160,
                         "y": 0
                       },
                       {
-                        "x": 80,
-                        "y": 80
+                        "x": 160,
+                        "y": 160
                       },
                       {
                         "x": 0,
-                        "y": 80
+                        "y": 160
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "EnergyPlateOn6",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 0
+                      },
+                      {
+                        "x": 160,
+                        "y": 160
+                      },
+                      {
+                        "x": 0,
+                        "y": 160
                       }
                     ]
                   ]
@@ -1452,13 +1524,13 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
+              "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 1,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "MinionPlate3",
+                  "image": "MinionPlate6",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1478,16 +1550,16 @@
                         "y": 0
                       },
                       {
-                        "x": 80,
+                        "x": 160,
                         "y": 0
                       },
                       {
-                        "x": 80,
-                        "y": 80
+                        "x": 160,
+                        "y": 160
                       },
                       {
                         "x": 0,
-                        "y": 80
+                        "y": 160
                       }
                     ]
                   ]
@@ -1838,6 +1910,17 @@
                 "=",
                 "\"MinionPlate\""
               ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "EnergyPlate",
+                "Effect",
+                "\"Effect\"",
+                "yes"
+              ]
             }
           ]
         },
@@ -1864,16 +1947,6 @@
                 "levelReached",
                 "=",
                 "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "EcrireFichierExp"
-              },
-              "parameters": [
-                "\"Storage\"",
-                "\"levelReached\"",
-                "levelReached"
               ]
             }
           ]
@@ -2055,7 +2128,7 @@
                   "parameters": [
                     "EnemyText",
                     "=",
-                    "\"Energy from shields partially removed, rerouting power\""
+                    "\"Energy from shields reduced, rerouting power\""
                   ]
                 },
                 {
@@ -2215,7 +2288,7 @@
                   "parameters": [
                     "EnemyText",
                     "=",
-                    "\"Stop, this energy MUST go somewhere after the shields are down\""
+                    "\"Stop, this energy MUST go somewhere\""
                   ]
                 },
                 {
@@ -2295,7 +2368,7 @@
                   "parameters": [
                     "EnemyText",
                     "=",
-                    "\"Rerouting power back from energy plates to shield generators...\""
+                    "\"Rerouting power back from energy plates\""
                   ]
                 },
                 {
@@ -3540,6 +3613,16 @@
             },
             {
               "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Minion1",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
                 "value": "Create"
               },
               "parameters": [
@@ -3548,6 +3631,16 @@
                 "1056",
                 "672",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Minion1",
+                "=",
+                "3"
               ]
             },
             {
@@ -3564,6 +3657,16 @@
             },
             {
               "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Minion1",
+                "=",
+                "3"
+              ]
+            },
+            {
+              "type": {
                 "value": "Create"
               },
               "parameters": [
@@ -3572,6 +3675,16 @@
                 "2432",
                 "32",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Minion1",
+                "=",
+                "3"
               ]
             },
             {
@@ -4006,7 +4119,7 @@
         },
         {
           "type": {
-            "value": "PauseObjectTimer"
+            "value": "RemoveObjectTimer"
           },
           "parameters": [
             "Boss1",

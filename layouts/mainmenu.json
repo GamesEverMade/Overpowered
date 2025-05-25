@@ -5,7 +5,7 @@
   "name": "MainMenu",
   "r": 209,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 209,
   "uiSettings": {
@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4789341884535246,
+    "zoomFactor": 0.43357743047023733,
     "windowMask": false
   },
   "objectsGroups": [
@@ -38,24 +38,7 @@
     }
   ],
   "variables": [],
-  "instances": [
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Title",
-      "persistentUuid": "7be02d66-531a-4ffb-bf8a-8ec640b3cba4",
-      "width": 0,
-      "x": 466,
-      "y": 32,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    }
-  ],
+  "instances": [],
   "objects": [
     {
       "assetStoreId": "0364dbe0c9a504055bcfd65a3e898b58b0cb0aea76c15cc0b9961815b88ba4e6",
@@ -79,20 +62,20 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Hovered.png",
+          "texture": "White Square Decorated Button_Hovered.png",
           "tiled": false,
           "topMargin": 0,
-          "width": 350
+          "width": 250
         },
         "Idle": {
           "bottomMargin": 0,
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Idle.png",
+          "texture": "White Square Decorated Button_Idle.png",
           "tiled": false,
           "topMargin": 0,
-          "width": 350
+          "width": 250
         },
         "Label": {
           "bold": false,
@@ -104,9 +87,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           },
           "content": {
             "bold": false,
@@ -127,18 +110,18 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
-            "color": "255;255;255"
+            "color": "0;0;0"
           }
         },
         "Pressed": {
           "bottomMargin": 0,
-          "height": 104,
+          "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Pressed.png",
+          "texture": "White Square Decorated Button_Pressed.png",
           "tiled": false,
           "topMargin": 0,
-          "width": 350
+          "width": 250
         }
       }
     },
@@ -161,23 +144,23 @@
       "childrenContent": {
         "Hovered": {
           "bottomMargin": 0,
-          "height": 102,
+          "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Hovered.png",
+          "texture": "White Square Decorated Button_Hovered.png",
           "tiled": false,
           "topMargin": 0,
-          "width": 348
+          "width": 250
         },
         "Idle": {
           "bottomMargin": 0,
-          "height": 102,
+          "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Idle.png",
+          "texture": "White Square Decorated Button_Idle.png",
           "tiled": false,
           "topMargin": 0,
-          "width": 348
+          "width": 250
         },
         "Label": {
           "bold": false,
@@ -189,9 +172,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           },
           "content": {
             "bold": false,
@@ -212,18 +195,18 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
-            "color": "255;255;255"
+            "color": "0;0;0"
           }
         },
         "Pressed": {
           "bottomMargin": 0,
-          "height": 102,
+          "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Pressed.png",
+          "texture": "White Square Decorated Button_Pressed.png",
           "tiled": false,
           "topMargin": 0,
-          "width": 348
+          "width": 250
         }
       }
     },
@@ -267,7 +250,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Hovered.png",
+          "texture": "White Square Decorated Button_Hovered.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -277,7 +260,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Idle.png",
+          "texture": "White Square Decorated Button_Idle.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -292,9 +275,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           },
           "content": {
             "bold": false,
@@ -315,7 +298,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
-            "color": "255;255;255"
+            "color": "0;0;0"
           }
         },
         "Pressed": {
@@ -323,7 +306,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Pressed.png",
+          "texture": "White Square Decorated Button_Pressed.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -362,7 +345,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Hovered.png",
+          "texture": "White Square Decorated Button_Hovered.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -372,7 +355,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Idle.png",
+          "texture": "White Square Decorated Button_Idle.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -387,9 +370,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           },
           "content": {
             "bold": false,
@@ -410,7 +393,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
-            "color": "255;255;255"
+            "color": "0;0;0"
           }
         },
         "Pressed": {
@@ -418,7 +401,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Pressed.png",
+          "texture": "White Square Decorated Button_Pressed.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -457,7 +440,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Hovered.png",
+          "texture": "White Square Decorated Button_Hovered.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -467,7 +450,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Idle.png",
+          "texture": "White Square Decorated Button_Idle.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -482,9 +465,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           },
           "content": {
             "bold": false,
@@ -505,7 +488,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
-            "color": "255;255;255"
+            "color": "0;0;0"
           }
         },
         "Pressed": {
@@ -513,7 +496,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Pressed.png",
+          "texture": "White Square Decorated Button_Pressed.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -552,7 +535,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Hovered.png",
+          "texture": "White Square Decorated Button_Hovered.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -562,7 +545,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Idle.png",
+          "texture": "White Square Decorated Button_Idle.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -577,9 +560,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           },
           "content": {
             "bold": false,
@@ -600,7 +583,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
-            "color": "255;255;255"
+            "color": "0;0;0"
           }
         },
         "Pressed": {
@@ -608,7 +591,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Pressed.png",
+          "texture": "White Square Decorated Button_Pressed.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -662,11 +645,99 @@
         "characterSize": 20,
         "color": "0;0;0"
       }
+    },
+    {
+      "assetStoreId": "f23eb31ad33dd63f1937c8745105316ca530c28513c64b68a665975503c852a6",
+      "name": "WhiteSquareDecoratedButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 6,
+        "BottomPadding": 24,
+        "TopPadding": 20,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 22,
+          "height": 64,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "White Square Decorated Button_Hovered.png",
+          "tiled": false,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 22,
+          "height": 64,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "White Square Decorated Button_Idle.png",
+          "tiled": false,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Button",
+          "font": "mononoki-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Button",
+            "font": "mononoki-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 64,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "White Square Decorated Button_Pressed.png",
+          "tiled": false,
+          "topMargin": 22,
+          "width": 192
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "objectName": "WhiteSquareDecoratedButton"
+      },
       {
         "objectName": "BtnStartGame"
       },
@@ -713,18 +784,6 @@
         }
       ],
       "actions": [
-        {
-          "type": {
-            "value": "SetCenter"
-          },
-          "parameters": [
-            "Title",
-            "=",
-            "ScreenWidth()/2",
-            "=",
-            "150"
-          ]
-        },
         {
           "type": {
             "value": "PanelSpriteButton::PanelSpriteButton::Activate"
@@ -798,6 +857,42 @@
           "conditions": [
             {
               "type": {
+                "inverted": true,
+                "value": "MusicPlaying"
+              },
+              "parameters": [
+                "",
+                "20"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "metau.ogg",
+                "20",
+                "yes",
+                "100",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -857,7 +952,7 @@
               "parameters": [
                 "BtnStartGame",
                 "=",
-                "ScreenWidth()/2",
+                "ScreenWidth()/6",
                 "=",
                 "400"
               ]
@@ -881,7 +976,7 @@
               "parameters": [
                 "BtnSettings",
                 "=",
-                "ScreenWidth()/2",
+                "ScreenWidth()/6",
                 "=",
                 "550"
               ]
@@ -936,7 +1031,7 @@
               "parameters": [
                 "BtnLevel1",
                 "=",
-                "ScreenWidth()/3",
+                "ScreenWidth()/6",
                 "=",
                 "300"
               ]
@@ -962,7 +1057,7 @@
                 "=",
                 "BtnLevel1.X() + 50",
                 "=",
-                "BtnLevel1.Y() + 125"
+                "BtnLevel1.Y() + 135"
               ]
             },
             {
@@ -1008,9 +1103,9 @@
               "parameters": [
                 "BtnLevel2",
                 "=",
-                "ScreenWidth() - ScreenWidth()/3",
+                "ScreenWidth()/6",
                 "=",
-                "300"
+                "450"
               ]
             },
             {
@@ -1034,7 +1129,7 @@
                 "=",
                 "BtnLevel2.X() + 50",
                 "=",
-                "BtnLevel2.Y() + 125"
+                "BtnLevel2.Y() + 135"
               ]
             },
             {
@@ -1226,9 +1321,9 @@
               "parameters": [
                 "BtnSettings",
                 "=",
-                "ScreenWidth()/2",
+                "ScreenWidth()/6",
                 "=",
-                "610"
+                "600"
               ]
             }
           ]

@@ -206,19 +206,51 @@
         },
         {
           "type": {
-            "value": "PlaySoundCanal"
+            "value": "StopSoundCanal"
           },
           "parameters": [
             "",
-            "ButtonClick.mp3",
-            "1",
-            "no",
-            "100",
-            "1"
+            "14"
           ]
         }
       ],
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "MusicPlaying"
+              },
+              "parameters": [
+                "",
+                "20"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "metau.ogg",
+                "20",
+                "yes",
+                "100",
+                "1"
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::ForEach",
           "object": "Minions",
@@ -323,6 +355,33 @@
             "=",
             "BSODGun.FireBullet::AmmoQuantity()",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BooleanObjectVariable"
+          },
+          "parameters": [
+            "Player",
+            "isOverPowered",
+            "=",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "StopSoundCanal"
+          },
+          "parameters": [
+            "",
+            "14"
           ]
         }
       ]
@@ -3790,6 +3849,15 @@
               "actions": [
                 {
                   "type": {
+                    "value": "StopMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "20"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Create"
                   },
                   "parameters": [
@@ -3816,28 +3884,6 @@
                     "BlueScreen",
                     "=",
                     "98"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "NextLevelTeleporter",
-                    "BlueScreen.PointX(\"Exit\")",
-                    "BlueScreen.PointY(\"Exit\")",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "NextLevelTeleporter",
-                    "=",
-                    "99"
                   ]
                 },
                 {
@@ -3878,6 +3924,17 @@
                   "parameters": [
                     "",
                     "\"bsodTimer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Player",
+                    "isOverPowered",
+                    "False",
+                    ""
                   ]
                 }
               ]
@@ -4105,6 +4162,28 @@
               "parameters": [
                 "TextFrame",
                 "TextFrame"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "NextLevelTeleporter",
+                "BlueScreen.PointX(\"Exit\")",
+                "BlueScreen.PointY(\"Exit\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "NextLevelTeleporter",
+                "=",
+                "99"
               ]
             },
             {

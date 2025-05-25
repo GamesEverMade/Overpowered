@@ -5,7 +5,7 @@
   "name": "Settings",
   "r": 209,
   "standardSortMethod": true,
-  "stopSoundsOnStartup": true,
+  "stopSoundsOnStartup": false,
   "title": "",
   "v": 209,
   "uiSettings": {
@@ -357,7 +357,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Hovered.png",
+          "texture": "White Square Decorated Button_Hovered.png",
           "tiled": false,
           "topMargin": 0,
           "width": 260
@@ -367,7 +367,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Idle.png",
+          "texture": "White Square Decorated Button_Idle.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -382,9 +382,9 @@
           "textAlignment": "center",
           "characterSize": 30,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           },
           "content": {
             "bold": false,
@@ -405,7 +405,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 30,
-            "color": "255;255;255"
+            "color": "0;0;0"
           }
         },
         "Pressed": {
@@ -413,7 +413,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Pressed.png",
+          "texture": "White Square Decorated Button_Pressed.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -442,7 +442,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Hovered.png",
+          "texture": "White Square Decorated Button_Hovered.png",
           "tiled": false,
           "topMargin": 0,
           "width": 260
@@ -452,7 +452,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Idle.png",
+          "texture": "White Square Decorated Button_Idle.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -467,9 +467,9 @@
           "textAlignment": "center",
           "characterSize": 30,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           },
           "content": {
             "bold": false,
@@ -490,7 +490,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 30,
-            "color": "255;255;255"
+            "color": "0;0;0"
           }
         },
         "Pressed": {
@@ -498,7 +498,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Pressed.png",
+          "texture": "White Square Decorated Button_Pressed.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -572,7 +572,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Hovered.png",
+          "texture": "White Square Decorated Button_Hovered.png",
           "tiled": false,
           "topMargin": 0,
           "width": 260
@@ -582,7 +582,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Idle.png",
+          "texture": "White Square Decorated Button_Idle.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -597,9 +597,9 @@
           "textAlignment": "center",
           "characterSize": 25,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           },
           "content": {
             "bold": false,
@@ -620,7 +620,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 25,
-            "color": "255;255;255"
+            "color": "0;0;0"
           }
         },
         "Pressed": {
@@ -628,7 +628,7 @@
           "height": 96,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Pressed.png",
+          "texture": "White Square Decorated Button_Pressed.png",
           "tiled": false,
           "topMargin": 0,
           "width": 160
@@ -754,7 +754,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Hovered.png",
+          "texture": "White Square Decorated Button_Hovered.png",
           "tiled": false,
           "topMargin": 0,
           "width": 260
@@ -764,7 +764,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Idle.png",
+          "texture": "White Square Decorated Button_Idle.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
@@ -779,9 +779,9 @@
           "textAlignment": "center",
           "characterSize": 30,
           "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+            "b": 0,
+            "g": 0,
+            "r": 0
           },
           "content": {
             "bold": false,
@@ -802,7 +802,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 30,
-            "color": "255;255;255"
+            "color": "0;0;0"
           }
         },
         "Pressed": {
@@ -810,7 +810,7 @@
           "height": 100,
           "leftMargin": 0,
           "rightMargin": 0,
-          "texture": "Green Button With Stone Frame_Pressed.png",
+          "texture": "White Square Decorated Button_Pressed.png",
           "tiled": false,
           "topMargin": 0,
           "width": 250
