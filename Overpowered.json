@@ -77,8 +77,12 @@
       "placement": "bottom-left",
       "showWatermark": false
     },
-    "authorIds": [],
-    "authorUsernames": [],
+    "authorIds": [
+      "R08wQyOwJjVyaJfzfHWJTJOi9Rh1"
+    ],
+    "authorUsernames": [
+      "holysparks"
+    ],
     "categories": [],
     "playableDevices": [],
     "extensionProperties": [],
@@ -1144,14 +1148,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/NextLevelTeleporter.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NextLevelTeleporter",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "Perfect DOS VGA 437 Win.ttf",
         "kind": "font",
         "metadata": "",
@@ -1203,7 +1199,7 @@
         "userAdded": false
       },
       {
-        "file": "Boss1Gun.mp3",
+        "file": "Boss1Gun2.mp3",
         "kind": "audio",
         "metadata": "",
         "name": "Boss1Gun.mp3",
@@ -1213,7 +1209,7 @@
         "userAdded": false
       },
       {
-        "file": "Boss2Gun.mp3",
+        "file": "Boss2Gun2.mp3",
         "kind": "audio",
         "metadata": "",
         "name": "Boss2Gun.mp3",
@@ -1253,7 +1249,7 @@
         "userAdded": false
       },
       {
-        "file": "Dash.mp3",
+        "file": "Dash3.mp3",
         "kind": "audio",
         "metadata": "",
         "name": "Dash.mp3",
@@ -1358,6 +1354,14 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "small_circuit_spritesheet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "small_circuit_spritesheet.png",
+        "smoothed": false,
         "userAdded": false
       }
     ],
@@ -3376,7 +3380,7 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 1,
+          "Health": 10000,
           "CurrentHealth": 0,
           "MaxHealth": 10000,
           "DamageCooldown": 0.3,
@@ -5641,9 +5645,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 1,
+          "Health": 20000,
           "CurrentHealth": 0,
-          "MaxHealth": 1,
+          "MaxHealth": 20000,
           "DamageCooldown": 0.3,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
@@ -6200,9 +6204,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 1,
+          "Health": 30000,
           "CurrentHealth": 0,
-          "MaxHealth": 1,
+          "MaxHealth": 30000,
           "DamageCooldown": 0.3,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
@@ -7094,6 +7098,21 @@
         "align": "center",
         "verticalTextAlignment": "top"
       }
+    },
+    {
+      "assetStoreId": "",
+      "name": "CircuitTileMap",
+      "type": "TileMap::SimpleTileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "atlasImage": "small_circuit_spritesheet.png",
+        "rowCount": 1,
+        "columnCount": 8,
+        "tileSize": 32,
+        "tilesWithHitBox": ""
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -7102,6 +7121,9 @@
       {
         "folderName": "Tiles",
         "children": [
+          {
+            "objectName": "CircuitTileMap"
+          },
           {
             "objectName": "Wall"
           },

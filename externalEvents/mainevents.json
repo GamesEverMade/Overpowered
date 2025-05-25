@@ -196,6 +196,16 @@
         },
         {
           "type": {
+            "value": "ModGlobalVolume"
+          },
+          "parameters": [
+            "",
+            "=",
+            "globalVolume"
+          ]
+        },
+        {
+          "type": {
             "value": "PlaySoundCanal"
           },
           "parameters": [
@@ -416,30 +426,6 @@
             ">=",
             "0.1"
           ]
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "Gamepads::C_Axis_pushed"
-          },
-          "parameters": [
-            "",
-            "1",
-            "\"Left\"",
-            "\"Any\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "Gamepads::C_any_button_released"
-          },
-          "parameters": [
-            "",
-            "1",
-            "\"Left\""
-          ]
         }
       ],
       "actions": [
@@ -483,30 +469,6 @@
             ">=",
             "0.1"
           ]
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "Gamepads::C_Axis_pushed"
-          },
-          "parameters": [
-            "",
-            "1",
-            "\"Left\"",
-            "\"Any\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "inverted": true,
-            "value": "Gamepads::C_any_button_released"
-          },
-          "parameters": [
-            "",
-            "1",
-            "\"Left\""
-          ]
         }
       ],
       "actions": [
@@ -532,148 +494,6 @@
             "CursorY()",
             "0",
             ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": true,
-            "value": "CompareObjectTimer"
-          },
-          "parameters": [
-            "Player",
-            "\"attackTimer\"",
-            ">=",
-            "0.1"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Or"
-          },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "Gamepads::C_Axis_pushed"
-              },
-              "parameters": [
-                "",
-                "1",
-                "\"Left\"",
-                "\"Any\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Gamepads::C_any_button_released"
-              },
-              "parameters": [
-                "",
-                "1",
-                "\"Left\""
-              ]
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetCenter"
-          },
-          "parameters": [
-            "AttackHitbox",
-            "=",
-            "Player.CenterX()",
-            "=",
-            "Player.CenterY()"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetAngle"
-          },
-          "parameters": [
-            "AttackHitbox",
-            "=",
-            "Player.TopDownMovement::Angle()"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "inverted": true,
-            "value": "CompareObjectTimer"
-          },
-          "parameters": [
-            "Player",
-            "\"attackTimer\"",
-            ">=",
-            "0.1"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Or"
-          },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "Gamepads::C_Axis_pushed"
-              },
-              "parameters": [
-                "",
-                "1",
-                "\"Left\"",
-                "\"Any\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Gamepads::C_any_button_released"
-              },
-              "parameters": [
-                "",
-                "1",
-                "\"Left\""
-              ]
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetCenter"
-          },
-          "parameters": [
-            "BSODGun",
-            "=",
-            "Player.PointX(\"Weapon\")",
-            "=",
-            "Player.PointY(\"Weapon\")"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetAngle"
-          },
-          "parameters": [
-            "BSODGun",
-            "=",
-            "Player.TopDownMovement::Angle()"
           ]
         }
       ]
@@ -1820,6 +1640,15 @@
                         ">=",
                         "0"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "MouseButtonFromTextPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "controls.keyAttack"
+                      ]
                     }
                   ],
                   "actions": [
@@ -1830,75 +1659,16 @@
                       "parameters": [
                         "BSODGun"
                       ]
-                    }
-                  ],
-                  "events": [
-                    {
-                      "disabled": true,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "MouseButtonFromTextPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "controls.keyAttack"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "AddForceAL"
-                          },
-                          "parameters": [
-                            "Player",
-                            "Player.AngleToPosition(CursorX(),CursorY())",
-                            "100",
-                            "0"
-                          ]
-                        }
-                      ]
                     },
                     {
-                      "disabled": true,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "Gamepads::C_Button_pressed"
-                          },
-                          "parameters": [
-                            "",
-                            "1",
-                            "\"X\"",
-                            ""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "AddForceAL"
-                          },
-                          "parameters": [
-                            "Player",
-                            "Player.TopDownMovement::Angle()",
-                            "100",
-                            "0"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetAngle"
-                          },
-                          "parameters": [
-                            "AttackHitbox",
-                            "=",
-                            "Gamepads::StickAngle(1,\"Left\")"
-                          ]
-                        }
+                      "type": {
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Player.AngleToPosition(CursorX(),CursorY())",
+                        "100",
+                        "0"
                       ]
                     }
                   ]
@@ -4348,6 +4118,17 @@
                 "",
                 "100",
                 "RandomFloatInRange(0.9,1.1)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Player",
+                "isOverPowered",
+                "False",
+                ""
               ]
             }
           ]
