@@ -10,7 +10,7 @@
     <img src='./GamesEverMade_logo.png' alt='GamesEverMade logo' width='120'>
 </div>
 <a align="center" href="https://itch.io/jam/gdevelop-big-game-jam-7">GDevelop Big Game Jam 7 website</a>
-<h1 align="center" style="font-weight: bold;">The Lord of the Pendrive</h1>
+<h1 align="center" style="font-weight: bold;">Battle for Saving Our Destiny</h1>
 
 [![Static Badge](https://img.shields.io/badge/Made_with-GDevelop-purple)](https://img.shields.io/badge/Made_with-GDevelop-purple)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
@@ -38,8 +38,8 @@
 </p>
 
 <p align="center">
-    <img src="./game/example1.png" alt="Image Example" width="400px"></img> |
-    <img src="./game/example2.png" alt="Image Example" width="400px"></img>
+    <img src="./example1.png" alt="Image Example" width="400px"></img> |
+    <img src="./example2.png" alt="Image Example" width="400px"></img>
 </p>
 
 Project developed during the Big Games Jam #7, sponsored by GDevelop. The project was based on the theme of the same, defined as “Overpower”. Given the current reality of the evolution of current artificial intelligences (GPT, Gemini, Meta, Siri, etc.), we thought it would be a current and relaxed theme to have as the game's background.
