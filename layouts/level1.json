@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.34375202416123735,
+    "zoomFactor": 0.30104611971825107,
     "windowMask": false
   },
   "objectsGroups": [
@@ -1869,7 +1869,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Boss AI",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2515,11 +2514,40 @@
       "parameters": []
     },
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::HasJustFired"
+          },
+          "parameters": [
+            "Boss1",
+            "FireBullet",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "Boss1Gun.mp3",
+            "16",
+            "",
+            "GlobalVolume()-20",
+            "RandomFloatInRange(0.9,1.1)"
+          ]
+        }
+      ]
+    },
+    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Barramentos",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2614,6 +2642,19 @@
                     "\"Effect\"",
                     "no"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "EnergyUp.mp3",
+                    "17",
+                    "",
+                    "100",
+                    "RandomFloatInRange(0.9,1.1)"
+                  ]
                 }
               ]
             }
@@ -2696,6 +2737,19 @@
                     "Effect",
                     "\"Effect\"",
                     "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "EnergyUp.mp3",
+                    "17",
+                    "",
+                    "100",
+                    "RandomFloatInRange(0.9,1.1)"
                   ]
                 }
               ]
@@ -2780,6 +2834,19 @@
                     "\"Effect\"",
                     "no"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "EnergyUp.mp3",
+                    "17",
+                    "",
+                    "100",
+                    "RandomFloatInRange(0.9,1.1)"
+                  ]
                 }
               ]
             }
@@ -2863,6 +2930,19 @@
                     "\"Effect\"",
                     "no"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "EnergyUp.mp3",
+                    "17",
+                    "",
+                    "100",
+                    "RandomFloatInRange(0.9,1.1)"
+                  ]
                 }
               ]
             }
@@ -2876,7 +2956,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Shield down",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3877,6 +3956,19 @@
             "levelEnding",
             "True",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "EnemyDeath.mp3",
+            "12",
+            "",
+            "100",
+            "RandomFloatInRange(0.9,1.1)"
           ]
         }
       ],

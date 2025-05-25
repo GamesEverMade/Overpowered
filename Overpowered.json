@@ -1201,6 +1201,164 @@
         "name": "tiled_Tiled Filler UI Heart.png2",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "Boss1Gun.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss1Gun.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Boss2Gun.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss2Gun.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Boss2Punch.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Boss2Punch.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "BsodGun.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "BsodGun.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "ButtonClick.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "ButtonClick.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Dash.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Dash.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "EnemyBlock.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "EnemyBlock.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Dash2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Dash2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "EnemyDeath.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "EnemyDeath.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "EnemyHurt.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "EnemyHurt.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "EnergyUp.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "EnergyUp.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "MeleeAttack.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "MeleeAttack.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "PlayerHurt.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "PlayerHurt.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "PoweredUp.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "PoweredUp.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NextLevelTeleporter2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NextLevelTeleporter2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "Windows.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Windows.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2725,7 +2883,7 @@
       "content": {
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in congue risus.",
         "opacity": 255,
-        "fontSize": 40,
+        "fontSize": 35,
         "visible": true,
         "color": "0;0;0",
         "fontFamily": "Perfect DOS VGA 437 Win.ttf",
@@ -3220,7 +3378,7 @@
           "type": "Health::Health",
           "Health": 1,
           "CurrentHealth": 0,
-          "MaxHealth": 1,
+          "MaxHealth": 10000,
           "DamageCooldown": 0.3,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
@@ -6860,7 +7018,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NextLevelTeleporter",
+                  "image": "NextLevelTeleporter2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

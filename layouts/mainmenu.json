@@ -235,9 +235,9 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "[shadow=red]OVERPOWERED[/shadow] ",
+        "text": "[shadow=red]Battle to Save\nOur Destiny[/shadow] ",
         "opacity": 255,
-        "fontSize": 140,
+        "fontSize": 100,
         "visible": true,
         "color": "0;0;0",
         "fontFamily": "Perfect DOS VGA 437 Win.ttf",
@@ -776,6 +776,19 @@
             "",
             "=",
             "globalVolume"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "ButtonClick.mp3",
+            "1",
+            "no",
+            "100",
+            "1"
           ]
         }
       ],
@@ -1456,6 +1469,19 @@
       "actions": [
         {
           "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "ButtonClick.mp3",
+            "1",
+            "no",
+            "100",
+            "1"
+          ]
+        },
+        {
+          "type": {
             "value": "Scene"
           },
           "parameters": [
@@ -1480,6 +1506,19 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "ButtonClick.mp3",
+            "1",
+            "no",
+            "100",
+            "1"
+          ]
+        },
         {
           "type": {
             "value": "Scene"
@@ -1517,6 +1556,19 @@
       "actions": [
         {
           "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "ButtonClick.mp3",
+            "1",
+            "no",
+            "100",
+            "1"
+          ]
+        },
+        {
+          "type": {
             "value": "Scene"
           },
           "parameters": [
@@ -1552,6 +1604,19 @@
       "actions": [
         {
           "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "ButtonClick.mp3",
+            "1",
+            "no",
+            "100",
+            "1"
+          ]
+        },
+        {
+          "type": {
             "value": "Scene"
           },
           "parameters": [
@@ -1585,6 +1650,19 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "ButtonClick.mp3",
+            "1",
+            "no",
+            "100",
+            "1"
+          ]
+        },
         {
           "type": {
             "value": "Scene"
@@ -1623,6 +1701,19 @@
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "ButtonClick.mp3",
+            "1",
+            "no",
+            "100",
+            "1"
+          ]
+        },
         {
           "type": {
             "value": "Scene"

@@ -67,7 +67,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "[size=42]CONGRATULATIONS[/size] \nYou have vanquished the AI menance with \nthe powers the mythical infected pendrive.\n\nThanks for playing Battle for Saving Our Destiny.\n\n\n[size=42]CREDITS[/size] \nGAMES EVER MADE\n[b]Alisson Lindote[/b]: PM, Marketing, Developer and Composer\n[b]Andrew Mendes[/b]: Lead visual artist and Composer\n[b]Felipe Gil[/b]: Developer, Composer and Level designer\n[b]Marcelo 'Holy' Moreira[/b]: Lead game designer and Developer\n\nADDITIONAL ASSETS\nSFXs: \n",
+        "text": "[size=42]CONGRATULATIONS[/size] \nYou have vanquished the AI menance with \nthe powers the mythical infected pendrive.\n\nThanks for playing Battle to Save Our Destiny.\n\n\n[size=42]CREDITS[/size] \nGAMES EVER MADE\n[b]Alisson Lindote[/b]: PM, Marketing, Developer and Composer\n[b]Andrew Mendes[/b]: Lead visual artist and Composer\n[b]Felipe Gil[/b]: Developer, Composer and Level designer\n[b]Marcelo 'Holy' Moreira[/b]: Lead game designer and Developer\n\nADDITIONAL ASSETS\n[b]Pixabay[/b]: royalty-free sound effects\n[b]Zeh Fernando[/b]: Perfect DOS VGA 437 font\n\n\nPRESS ANY KEY TO RETURN\n",
         "opacity": 255,
         "fontSize": 30,
         "visible": true,
@@ -122,6 +122,49 @@
             "FloorCircuitBlank.CenterX()",
             "=",
             "FloorCircuitBlank.CenterY()"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Gamepads::C_Any_Button_pressed"
+          },
+          "parameters": [
+            "",
+            "1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "AnyKeyPressed"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"MainMenu\"",
+            ""
           ]
         }
       ]

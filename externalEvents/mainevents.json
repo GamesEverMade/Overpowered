@@ -193,6 +193,19 @@
             "Player",
             "\"levelTimer\""
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "ButtonClick.mp3",
+            "1",
+            "no",
+            "100",
+            "1"
+          ]
         }
       ],
       "events": [
@@ -403,6 +416,30 @@
             ">=",
             "0.1"
           ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Gamepads::C_Axis_pushed"
+          },
+          "parameters": [
+            "",
+            "1",
+            "\"Left\"",
+            "\"Any\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Gamepads::C_any_button_released"
+          },
+          "parameters": [
+            "",
+            "1",
+            "\"Left\""
+          ]
         }
       ],
       "actions": [
@@ -446,6 +483,30 @@
             ">=",
             "0.1"
           ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Gamepads::C_Axis_pushed"
+          },
+          "parameters": [
+            "",
+            "1",
+            "\"Left\"",
+            "\"Any\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "Gamepads::C_any_button_released"
+          },
+          "parameters": [
+            "",
+            "1",
+            "\"Left\""
+          ]
         }
       ],
       "actions": [
@@ -471,6 +532,148 @@
             "CursorY()",
             "0",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Player",
+            "\"attackTimer\"",
+            ">=",
+            "0.1"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "Gamepads::C_Axis_pushed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"Left\"",
+                "\"Any\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_any_button_released"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"Left\""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "AttackHitbox",
+            "=",
+            "Player.CenterX()",
+            "=",
+            "Player.CenterY()"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetAngle"
+          },
+          "parameters": [
+            "AttackHitbox",
+            "=",
+            "Player.TopDownMovement::Angle()"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Player",
+            "\"attackTimer\"",
+            ">=",
+            "0.1"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "Gamepads::C_Axis_pushed"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"Left\"",
+                "\"Any\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Gamepads::C_any_button_released"
+              },
+              "parameters": [
+                "",
+                "1",
+                "\"Left\""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetCenter"
+          },
+          "parameters": [
+            "BSODGun",
+            "=",
+            "Player.PointX(\"Weapon\")",
+            "=",
+            "Player.PointY(\"Weapon\")"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetAngle"
+          },
+          "parameters": [
+            "BSODGun",
+            "=",
+            "Player.TopDownMovement::Angle()"
           ]
         }
       ]
@@ -1053,6 +1256,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Dash.mp3",
+                    "2",
+                    "",
+                    "GlobalVolume()-15",
+                    "RandomFloatInRange(0.9,1.1)"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
@@ -1445,6 +1661,19 @@
                         "=",
                         "\"Melee\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "MeleeAttack.mp3",
+                        "3",
+                        "",
+                        "100",
+                        "RandomFloatInRange(0.9,1.1)"
+                      ]
                     }
                   ]
                 },
@@ -1541,6 +1770,14 @@
                   "actions": [
                     {
                       "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "BSODGun"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "AddForceAL"
                       },
                       "parameters": [
@@ -1548,14 +1785,6 @@
                         "Player.TopDownMovement::Angle()",
                         "100",
                         "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "BSODGun"
                       ]
                     }
                   ]
@@ -1596,21 +1825,80 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "AddForceAL"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Player.AngleToPosition(CursorX(),CursorY())",
-                        "100",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Cache"
                       },
                       "parameters": [
                         "BSODGun"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "disabled": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "MouseButtonFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "controls.keyAttack"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AddForceAL"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Player.AngleToPosition(CursorX(),CursorY())",
+                            "100",
+                            "0"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Gamepads::C_Button_pressed"
+                          },
+                          "parameters": [
+                            "",
+                            "1",
+                            "\"X\"",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AddForceAL"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Player.TopDownMovement::Angle()",
+                            "100",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetAngle"
+                          },
+                          "parameters": [
+                            "AttackHitbox",
+                            "=",
+                            "Gamepads::StickAngle(1,\"Left\")"
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -1937,6 +2225,19 @@
               "actions": [
                 {
                   "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "BsodGun.mp3",
+                    "4",
+                    "",
+                    "100",
+                    "RandomFloatInRange(0.9,1.1)"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ChangePlan"
                   },
                   "parameters": [
@@ -2170,53 +2471,6 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Interact is context dependent"
-        },
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "KeyFromTextPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "controls.keyInteract"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Gamepads::C_Button_pressed"
-                  },
-                  "parameters": [
-                    "",
-                    "1",
-                    "\"A\"",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ],
-          "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
           "comment": "Start"
         },
         {
@@ -2292,7 +2546,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player Attacks",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2489,6 +2742,120 @@
           "conditions": [
             {
               "type": {
+                "value": "Health::Health::IsJustDamaged"
+              },
+              "parameters": [
+                "Bosses",
+                "Health",
+                "="
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::PreviousDamageTaken"
+              },
+              "parameters": [
+                "Bosses",
+                "Health",
+                "<=",
+                "5",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "EnemyBlock.mp3",
+                "8",
+                "",
+                "100",
+                "RandomFloatInRange(0.9,1.1)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsJustDamaged"
+              },
+              "parameters": [
+                "Bosses",
+                "Health",
+                "="
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::PreviousDamageTaken"
+              },
+              "parameters": [
+                "Bosses",
+                "Health",
+                ">",
+                "5",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "EnemyHurt.mp3",
+                "9",
+                "",
+                "100",
+                "RandomFloatInRange(0.9,1.1)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsJustDamaged"
+              },
+              "parameters": [
+                "Minions",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "EnemyHurt.mp3",
+                "10",
+                "",
+                "GlobalVolume()-10",
+                "RandomFloatInRange(0.9,1.1)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "CollisionNP"
               },
               "parameters": [
@@ -2508,6 +2875,19 @@
               "parameters": [
                 "PlayerBullet",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "EnemyBlock.mp3",
+                "6",
+                "",
+                "100",
+                "RandomFloatInRange(0.9,1.1)"
               ]
             }
           ]
@@ -2536,6 +2916,19 @@
               "parameters": [
                 "PlayerBullet",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "EnemyBlock.mp3",
+                "7",
+                "",
+                "100",
+                "RandomFloatInRange(0.9,1.1)"
               ]
             }
           ]
@@ -2585,6 +2978,19 @@
             "Bounce",
             "Wall",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "EnemyBlock.mp3",
+            "5",
+            "",
+            "100",
+            "RandomFloatInRange(0.9,1.1)"
           ]
         }
       ],
@@ -2895,7 +3301,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Healthbar popup",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3120,6 +3525,19 @@
             "Minions",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "EnemyDeath.mp3",
+            "12",
+            "",
+            "100",
+            "RandomFloatInRange(0.9,1.1)"
+          ]
         }
       ]
     },
@@ -3128,7 +3546,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Player collision, damage and death",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3405,6 +3822,19 @@
                 "0.1",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "PlayerHurt.mp3",
+                "11",
+                "",
+                "100",
+                "RandomFloatInRange(0.9,1.1)"
+              ]
             }
           ]
         }
@@ -3532,6 +3962,19 @@
                 "=",
                 "1000",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "PoweredUp.mp3",
+                "14",
+                "yes",
+                "100",
+                "RandomFloatInRange(0.9,1.1)"
               ]
             }
           ]
@@ -3701,6 +4144,19 @@
                 "BlueScreen",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Windows.mp3",
+                "15",
+                "",
+                "100",
+                "RandomFloatInRange(0.9,1.1)"
+              ]
             }
           ]
         },
@@ -3765,6 +4221,19 @@
               "parameters": [
                 "BlueScreen",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Windows.mp3",
+                "15",
+                "",
+                "100",
+                "RandomFloatInRange(0.9,1.1)"
               ]
             }
           ]
@@ -3866,6 +4335,19 @@
               "parameters": [
                 "TextFrame",
                 "TextFrame"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Windows.mp3",
+                "15",
+                "",
+                "100",
+                "RandomFloatInRange(0.9,1.1)"
               ]
             }
           ]

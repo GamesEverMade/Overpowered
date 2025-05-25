@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.46331118245139813,
+    "zoomFactor": 0.4335774304702378,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -897,6 +897,19 @@
             "globalVolume",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySoundCanal"
+          },
+          "parameters": [
+            "",
+            "ButtonClick.mp3",
+            "1",
+            "no",
+            "100",
+            "1"
+          ]
         }
       ],
       "events": [
@@ -1356,7 +1369,21 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "ButtonClick.mp3",
+                    "1",
+                    "no",
+                    "100",
+                    "1"
+                  ]
+                }
+              ],
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -2307,6 +2334,19 @@
           "actions": [
             {
               "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "ButtonClick.mp3",
+                "1",
+                "no",
+                "100",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "Scene"
               },
               "parameters": [
@@ -2331,6 +2371,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "ButtonClick.mp3",
+                "1",
+                "no",
+                "100",
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "DeleteFichier"
@@ -2377,6 +2430,19 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "ButtonClick.mp3",
+                "1",
+                "no",
+                "100",
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "SetStringVariable"
