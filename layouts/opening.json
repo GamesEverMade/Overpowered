@@ -284,6 +284,15 @@
         },
         {
           "type": {
+            "value": "PreloadMusic"
+          },
+          "parameters": [
+            "",
+            "metau.ogg"
+          ]
+        },
+        {
+          "type": {
             "value": "ModGlobalVolume"
           },
           "parameters": [

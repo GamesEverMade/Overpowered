@@ -355,7 +355,6 @@
       "assetStoreId": "0364dbe0c9a504055bcfd65a3e898b58b0cb0aea76c15cc0b9961815b88ba4e6",
       "name": "BtnBack",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -440,7 +439,6 @@
       "assetStoreId": "0364dbe0c9a504055bcfd65a3e898b58b0cb0aea76c15cc0b9961815b88ba4e6",
       "name": "BtnClearSave",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -549,7 +547,6 @@
       "assetStoreId": "0364dbe0c9a504055bcfd65a3e898b58b0cb0aea76c15cc0b9961815b88ba4e6",
       "name": "BtnKeybind",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [
         {
           "name": "function",
@@ -655,7 +652,6 @@
       "assetStoreId": "bfeeb465a4a164b560a2215e3ff9e78e66123af43cbf7ef1f22d56fca4271c80",
       "name": "VolumeSlider",
       "type": "PanelSpriteSlider::PanelSpriteSlider",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -741,7 +737,6 @@
       "assetStoreId": "0364dbe0c9a504055bcfd65a3e898b58b0cb0aea76c15cc0b9961815b88ba4e6",
       "name": "BtnDefaultControls",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [
         {
           "name": "function",

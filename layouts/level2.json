@@ -2008,7 +2008,6 @@
       "assetStoreId": "0a398f1656e34f64758c909a71ca17cd69fd41bd251d89ff5a640303c4279f50",
       "name": "OverpowerCharge",
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],

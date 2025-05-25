@@ -61,7 +61,6 @@
       "assetStoreId": "0364dbe0c9a504055bcfd65a3e898b58b0cb0aea76c15cc0b9961815b88ba4e6",
       "name": "BtnStartGame",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -146,7 +145,6 @@
       "assetStoreId": "0364dbe0c9a504055bcfd65a3e898b58b0cb0aea76c15cc0b9961815b88ba4e6",
       "name": "BtnSettings",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -249,7 +247,6 @@
       "assetStoreId": "0364dbe0c9a504055bcfd65a3e898b58b0cb0aea76c15cc0b9961815b88ba4e6",
       "name": "BtnTimeAttack",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -334,7 +331,6 @@
       "assetStoreId": "0364dbe0c9a504055bcfd65a3e898b58b0cb0aea76c15cc0b9961815b88ba4e6",
       "name": "BtnLevel1",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [
         {
@@ -429,7 +425,6 @@
       "assetStoreId": "0364dbe0c9a504055bcfd65a3e898b58b0cb0aea76c15cc0b9961815b88ba4e6",
       "name": "BtnLevel2",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [
         {
@@ -524,7 +519,6 @@
       "assetStoreId": "0364dbe0c9a504055bcfd65a3e898b58b0cb0aea76c15cc0b9961815b88ba4e6",
       "name": "BtnLevel3",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [
         {
@@ -667,7 +661,6 @@
       "assetStoreId": "f23eb31ad33dd63f1937c8745105316ca530c28513c64b68a665975503c852a6",
       "name": "WhiteSquareDecoratedButton",
       "type": "PanelSpriteButton::PanelSpriteButton",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],

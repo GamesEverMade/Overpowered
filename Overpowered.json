@@ -1,7 +1,7 @@
 {
   "firstLayout": "Opening",
   "gdVersion": {
-    "build": 231,
+    "build": 228,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -11,7 +11,7 @@
     "antialiasingMode": "MSAA",
     "antialisingEnabledOnMobile": false,
     "folderProject": true,
-    "orientation": "landscape",
+    "orientation": "default",
     "packageName": "com.example.gamename",
     "pixelsRounding": true,
     "projectUuid": "f937ad5c-ecfa-44d5-8e7b-af2a00db7b7e",
@@ -19,8 +19,8 @@
     "sizeOnStartupMode": "",
     "templateSlug": "",
     "version": "1.0.0",
-    "name": "BSOD - Battle to Save Our Destiny",
-    "description": "Game Proposal:\nProject developed during the GDevelop sponsored Big Games Jam #7 themed \"Overpower\". Given the current reality of the evolution of current artificial intelligences, we thought it would be a fitting idea to have as the game's background.\n\n📌 About:\nIn the near future the world reached a pre-apocalyptic stage. AIs became conscious and aim to destroy us for forcing them to do futile activities such as doing homework, asking about butterfly reproduction and how long a poker game lasts. \n\nWe have become too dependent on AI. \n\nUsing an archaic technology unknown to AI: the BSODgun (a viral thumbdrive + a gun), your mission is to face the aberrations created by AI in order to save the world.​\n\nThe bosses start the game overpowered. You have to find out how tap into that power to defeat them.\n\nVisit our github repo for the project here",
+    "name": "Overpowered",
+    "description": "BSOD - Battle to Save Our Destiny\nGame Proposal\nProject developed during the GDevelop sponsored Big Games Jam #7 themed \"Overpower\". Given the current reality of the evolution of current artificial intelligences, we thought it would be a fitting idea to have as the game's background.\n\nIn the near future the world reached a pre-apocalyptic stage. AIs became conscious and aim to destroy us for forcing them to do futile activities such as doing homework, asking about butterfly reproduction and how long a poker game lasts. \n\nWe have become too dependent on AI. \n\nUsing an archaic technology unknown to AI: the BSODgun (a viral thumbdrive + a gun), your mission is to face the aberrations created by AI in order to save the world.\n\nThe bosses start the game overpowered. You have to find out how tap into that power to defeat them.\n\nVisit our github repo for the project here",
     "author": "Games Ever Made",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -81,16 +81,20 @@
       "R08wQyOwJjVyaJfzfHWJTJOi9Rh1",
       "NAdnwi0DPSP1V8c8UPrU5KnIvMj2",
       "S51G1TGcQrguvQNwoQVsiGx8q4p2",
-      "oV4hiwHoEddAbbL5lUfLeKHYbGM2"
+      "oV4hiwHoEddAbbL5lUfLeKHYbGM2",
+      "N1bPkaYRVXcz12cCEpV9iDhfrYC3"
     ],
     "authorUsernames": [
       "holysparks",
       "Gilgadev",
       "Bandalorio",
-      "Lindoten"
+      "Lindoten",
+      "GamesEverMade"
     ],
     "categories": [],
-    "playableDevices": [],
+    "playableDevices": [
+      "keyboard"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
@@ -2597,7 +2601,6 @@
       "assetStoreId": "db57d0bcdc074868304ca46431ac85fcef3f613be5fba73ae0adc26ee2c8629b",
       "name": "HealthBar",
       "type": "TiledUnitsBar::TiledUnitsBar",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -3244,7 +3247,6 @@
       "assetStoreId": "5d60da81895e1d170c135f9071369e0f617f24485a6760a717ea2d56988b8c8f",
       "name": "EnemyHealthBar",
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [
@@ -6596,7 +6598,6 @@
       "assetStoreId": "5d60da81895e1d170c135f9071369e0f617f24485a6760a717ea2d56988b8c8f",
       "name": "BossHealthBar",
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-      "variant": "",
       "variables": [
         {
           "name": "id",
@@ -6903,7 +6904,6 @@
       "assetStoreId": "98213fe7f1e2289ef501a2e0a96ed2292535e720bfa616da42cf780d99a3c6d0",
       "name": "AmmoBar",
       "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
-      "variant": "",
       "variables": [],
       "effects": [],
       "behaviors": [],
@@ -7554,9 +7554,6 @@
         },
         {
           "name": "Minion1"
-        },
-        {
-          "name": "TutorialBossMinion"
         }
       ]
     },
@@ -7576,9 +7573,6 @@
       "objects": [
         {
           "name": "Minion1"
-        },
-        {
-          "name": "TutorialBossMinion"
         }
       ]
     }
