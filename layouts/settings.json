@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.4335774304702378,
+    "zoomFactor": 1.0615714305219985,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -243,8 +243,8 @@
       "name": "VolumeSlider",
       "persistentUuid": "12cd04d1-c2ef-4942-9741-5e894ac6851c",
       "width": 0,
-      "x": 254,
-      "y": 83,
+      "x": 66,
+      "y": 148,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -332,6 +332,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.0007818608287724,
+      "height": 720,
+      "layer": "BG",
+      "name": "BSODCover",
+      "persistentUuid": "220cb340-eb42-403e-b989-62e29b5d420d",
+      "width": 1280,
+      "x": 0,
+      "y": 0,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -382,9 +398,9 @@
           "textAlignment": "center",
           "characterSize": 30,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
@@ -405,7 +421,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 30,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         "Pressed": {
@@ -467,9 +483,9 @@
           "textAlignment": "center",
           "characterSize": 30,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
@@ -490,7 +506,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 30,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         "Pressed": {
@@ -523,7 +539,7 @@
         "opacity": 255,
         "fontSize": 40,
         "visible": true,
-        "color": "0;0;0",
+        "color": "252;252;252",
         "fontFamily": "Perfect DOS VGA 437 Win.ttf",
         "align": "left",
         "verticalTextAlignment": "top"
@@ -597,9 +613,9 @@
           "textAlignment": "center",
           "characterSize": 25,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
@@ -620,7 +636,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 25,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         "Pressed": {
@@ -683,9 +699,9 @@
           "textAlignment": "",
           "characterSize": 20,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
@@ -706,7 +722,7 @@
             "textAlignment": "",
             "verticalTextAlignment": "top",
             "characterSize": 20,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         "Thumb": {
@@ -779,9 +795,9 @@
           "textAlignment": "center",
           "characterSize": 30,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
@@ -802,7 +818,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 30,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         "Pressed": {
@@ -2596,6 +2612,33 @@
     }
   ],
   "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "BG",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Brightness",
+          "name": "Effect",
+          "doubleParameters": {
+            "brightness": 0.4
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ]
+    },
     {
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,

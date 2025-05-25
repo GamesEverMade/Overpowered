@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.43357743047023733,
+    "zoomFactor": 0.4789341884535246,
     "windowMask": false
   },
   "objectsGroups": [
@@ -38,7 +38,24 @@
     }
   ],
   "variables": [],
-  "instances": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1.0007818608287724,
+      "height": 720,
+      "layer": "",
+      "name": "BSODCover",
+      "persistentUuid": "e41653b0-5f7e-4322-98a3-13cb78a4159a",
+      "width": 1280,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
   "objects": [
     {
       "assetStoreId": "0364dbe0c9a504055bcfd65a3e898b58b0cb0aea76c15cc0b9961815b88ba4e6",
@@ -87,9 +104,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
@@ -110,7 +127,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         "Pressed": {
@@ -172,9 +189,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
@@ -195,7 +212,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         "Pressed": {
@@ -275,9 +292,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
@@ -298,7 +315,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         "Pressed": {
@@ -370,9 +387,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
@@ -393,7 +410,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         "Pressed": {
@@ -465,9 +482,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
@@ -488,7 +505,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         "Pressed": {
@@ -560,9 +577,9 @@
           "textAlignment": "center",
           "characterSize": 40,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 253,
+            "g": 253,
+            "r": 253
           },
           "content": {
             "bold": false,
@@ -583,7 +600,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
-            "color": "0;0;0"
+            "color": "253;253;253"
           }
         },
         "Pressed": {
@@ -693,9 +710,9 @@
           "textAlignment": "center",
           "characterSize": 20,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
@@ -716,7 +733,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 20,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         "Pressed": {
@@ -813,18 +830,6 @@
             "currentLevel",
             "=",
             "\"Settings\""
-          ]
-        },
-        {
-          "type": {
-            "value": "SetCameraCenterX"
-          },
-          "parameters": [
-            "",
-            "=",
-            "Title.CenterX()",
-            "",
-            ""
           ]
         },
         {

@@ -1380,7 +1380,7 @@
       {
         "file": "assets/EnergyPlateOff6.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/EnergyPlateOff6.png\"}",
         "name": "EnergyPlateOff6",
         "smoothed": false,
         "userAdded": false
@@ -1406,6 +1406,78 @@
         "kind": "image",
         "metadata": "",
         "name": "portal.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "BSOD Cover.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"BSOD Cover.png\",\"extension\":\".png\"}",
+        "name": "BSOD Cover.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "BSOD Cover2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BSOD Cover2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BossFrame3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BossFrame2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "GlassWall.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GlassWall.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "boss_pig_avatar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "boss_pig_avatar.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BossPig.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BossPig",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "boss_hand_avatar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "boss_hand_avatar.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/BossHand.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BossHand",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/MinionPlate7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/MinionPlate7.png\"}",
+        "name": "MinionPlate",
         "smoothed": false,
         "userAdded": false
       }
@@ -2934,10 +3006,10 @@
         "opacity": 255,
         "fontSize": 35,
         "visible": true,
-        "color": "0;0;0",
+        "color": "156;23;59",
         "fontFamily": "Perfect DOS VGA 437 Win.ttf",
-        "align": "right",
-        "verticalTextAlignment": "top"
+        "align": "center",
+        "verticalTextAlignment": "center"
       }
     },
     {
@@ -2947,11 +3019,24 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "190;220;127"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": [],
       "animations": [
         {
-          "name": "BossFrame",
+          "name": "Boss1",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -2961,7 +3046,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "BossFrame",
+                  "image": "BossFrame2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2981,16 +3066,114 @@
                         "y": 0
                       },
                       {
-                        "x": 128,
+                        "x": 136,
                         "y": 0
                       },
                       {
-                        "x": 128,
-                        "y": 128
+                        "x": 136,
+                        "y": 136
                       },
                       {
                         "x": 0,
-                        "y": 128
+                        "y": 136
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BossPig",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "BossPig",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 136,
+                        "y": 0
+                      },
+                      {
+                        "x": 136,
+                        "y": 136
+                      },
+                      {
+                        "x": 0,
+                        "y": 136
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BossHand",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "BossHand",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 136,
+                        "y": 0
+                      },
+                      {
+                        "x": 136,
+                        "y": 136
+                      },
+                      {
+                        "x": 0,
+                        "y": 136
                       }
                     ]
                   ]
@@ -3163,7 +3346,7 @@
             {
               "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.5,
+              "timeBetweenFrames": 0.25,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -6858,7 +7041,7 @@
       "assetStoreId": "",
       "height": 32,
       "name": "GlassWall",
-      "texture": "GlassWall",
+      "texture": "GlassWall.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -7108,15 +7291,33 @@
       "effects": [
         {
           "effectType": "Outline",
-          "name": "Effect",
+          "name": "Outline",
           "doubleParameters": {
             "padding": 0,
-            "thickness": 2
+            "thickness": 3
           },
           "stringParameters": {
-            "color": "255;255;255"
+            "color": "28;55;39"
           },
           "booleanParameters": {}
+        },
+        {
+          "effectType": "DropShadow",
+          "name": "Shadow",
+          "doubleParameters": {
+            "alpha": 1,
+            "blur": 2,
+            "distance": 1,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
         }
       ],
       "behaviors": [],
@@ -7125,7 +7326,7 @@
         "opacity": 255,
         "fontSize": 80,
         "visible": true,
-        "color": "0;0;0",
+        "color": "190;220;127",
         "fontFamily": "Perfect DOS VGA 437 Win.ttf",
         "align": "center",
         "verticalTextAlignment": "top"
@@ -7145,6 +7346,66 @@
         "tileSize": 32,
         "tilesWithHitBox": ""
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BSODCover",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "BSODCover",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "BSOD Cover2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 640,
+                        "y": 0
+                      },
+                      {
+                        "x": 640,
+                        "y": 360
+                      },
+                      {
+                        "x": 0,
+                        "y": 360
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -7252,6 +7513,9 @@
       },
       {
         "objectName": "NextLevelTeleporter"
+      },
+      {
+        "objectName": "BSODCover"
       }
     ]
   },

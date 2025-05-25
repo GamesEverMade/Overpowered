@@ -1393,42 +1393,6 @@
                       }
                     ]
                   ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "EnergyPlateOff7",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 160,
-                        "y": 0
-                      },
-                      {
-                        "x": 160,
-                        "y": 160
-                      },
-                      {
-                        "x": 0,
-                        "y": 160
-                      }
-                    ]
-                  ]
                 }
               ]
             }
@@ -1441,7 +1405,7 @@
             {
               "looping": true,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.1,
+              "timeBetweenFrames": 0.25,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -1530,7 +1494,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "MinionPlate6",
+                  "image": "MinionPlate",
                   "points": [],
                   "originPoint": {
                     "name": "origine",

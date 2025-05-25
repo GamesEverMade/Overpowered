@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 0.3437520241612365,
+    "zoomFactor": 0.3325387091250822,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -2894,6 +2894,17 @@
                 "100",
                 "RandomFloatInRange(0.9,1.1)"
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "BossFrame",
+                "Animation",
+                "=",
+                "\"BossPig\""
+              ]
             }
           ],
           "events": [
@@ -3538,6 +3549,17 @@
                 "",
                 "100",
                 "RandomFloatInRange(0.9,1.1)"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "BossFrame",
+                "Animation",
+                "=",
+                "\"BossHand\""
               ]
             }
           ],
